@@ -129,10 +129,17 @@ export default function Quiz() {
     } else {
       sigmlFilePath = `SignFiles/${wordItem.file}.sigml`;
     }
-    try {
-      iframeRef.current.contentWindow.startPlayer(sigmlFilePath);
-    } catch (err) {
-      console.log("Player error:", err);
+    if (iframeRef.current.contentWindow) {
+      try {
+        if (typeof iframeRef.current.contentWindow.startPlayer === 'function') {
+          iframeRef.current.contentWindow.startPlayer(sigmlFilePath);
+        }
+      } catch (err) {
+        console.warn("Player error:", err);
+      }
+      try {
+        iframeRef.current.contentWindow.postMessage({ type: 'PLAY_SIGML', file: sigmlFilePath }, '*');
+      } catch (e) {}
     }
   };
 

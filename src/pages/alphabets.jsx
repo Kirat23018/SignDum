@@ -1,4 +1,4 @@
-import React, { useState, useRef } from 'react';
+import React, { useState, useRef, useEffect, useCallback } from 'react';
 
 export default function Alphabets() {
   const alphabetList = Array.from({ length: 26 }, (_, i) => {
@@ -9,17 +9,38 @@ export default function Alphabets() {
   const [activeItem, setActiveItem] = useState(alphabetList[0]);
   const iframeRef = useRef(null);
 
-  const handleAction = (item) => {
-    setActiveItem(item);
-    if (iframeRef.current) {
-      const sigmlFilePath = `SignFiles/${item.file}.sigml`;
+  const playSigml = useCallback((fileOrLetter) => {
+    const file = typeof fileOrLetter === 'object' ? fileOrLetter.file : fileOrLetter;
+    const sigmlPath = `SignFiles/${file}.sigml`;
+
+    if (iframeRef.current && iframeRef.current.contentWindow) {
       try {
-        iframeRef.current.contentWindow.startPlayer(sigmlFilePath);
+        if (typeof iframeRef.current.contentWindow.startPlayer === 'function') {
+          iframeRef.current.contentWindow.startPlayer(sigmlPath);
+        }
       } catch (err) {
-        console.log("Player not ready", err);
+        console.warn("Direct startPlayer call failed, falling back to postMessage:", err);
+      }
+      try {
+        iframeRef.current.contentWindow.postMessage({ type: 'PLAY_SIGML', file: sigmlPath }, '*');
+      } catch (err) {
+        console.warn("postMessage dispatch failed:", err);
       }
     }
+  }, []);
+
+  const handleAction = (item) => {
+    setActiveItem(item);
+    playSigml(item.file);
   };
+
+  // Auto-play initial letter A when the component mounts after avatar loads
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      playSigml('A');
+    }, 1200);
+    return () => clearTimeout(timer);
+  }, [playSigml]);
 
   // Keyboard Event Handler for Enter and Space
   const handleKeyDown = (e, item) => {
@@ -30,13 +51,8 @@ export default function Alphabets() {
   };
 
   const playAnimation = () => {
-    if (activeItem && iframeRef.current) {
-      const sigmlFilePath = `SignFiles/${activeItem.file}.sigml`;
-      try {
-        iframeRef.current.contentWindow.startPlayer(sigmlFilePath);
-      } catch (err) {
-        console.log("Player not ready", err);
-      }
+    if (activeItem) {
+      playSigml(activeItem.file);
     }
   };
 
@@ -161,13 +177,7 @@ export default function Alphabets() {
               display: 'block'
             }}
             onLoad={() => {
-              if (activeItem && iframeRef.current) {
-                try {
-                  iframeRef.current.contentWindow.startPlayer(`SignFiles/${activeItem.file}.sigml`);
-                } catch (err) {
-                  console.log("Player not ready yet", err);
-                }
-              }
+              playSigml(activeItem ? activeItem.file : 'A');
             }}
           />
         </div>

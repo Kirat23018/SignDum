@@ -40,6 +40,9 @@
 </style>
 <script type="text/javascript" src="https://vhg.cmp.uea.ac.uk/tech/jas/vhg2017/cwa/allcsa.js"></script>
 <script language="javascript">
+	window.isCwasaReady = false;
+	window.pendingSiGML = null;
+
 	// Initial configuration with explicit HTTPS URLs to avoid mixed content blocking on deployed HTTPS sites
 	var initCfg = {
 		"jasBase": "https://vhg.cmp.uea.ac.uk/tech/jas/vhg2017/",
@@ -49,7 +52,17 @@
 		"avJARBase": "https://vhg.cmp.uea.ac.uk/tech/jas/vhg2017/avatars/",
 		"sigmlBase": "https://vhg.cmp.uea.ac.uk/tech/jas/vhg2017/sigml/",
 		"avsbsl": ["luna", "siggi", "anna", "marc", "francoise"],
-		"avSettings": { "avList": "avsbsl", "initAv": "luna" }
+		"avSettings": { "avList": "avsbsl", "initAv": "luna" },
+		"initCallback": function() {
+			window.isCwasaReady = true;
+			if (window.pendingSiGML) {
+				var toPlay = window.pendingSiGML;
+				window.pendingSiGML = null;
+				setTimeout(function() {
+					startPlayer(toPlay);
+				}, 200);
+			}
+		}
 	};
 </script>
 
@@ -60,26 +73,103 @@
 <script language="javascript">
 
 function playText(stext) {
-	CWASA.playSiGMLText(stext);
+	if (!stext) return;
+	try {
+		if (typeof CWASA !== 'undefined' && CWASA.playSiGMLText) {
+			try { CWASA.stop(); } catch(e) {}
+			CWASA.playSiGMLText(stext);
+		}
+	} catch (e) {
+		console.warn("playText error:", e);
+	}
 }
 
 function setSiGMLURL(sigmlURL) {
-	var loc = window.location.href;
-    var locDir = loc.substring(0, loc.lastIndexOf('/'));
-	// console.log("SiGML: "+sigmlURL);
-	// console.log("Location Dir: "+locDir);
-	sigmlURL = locDir + "/" + sigmlURL;
-	// console.log("URL "+sigmlURL);
+	if (!sigmlURL) return "";
+	var url = String(sigmlURL).trim();
+	if (!url.startsWith("http://") && !url.startsWith("https://")) {
+		var loc = window.location.href;
+		var locDir = loc.substring(0, loc.lastIndexOf('/'));
+		if (url.startsWith('/')) {
+			url = url.substring(1);
+		}
+		url = locDir + "/" + url;
+	}
 	var urlEl = document.getElementById("URLText");
-	if (urlEl) urlEl.value = sigmlURL;
-	return sigmlURL;
+	if (urlEl) urlEl.value = url;
+	return url;
 }
 
 function startPlayer(sigmlURL) {
-	sigmlURL = setSiGMLURL(sigmlURL);
-    // Equivalent to click on Sign button
-	CWASA.playSiGMLURL(sigmlURL);
+	if (!sigmlURL) return;
+	var fullUrl = setSiGMLURL(sigmlURL);
+	
+	var isReady = false;
+	try {
+		if (typeof CWASA !== 'undefined' && CWASA.isInitialised && CWASA.isInitialised()) {
+			isReady = true;
+		} else if (window.isCwasaReady) {
+			isReady = true;
+		}
+	} catch(e) {
+		isReady = false;
+	}
+
+	if (!isReady) {
+		window.pendingSiGML = fullUrl;
+		return;
+	}
+
+	try {
+		if (typeof CWASA !== 'undefined' && CWASA.playSiGMLURL) {
+			try { CWASA.stop(); } catch(e) {}
+			CWASA.playSiGMLURL(fullUrl);
+		}
+	} catch (err) {
+		console.warn("Error in CWASA.playSiGMLURL, trying fallback text fetch:", err);
+		fetch(fullUrl)
+			.then(function(res) { return res.text(); })
+			.then(function(xmlText) {
+				if (xmlText && typeof CWASA !== 'undefined' && CWASA.playSiGMLText) {
+					CWASA.playSiGMLText(xmlText);
+				}
+			})
+			.catch(function(e) {
+				console.error("SiGML fetch fallback failed:", e);
+			});
+	}
 }
+
+// Global window message listener for cross-frame commands
+window.addEventListener("message", function(event) {
+	if (!event || !event.data) return;
+	var data = event.data;
+	if (typeof data === "object") {
+		if (data.type === "PLAY_SIGML" || data.type === "START_PLAYER") {
+			var file = data.file || data.url || data.sigml;
+			if (file) startPlayer(file);
+		} else if (data.type === "PLAY_TEXT") {
+			if (data.text) playText(data.text);
+		}
+	} else if (typeof data === "string" && (data.includes(".sigml") || data.startsWith("SignFiles/"))) {
+		startPlayer(data);
+	}
+});
+
+// Periodic check in case initCallback is not fired by the library
+var readyChecker = setInterval(function() {
+	try {
+		if (typeof CWASA !== 'undefined' && CWASA.isInitialised && CWASA.isInitialised()) {
+			window.isCwasaReady = true;
+			if (window.pendingSiGML) {
+				var toPlay = window.pendingSiGML;
+				window.pendingSiGML = null;
+				startPlayer(toPlay);
+			}
+			clearInterval(readyChecker);
+		}
+	} catch(e) {}
+}, 400);
 
 </script>
 
@@ -119,11 +209,6 @@ Gloss:
 
 <!--  CachedSiGML URL  -->
 <input type="text" id="URLText" class="txtSiGMLURL av0 undisplayed" value="" />
-
-<script language="javascript">
-// Set default sign
-setSiGMLURL("sigmlprovider/hello");
-</script>
 
 </td>
 </tr>

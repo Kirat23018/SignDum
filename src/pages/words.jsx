@@ -45,12 +45,17 @@ export default function Words() {
         sigmlFilePath = `SignFiles/${item.file}.sigml`;
     }
 
-    if (iframeRef.current) {
+    if (iframeRef.current && iframeRef.current.contentWindow) {
       try {
-        iframeRef.current.contentWindow.startPlayer(sigmlFilePath);
+        if (typeof iframeRef.current.contentWindow.startPlayer === 'function') {
+          iframeRef.current.contentWindow.startPlayer(sigmlFilePath);
+        }
       } catch (err) {
-        console.log("Player error:", err);
+        console.warn("Player error:", err);
       }
+      try {
+        iframeRef.current.contentWindow.postMessage({ type: 'PLAY_SIGML', file: sigmlFilePath }, '*');
+      } catch (e) {}
     }
   };
 
