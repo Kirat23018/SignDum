@@ -1,4 +1,4 @@
-﻿<sigml> <!--  -->  <hns_sign gloss="mug" > <hamnosys_nonmanual><hnm_mouthpicture picture="la_Ud"/>
+<sigml> <!--  -->  <hns_sign gloss="mug" > <hamnosys_nonmanual><hnm_mouthpicture picture="la_Ud"/>
 			<hnm_head tag="ND"/>
 			<hnm_eyebrows tag="FU"/>
 			<hnm_eyelids tag="SB"/>

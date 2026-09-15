@@ -1,5 +1,3 @@
-﻿<!--  -->
-<!--  -->
 <sigml>
 	<hns_sign gloss="$PROD">
 		<hamnosys_nonmanual>
@@ -45,5 +43,4 @@
 	</hns_sign>
 
 <!--  -->  <hns_sign gloss="mug" > <hamnosys_nonmanual><hnm_mouthpicture picture="bulb"/>
-			<hnm_eyegaze tag="RU"/></hamnosys_nonmanual><hamnosys_manual><hamflathand/><hamthumboutmod/><hamfingerbendmod/><hambetween/><hamfinger2345/><hamthumboutmod/><hamfingerbendmod/><hamextfingeru/><hambetween/><hamextfingeri/><hampalmu/><hamshouldertop/><hamlrat/><hambetween/><hamhead/><hamlrat/><hamreplace/><hamextfingero/><hambetween/><hamextfingeru/><hampalmu/><hamreplace/><hamextfingeru/><hambetween/><hamextfingeri/><hampalmu/><hamreplace/><hamextfingero/><hambetween/><hamextfingeru/><hampalmu/><hamreplace/><hamextfingeru/><hambetween/><hamextfingeri/><hampalmu/></hamnosys_manual></hns_sign></sigml>		
-		
+			<hnm_eyegaze tag="RU"/></hamnosys_nonmanual><hamnosys_manual><hamflathand/><hamthumboutmod/><hamfingerbendmod/><hambetween/><hamfinger2345/><hamthumboutmod/><hamfingerbendmod/><hamextfingeru/><hambetween/><hamextfingeri/><hampalmu/><hamshouldertop/><hamlrat/><hambetween/><hamhead/><hamlrat/><hamreplace/><hamextfingero/><hambetween/><hamextfingeru/><hampalmu/><hamreplace/><hamextfingeru/><hambetween/><hamextfingeri/><hampalmu/><hamreplace/><hamextfingero/><hambetween/><hamextfingeru/><hampalmu/><hamreplace/><hamextfingeru/><hambetween/><hamextfingeri/><hampalmu/></hamnosys_manual></hns_sign></sigml>

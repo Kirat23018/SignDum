@@ -1,5 +1,4 @@
-
-	<sigml>  <!--  --> <hns_sign gloss="mug" > <hamnosys_nonmanual></hamnosys_nonmanual><hamnosys_manual><hamfist/><hambetween/><hamfist/><hamindexfinger/><hamfingerhookmod/><hamextfingerul/><hampalmdr/><hamlips/><hamlrbeside/><hamclose/><hamreplace/><hampalml/><hamtense/><hamlips/><hamlrbeside/><hambetween/><hamchin/><hamlrbeside/><hamclose/></hamnosys_manual></hns_sign>
+<sigml>  <!--  --> <hns_sign gloss="mug" > <hamnosys_nonmanual></hamnosys_nonmanual><hamnosys_manual><hamfist/><hambetween/><hamfist/><hamindexfinger/><hamfingerhookmod/><hamextfingerul/><hampalmdr/><hamlips/><hamlrbeside/><hamclose/><hamreplace/><hampalml/><hamtense/><hamlips/><hamlrbeside/><hambetween/><hamchin/><hamlrbeside/><hamclose/></hamnosys_manual></hns_sign>
 
 	<hns_sign gloss="">
 		<hamnosys_nonmanual>

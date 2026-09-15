@@ -1,4 +1,4 @@
-﻿<sigml>   <hns_sign gloss="mug" > <!--  --><hamnosys_nonmanual>	<hnm_mouthpicture picture="fVni:"/>
+<sigml>   <hns_sign gloss="mug" > <!--  --><hamnosys_nonmanual>	<hnm_mouthpicture picture="fVni:"/>
 			<hnm_eyegaze tag="AD"/>
 			<hnm_eyebrows tag="FU"/>
 			<hnm_eyelids tag="SB"/>

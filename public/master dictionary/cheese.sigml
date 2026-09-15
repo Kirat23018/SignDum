@@ -1,4 +1,4 @@
-<!--  --><sigml>   <hns_sign gloss="salt" > <hamnosys_nonmanual><hnm_mouthgesture tag="D01"/></hamnosys_nonmanual><hamnosys_manual><hamfinger2/><hamthumboutmod/><hamextfingerul/><hampalml/><hamlips/><hamseqbegin/><hamtouch/><hamfingertip/><hamindexfinger/><hamseqend/><hamreplace/><hampalml/></hamnosys_manual></hns_sign><!--    -->
+<sigml>   <hns_sign gloss="salt" > <hamnosys_nonmanual><hnm_mouthgesture tag="D01"/></hamnosys_nonmanual><hamnosys_manual><hamfinger2/><hamthumboutmod/><hamextfingerul/><hampalml/><hamlips/><hamseqbegin/><hamtouch/><hamfingertip/><hamindexfinger/><hamseqend/><hamreplace/><hampalml/></hamnosys_manual></hns_sign><!--    -->
 
 	<hns_sign gloss="$PROD">
 		<hamnosys_nonmanual>

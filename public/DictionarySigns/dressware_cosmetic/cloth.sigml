@@ -1,6 +1,4 @@
-﻿
-<!--   -->
- <sigml>
+<sigml>
 	<hns_sign gloss="$PROD">
 		<hamnosys_nonmanual>
 			<hnm_mouthpicture picture="klQTh"/>

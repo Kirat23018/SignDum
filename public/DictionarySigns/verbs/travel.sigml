@@ -1,4 +1,4 @@
-﻿<!----><sigml>	<hns_sign gloss="T">		<hamnosys_nonmanual>			<hnm_mouthpicture picture="ti:"/>		</hamnosys_nonmanual>		<hamnosys_manual>			<hamsymmlr/>			<hamfinger2/>			<hamthumbacrossmod/>			<hamparbegin/>			<hamextfingeru/>			<hamplus/>			<hamextfingerr/>			<hamparend/>			<hamparbegin/>			<hampalml/>			<hamplus/>			<hampalmd/>			<hamparend/>			<hamparbegin/>			<hamfingermidjoint/>			<hamplus/>			<hamfingertip/>			<hamparend/>			<hamtouch/>			<hamshouldertop/><hambetween/><hamhead/>		</hamnosys_manual>	</hns_sign><!--      -->
+<sigml>	<hns_sign gloss="T">		<hamnosys_nonmanual>			<hnm_mouthpicture picture="ti:"/>		</hamnosys_nonmanual>		<hamnosys_manual>			<hamsymmlr/>			<hamfinger2/>			<hamthumbacrossmod/>			<hamparbegin/>			<hamextfingeru/>			<hamplus/>			<hamextfingerr/>			<hamparend/>			<hamparbegin/>			<hampalml/>			<hamplus/>			<hampalmd/>			<hamparend/>			<hamparbegin/>			<hamfingermidjoint/>			<hamplus/>			<hamfingertip/>			<hamparend/>			<hamtouch/>			<hamshouldertop/><hambetween/><hamhead/>		</hamnosys_manual>	</hns_sign><!--      -->
 
 	<hns_sign gloss="$PROD">
 		<hamnosys_nonmanual>

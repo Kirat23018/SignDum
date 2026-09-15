@@ -97,15 +97,46 @@ function setSiGMLURL(sigmlURL) {
 function startPlayer(sigmlURL) {
 	if (!sigmlURL) return;
 	var fullUrl = setSiGMLURL(sigmlURL);
-	// Clear any previous animation or active signing pose
-	stopPlayer();
-	setTimeout(function() {
-		try {
-			CWASA.playSiGMLURL(fullUrl);
-		} catch (err) {
-			console.warn("CWASA.playSiGMLURL error:", err);
-		}
-	}, 60);
+	
+	// Fetch the SiGML content directly, sanitize any BOM, XML declaration, or rogue prolog comments:
+	fetch(fullUrl)
+		.then(function(response) {
+			if (!response.ok) throw new Error("HTTP error " + response.status);
+			return response.text();
+		})
+		.then(function(rawText) {
+			if (!rawText) return;
+			var clean = rawText.trim();
+			// Strip UTF-8 BOM
+			if (clean.charCodeAt(0) === 0xFEFF) {
+				clean = clean.slice(1);
+			}
+			var sigmlStart = clean.indexOf("<sigml");
+			if (sigmlStart !== -1) {
+				clean = clean.substring(sigmlStart);
+			}
+			var sigmlEnd = clean.lastIndexOf("</sigml>");
+			if (sigmlEnd !== -1) {
+				clean = clean.substring(0, sigmlEnd + 8);
+			}
+			clean = clean.replace(/<sigml>\s*-->/gi, '<sigml>');
+			
+			// Play via playSiGMLText directly
+			try {
+				CWASA.playSiGMLText(clean);
+			} catch (err) {
+				console.warn("CWASA.playSiGMLText error, falling back to URL:", err);
+				CWASA.playSiGMLURL(fullUrl);
+			}
+		})
+		.catch(function(err) {
+			console.warn("Fetch SiGML fallback:", err);
+			try {
+				CWASA.playSiGMLURL(fullUrl);
+			} catch (e) {
+				console.warn("CWASA playSiGMLURL fallback error:", e);
+			}
+		});
 }
 
 // Global window message listener for cross-frame commands
