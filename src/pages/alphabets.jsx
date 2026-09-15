@@ -41,35 +41,26 @@ export default function Alphabets() {
   };
 
   return (
-    <div className="signverse-split-layout">
+    <div style={{ display: 'flex', flex: 1, height: 'calc(100vh - 45px)', overflow: 'hidden', fontFamily: 'sans-serif', width: '100%' }}>
       
-      {/* Top / Left Panel: Alphabet Grid Controls */}
-      <div className="signverse-input-panel">
-        <div style={{ flex: 1, overflowY: 'auto' }}>
-          <h2 style={{ color: '#003366', marginTop: 0, marginBottom: '6px', fontSize: '22px', textAlign: 'left' }}>
-            Learn Sign Alphabets (A-Z)
-          </h2>
-          <p style={{ color: '#666', fontSize: '13.5px', marginBottom: '16px', textAlign: 'left' }}>
-            Click or use Tab & Enter on any alphabet to view its sign language animation.
-          </p>
+      {/* Left Panel: 4-Column Grid of Alphabets */}
+      <div style={{ width: '45%', padding: '30px', backgroundColor: '#ffffff', overflowY: 'auto', borderRight: '2px solid #ecf0f1', display: 'flex', flexDirection: 'column', justifyContent: 'space-between' }}>
+        <div>
+          <h2 style={{ color: '#003366', marginTop: 0, marginBottom: '10px', fontSize: '26px', textAlign: 'left' }}>Learn Sign Alphabets (A-Z)</h2>
+          <p style={{ color: '#666', fontSize: '14px', marginBottom: '25px', textAlign: 'left' }}>Click or use Tab & Enter on any alphabet to view its sign language animation.</p>
           
-          {/* Responsive Alphabet Grid (Auto fits columns cleanly) */}
-          <div style={{ 
-            display: 'grid', 
-            gridTemplateColumns: 'repeat(auto-fill, minmax(52px, 1fr))', 
-            gap: '8px', 
-            marginBottom: '16px' 
-          }}>
+          {/* 4-Column Grid */}
+          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(4, 1fr)', gap: '12px', marginBottom: '20px' }}>
             {alphabetList.map((item) => (
               <div
                 key={item.label}
-                tabIndex={0}
+                tabIndex={0} // Keyboard support ke liye
                 role="button"
                 onClick={() => handleAction(item)}
-                onKeyDown={(e) => handleKeyDown(e, item)}
+                onKeyDown={(e) => handleKeyDown(e, item)} // Enter/Space handle
                 style={{
-                  padding: '12px 0', 
-                  fontSize: '17px', 
+                  padding: '15px 0', 
+                  fontSize: '18px', 
                   fontWeight: 'bold', 
                   borderRadius: '8px', 
                   cursor: 'pointer',
@@ -79,7 +70,7 @@ export default function Alphabets() {
                   textAlign: 'center',
                   boxShadow: '0 2px 4px rgba(0,0,0,0.05)',
                   transition: 'all 0.2s',
-                  outline: 'none'
+                  outline: 'none' // Keyboard outline hide
                 }}
                 onFocus={(e) => e.target.style.boxShadow = '0 0 0 3px #003366'}
                 onBlur={(e) => e.target.style.boxShadow = '0 2px 4px rgba(0,0,0,0.05)'}
@@ -90,13 +81,13 @@ export default function Alphabets() {
           </div>
         </div>
 
-        <div style={{ paddingTop: '10px' }}>
+        <div>
           <button 
             tabIndex={0}
             onClick={playAnimation}
             style={{
-              width: '100%', padding: '12px', backgroundColor: '#689f38', color: 'white', border: 'none', 
-              borderRadius: '8px', fontSize: '15px', fontWeight: 'bold', cursor: 'pointer', outline: 'none',
+              width: '100%', padding: '14px', backgroundColor: '#689f38', color: 'white', border: 'none', 
+              borderRadius: '6px', fontSize: '16px', fontWeight: 'bold', cursor: 'pointer', outline: 'none',
               transition: '0.2s'
             }}
             onFocus={(e) => e.target.style.boxShadow = '0 0 0 3px #003366'}
@@ -107,9 +98,9 @@ export default function Alphabets() {
         </div>
       </div>
 
-      {/* Bottom / Right Panel: 3D Avatar Viewer */}
-      <div className="signverse-avatar-panel">
-        <div style={{ flex: 1, position: 'relative', width: '100%', height: '100%', display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
+      {/* Right Panel: Avatar Viewer */}
+      <div style={{ width: '55%', display: 'flex', flexDirection: 'column', backgroundColor: '#e5e7eb' }}>
+        <div style={{ flex: 1, position: 'relative', display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
           <iframe 
             ref={iframeRef} 
             src="/player-applet.html" 

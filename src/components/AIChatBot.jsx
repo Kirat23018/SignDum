@@ -299,11 +299,10 @@ export default function AIChatBot() {
 
   return (
     <>
-      {/* 1. Floating Circular AI Assistant FAB Trigger Button (Bottom-Right) */}
+      {/* 1. Eye-Catching Futuristic Floating Trigger Button (Bottom-Right) */}
       <div 
-        className="signai-fab-container"
         style={{ 
-          position: 'fixed', bottom: '22px', right: '22px', zIndex: 9999,
+          position: 'fixed', bottom: '24px', right: '24px', zIndex: 9999,
           display: 'flex', alignItems: 'center'
         }}
       >
@@ -312,65 +311,74 @@ export default function AIChatBot() {
             if (isOpen) stopSpeech();
             setIsOpen(!isOpen);
           }}
-          aria-label="Toggle SignAI Assistant"
-          title={isOpen ? "Close AI Assistant" : "Ask SignAI Assistant ⚡"}
+          aria-label="Open AI Assistant"
           style={{
             position: 'relative',
-            width: '58px',
-            height: '58px',
-            borderRadius: '50%',
             background: isOpen 
               ? 'linear-gradient(135deg, #1e1b4b 0%, #312e81 100%)' 
               : 'linear-gradient(135deg, #4f46e5 0%, #7c3aed 45%, #ec4899 100%)',
             color: 'white',
-            border: '2px solid rgba(255, 255, 255, 0.4)',
+            border: '2px solid rgba(255, 255, 255, 0.35)',
+            borderRadius: '50px',
+            padding: isOpen ? '12px 20px' : '10px 22px 10px 14px',
+            fontSize: '15px',
+            fontWeight: '700',
             cursor: 'pointer',
             boxShadow: isOpen 
               ? '0 8px 24px rgba(30, 27, 75, 0.4)'
-              : '0 10px 30px rgba(124, 58, 237, 0.5), 0 0 20px rgba(236, 72, 153, 0.35)',
+              : '0 10px 30px rgba(124, 58, 237, 0.5), 0 0 20px rgba(236, 72, 153, 0.3)',
             display: 'flex',
             alignItems: 'center',
-            justifyContent: 'center',
+            gap: '10px',
             transition: 'all 0.35s cubic-bezier(0.175, 0.885, 0.32, 1.275)',
             backdropFilter: 'blur(10px)',
             transform: 'scale(1)',
-            outline: 'none'
           }}
           onMouseEnter={(e) => {
-            e.currentTarget.style.transform = 'translateY(-3px) scale(1.08)';
+            e.currentTarget.style.transform = 'translateY(-3px) scale(1.04)';
             e.currentTarget.style.boxShadow = '0 14px 38px rgba(124, 58, 237, 0.65), 0 0 25px rgba(236, 72, 153, 0.45)';
           }}
           onMouseLeave={(e) => {
             e.currentTarget.style.transform = 'scale(1)';
             e.currentTarget.style.boxShadow = isOpen 
               ? '0 8px 24px rgba(30, 27, 75, 0.4)'
-              : '0 10px 30px rgba(124, 58, 237, 0.5), 0 0 20px rgba(236, 72, 153, 0.35)';
+              : '0 10px 30px rgba(124, 58, 237, 0.5), 0 0 20px rgba(236, 72, 153, 0.3)';
           }}
         >
-          {isOpen ? (
-            <span style={{ fontSize: '24px', fontWeight: 'bold', color: '#ffffff' }}>✕</span>
-          ) : (
-            <div style={{
-              width: '100%', height: '100%', borderRadius: '50%',
-              display: 'flex', alignItems: 'center', justifyContent: 'center',
-              position: 'relative'
-            }}>
-              <span style={{ fontSize: '24px', animation: 'floatOrb 2.5s ease-in-out infinite' }}>
-                ✨
+          {/* Animated Glowing Orb Avatar */}
+          <div style={{
+            width: '38px', height: '38px', borderRadius: '50%',
+            background: 'linear-gradient(135deg, #ffffff 0%, #e0e7ff 100%)',
+            display: 'flex', alignItems: 'center', justifyContent: 'center',
+            boxShadow: '0 0 12px rgba(255, 255, 255, 0.8)',
+            position: 'relative', overflow: 'visible', flexShrink: 0
+          }}>
+            <span style={{ fontSize: '20px', animation: 'floatOrb 2.5s ease-in-out infinite' }}>
+              {isOpen ? '✕' : '✨'}
+            </span>
+            
+            {/* Live Online Green Halo */}
+            <span style={{
+              position: 'absolute', bottom: '-1px', right: '-1px', width: '11px', height: '11px',
+              backgroundColor: '#10b981', borderRadius: '50%', border: '2px solid #ffffff',
+              boxShadow: '0 0 8px #10b981'
+            }} />
+          </div>
+
+          <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'flex-start' }}>
+            <span style={{ letterSpacing: '0.3px', textShadow: '0 1px 3px rgba(0,0,0,0.2)' }}>
+              {isOpen ? 'Close Assistant' : 'Ask SignAI ⚡'}
+            </span>
+            {!isOpen && (
+              <span style={{ fontSize: '10.5px', opacity: 0.9, fontWeight: '500', color: '#fdf2f8' }}>
+                Real-Time LLM Assistant
               </span>
-              
-              {/* Live Online Green Halo */}
-              <span style={{
-                position: 'absolute', bottom: '3px', right: '3px', width: '10px', height: '10px',
-                backgroundColor: '#10b981', borderRadius: '50%', border: '2px solid #ffffff',
-                boxShadow: '0 0 8px #10b981'
-              }} />
-            </div>
-          )}
+            )}
+          </div>
 
           {hasUnread && !isOpen && (
             <span style={{
-              position: 'absolute', top: '-2px', right: '-2px', width: '13px', height: '13px',
+              position: 'absolute', top: '-4px', right: '-4px', width: '14px', height: '14px',
               backgroundColor: '#ef4444', borderRadius: '50%', border: '2px solid white',
               boxShadow: '0 0 10px #ef4444', animation: 'pulseDot 1.2s infinite'
             }} />

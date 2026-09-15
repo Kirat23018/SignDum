@@ -206,8 +206,8 @@ const LOCAL_KNOWLEDGE_BASE = [
   },
   {
     keywords: ["sign to text", "camera sign", "gesture recognition", "webcam sign"],
-    response: `**Sign-to-Text** camera recognition is currently under active model fine-tuning. Meanwhile, you can use our **3D Text & Voice Translator** to convert speech and text into avatar animations! 🤟`,
-    action: { label: "Try 3D Translator", route: "/translate" }
+    response: `**Sign-to-Text** allows you to perform gestures in front of your camera, and our computer vision model detects words and builds spoken sentences in real time! 🤟📹`,
+    action: { label: "Try Sign to Text", route: "/sign-to-text" }
   },
   {
     keywords: ["pricing", "price", "subscription", "free trial", "credits", "plans", "cost"],

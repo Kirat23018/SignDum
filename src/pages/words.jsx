@@ -54,6 +54,7 @@ export default function Words() {
     }
   };
 
+  // NAYA: ARROW KEY LOGIC YAHAN HAI
   const handleKeyDown = (e, item) => {
     if (e.key === 'Enter' || e.key === ' ') {
       e.preventDefault();
@@ -61,40 +62,38 @@ export default function Words() {
     } 
     else if (e.key === 'ArrowDown') {
       e.preventDefault();
+      // Focus agle element par shift karo
       e.currentTarget.nextElementSibling?.focus();
     } 
     else if (e.key === 'ArrowUp') {
       e.preventDefault();
+      // Focus pichle element par shift karo
       e.currentTarget.previousElementSibling?.focus();
     }
   };
 
   return (
-    <div className="signverse-split-layout">
+    <div style={{ display: 'flex', flex: 1, height: 'calc(100vh - 45px)', overflow: 'hidden', fontFamily: 'sans-serif', width: '100%' }}>
       
-      {/* Top / Left Panel */}
-      <div className="signverse-input-panel">
-        <h2 style={{ color: '#003366', marginTop: 0, marginBottom: '6px', fontSize: '22px' }}>
-          Sign Dictionary & Words
-        </h2>
-        <p style={{ color: '#666', fontSize: '13.5px', marginBottom: '14px' }}>
-          Learn basic words instantly or search our full database.
-        </p>
+      {/* Left Panel */}
+      <div style={{ width: '45%', padding: '30px', backgroundColor: '#ffffff', overflowY: 'auto', borderRight: '2px solid #ecf0f1', display: 'flex', flexDirection: 'column' }}>
+        <h2 style={{ color: '#003366', marginTop: 0, marginBottom: '10px', fontSize: '26px' }}>Sign Dictionary & Words</h2>
+        <p style={{ color: '#666', fontSize: '14px', marginBottom: '20px' }}>Learn basic words instantly or search our full database.</p>
         
         <input 
           type="text"
           placeholder="Search from 12,000+ words..."
           value={searchTerm}
           onChange={(e) => setSearchTerm(e.target.value)}
-          style={{ width: '100%', padding: '10px 14px', borderRadius: '8px', border: '1.5px solid #cbd5e1', marginBottom: '12px', boxSizing: 'border-box', fontSize: '14px', outline: 'none' }}
+          style={{ width: '100%', padding: '12px', borderRadius: '6px', border: '1px solid #ccc', marginBottom: '20px', boxSizing: 'border-box', fontSize: '15px' }}
         />
 
-        <h4 style={{ color: '#333', marginBottom: '8px', fontSize: '13px', fontWeight: '700' }}>
-          {searchTerm.trim() === '' ? 'Basic Examples (Use arrows & Enter):' : 'Search Results:'}
+        <h4 style={{ color: '#333', marginBottom: '10px', fontSize: '14px' }}>
+          {searchTerm.trim() === '' ? 'Basic Examples (Use ↑ ↓ arrows & Enter):' : 'Search Results:'}
         </h4>
 
         {/* List of Words */}
-        <div style={{ flex: 1, overflowY: 'auto', display: 'flex', flexDirection: 'column', gap: '6px', paddingRight: '4px' }}>
+        <div style={{ flex: 1, overflowY: 'auto', display: 'flex', flexDirection: 'column', gap: '8px', paddingRight: '5px' }}>
           {displayedWords.length > 0 ? (
             displayedWords.map((item, index) => {
               const isSelected = selectedWord === item;
@@ -104,17 +103,17 @@ export default function Words() {
                   tabIndex={0} 
                   role="button"
                   onClick={() => handleWordAction(item)}
-                  onKeyDown={(e) => handleKeyDown(e, item)}
+                  onKeyDown={(e) => handleKeyDown(e, item)} // Arrow Key Handler Attached Here
                   style={{
-                    padding: '10px 14px', 
-                    borderRadius: '8px', 
+                    padding: '12px 15px', 
+                    borderRadius: '6px', 
                     cursor: 'pointer', 
-                    fontSize: '14.5px', 
-                    fontWeight: '600',
+                    fontSize: '15px', 
+                    fontWeight: '500',
                     textAlign: 'left',
                     backgroundColor: isSelected ? '#689f38' : '#f8f9fa',
                     color: isSelected ? 'white' : '#333',
-                    border: '1px solid #e2e8f0',
+                    border: '1px solid #e0e0e0',
                     transition: 'all 0.2s ease',
                     outline: 'none'
                   }}
@@ -126,14 +125,14 @@ export default function Words() {
               );
             })
           ) : (
-            <p style={{ color: '#888', textAlign: 'center', marginTop: '20px', fontSize: '14px' }}>No words found.</p>
+            <p style={{ color: '#888', textAlign: 'center', marginTop: '30px' }}>No words found.</p>
           )}
         </div>
       </div>
 
-      {/* Bottom / Right Panel */}
-      <div className="signverse-avatar-panel">
-        <div style={{ flex: 1, position: 'relative', width: '100%', height: '100%', display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
+      {/* Right Panel */}
+      <div style={{ width: '55%', display: 'flex', flexDirection: 'column', backgroundColor: '#e5e7eb' }}>
+        <div style={{ flex: 1, position: 'relative', display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
           <iframe 
             ref={iframeRef} 
             src="/player-applet.html" 

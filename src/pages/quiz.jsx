@@ -189,10 +189,10 @@ export default function Quiz() {
   };
 
   return (
-    <div className="signverse-split-layout">
+    <div style={{ display: 'flex', flex: 1, height: 'calc(100vh - 45px)', overflow: 'hidden', fontFamily: 'sans-serif', width: '100%' }}>
       
       {/* Left Panel */}
-      <div className="signverse-input-panel">
+      <div style={{ width: '45%', padding: '30px', backgroundColor: '#ffffff', overflowY: 'auto', borderRight: '2px solid #ecf0f1', display: 'flex', flexDirection: 'column' }}>
         
         {/* --- SETUP SCREEN --- */}
         {quizState === 'setup' && (
@@ -407,7 +407,7 @@ export default function Quiz() {
       </div>
 
       {/* Right Panel: Avatar with Mask */}
-      <div className="signverse-avatar-panel">
+      <div style={{ width: '55%', display: 'flex', flexDirection: 'column', backgroundColor: '#e5e7eb', position: 'relative', overflow: 'hidden' }}>
         <div style={{ flex: 1, position: 'relative', width: '100%', height: '100%' }}>
           <iframe 
             ref={iframeRef} 

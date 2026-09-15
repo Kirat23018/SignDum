@@ -631,12 +631,12 @@ export default function Dashboard() {
           </div>
         </Link>
 
-        <Link to="/alphabets" style={{ textDecoration: 'none' }}>
+        <Link to="/sign-to-text" style={{ textDecoration: 'none' }}>
           <div style={{ backgroundColor: 'white', padding: '26px', borderRadius: '16px', boxShadow: '0 4px 15px rgba(0,0,0,0.04)', transition: 'transform 0.2s', borderTop: '5px solid #8b5cf6', height: '100%', boxSizing: 'border-box' }}
                onMouseEnter={(e) => e.currentTarget.style.transform = 'translateY(-3px)'}
                onMouseLeave={(e) => e.currentTarget.style.transform = 'translateY(0)'}>
-            <h3 style={{ color: '#0f172a', fontSize: '20px', fontWeight: '800', margin: '0 0 8px 0' }}>🔤 Learn Alphabets (A-Z)</h3>
-            <p style={{ color: '#64748b', fontSize: '14px', lineHeight: '1.5', margin: 0 }}>Interactive 3D fingerspelling studio to master full sign language alphabets step by step.</p>
+            <h3 style={{ color: '#0f172a', fontSize: '20px', fontWeight: '800', margin: '0 0 8px 0' }}>🤟 Camera Sign to Text</h3>
+            <p style={{ color: '#64748b', fontSize: '14px', lineHeight: '1.5', margin: 0 }}>Perform signs in front of your webcam and let AI vision detect gestures and speak sentences aloud!</p>
           </div>
         </Link>
 

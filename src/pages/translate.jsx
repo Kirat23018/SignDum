@@ -284,10 +284,10 @@ export default function Translate() {
   };
 
   return (
-    <div className="signverse-split-layout">
+    <div style={{ display: 'flex', flex: 1, height: 'calc(100vh - 45px)', overflow: 'hidden', fontFamily: 'system-ui, -apple-system, sans-serif', width: '100%' }}>
       
       {/* Left Panel: Text & Voice Input & Controls */}
-      <div className="signverse-input-panel">
+      <div style={{ width: '45%', padding: '28px', backgroundColor: '#ffffff', overflowY: 'auto', borderRight: '2px solid #e2e8f0', display: 'flex', flexDirection: 'column' }}>
         
         {/* Header with Credits & Plan Badge */}
         <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'flex-start', marginBottom: '8px' }}>
@@ -512,7 +512,7 @@ export default function Translate() {
       </div>
 
       {/* Right Panel: 3D Avatar Viewer */}
-      <div className="signverse-avatar-panel">
+      <div style={{ width: '55%', display: 'flex', flexDirection: 'column', backgroundColor: '#e2e8f0' }}>
         <div style={{ flex: 1, position: 'relative', display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
           <iframe 
             ref={iframeRef} 
