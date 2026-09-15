@@ -1,0 +1,11 @@
+Model Information:
+* title:	Sagiri
+* source:	https://sketchfab.com/3d-models/sagiri-0da1c5e94b544e859d4f0e1878749bb8
+* author:	GreyWax (https://sketchfab.com/GreyWax)
+
+Model License:
+* license type:	CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
+* requirements:	Author must be credited. Commercial use is allowed.
+
+If you use this 3D model in your project be sure to copy paste this credit wherever you share it:
+This work is based on "Sagiri" (https://sketchfab.com/3d-models/sagiri-0da1c5e94b544e859d4f0e1878749bb8) by GreyWax (https://sketchfab.com/GreyWax) licensed under CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)

@@ -1,0 +1,43 @@
+﻿<!--    -->
+<!-- mouth: D01  -->
+
+<sigml>
+	<hns_sign gloss="$PROD">
+		<hamnosys_nonmanual>
+			<hnm_mouthpicture picture="cari"/>
+			<hnm_eyelids tag="BB"/>
+
+		</hamnosys_nonmanual>
+		<hamnosys_manual>
+			<hamflathand/>
+			<hamthumbacrossmod/>
+			<hamfingerstraightmod/>
+			<hamextfingerol/>
+			<hampalmd/>
+			<hamshoulders/>
+			<hamparbegin/>
+			<hamparbegin/>
+			<hamcircled/>
+			<hamstircw/>
+			<hamparend/>
+			<hamreplace/>
+			<hamflathand/>
+			<hamthumbacrossmod/>
+			<hamextfingerol/>
+			<hamextfingerdo/>
+			<hampalml/>
+			<hamparend/>
+			<hamparbegin/>
+			<hammoveu/>
+			<hamlargemod/>
+			<hamreplace/>
+			<hamextfingerl/>
+			<hamparend/>
+			<hamforehead/>
+			<hambetween/>
+			<hamheadtop/>
+			<hamlrat/>
+		</hamnosys_manual>
+	</hns_sign>
+
+</sigml>

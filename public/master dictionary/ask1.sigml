@@ -1,0 +1,75 @@
+﻿<!--      -->
+<!--  Mouth: A:skosh  -->
+<!--  Limbs:   -->
+<!--   Face:  -->
+
+
+
+
+<sigml>
+	<hns_sign gloss="ask1">
+		<hamnosys_nonmanual>
+			<hnm_mouthpicture picture="A:skosh"/>
+		</hamnosys_nonmanual>
+		<hamnosys_manual>
+			<hamfinger2/>
+			<hamthumbacrossmod/>
+			<hamextfingeril/>
+			<hamextfingerui/>
+			<hampalmdl/>
+			<hamlips/>
+			<hamparbegin/>
+			<hammoveo/>
+			<hamlargemod/>
+			<hamreplace/>
+			<hamextfingero/>
+			<hampalml/>
+			<hamparend/>
+			<hamplus/>
+			<hamsymmpar/>
+			<hamparbegin/>
+			<hamfinger2/>
+			<hamthumbacrossmod/>
+			<hamfingerbendmod/>
+			<hambetween/>
+			<hamfinger2/>
+			<hamplus/>
+			<hamflathand/>
+			<hamthumbopenmod/>
+			<hamindexfinger/>
+			<hamfingerbendmod/>
+			<hamparend/>
+			<hamparbegin/>
+			<hamextfingerol/>
+			<hamextfingeruo/>
+			<hampalmd/>
+			<hamplus/>
+			<hamextfingerr/>
+			<hambetween/>
+			<hamextfingeror/>
+			<hampalmdr/>
+			<hamparend/>
+			<hamparbegin/>
+			<hamneck/>
+			<hamlrat/>
+			<hambetween/>
+			<hamneck/>
+			<hamplus/>
+			<hamshoulders/>
+			<hamparend/>
+			<hamparbegin/>
+			<hammoved/>
+			<hamsmallmod/>
+			<hamplus/>
+			<hamnomotion/>
+			<hamparend/>
+			<hamparbegin/>
+			<hamthumb/>
+			<hamfingerpad/>
+			<hamplus/>
+			<hamfingerpad/>
+			<hamparend/>
+			<hamtouch/>
+		</hamnosys_manual>
+	</hns_sign>
+</sigml>

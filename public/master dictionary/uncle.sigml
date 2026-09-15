@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<sigml>
+  <hns_sign gloss="uncle">
+    <hamnosys_nonmanual></hamnosys_nonmanual>
+    <hamnosys_manual>
+      <!-- Index aur Middle finger (ASL 'U' shape) -->
+      <hamfinger23/>
+      <hamthumbacrossmod/>
+      <hamextfingeru/>
+      <hampalml/>
+      <!-- Chest ki jagah kaan/gaal ke paas (safe distance par) -->
+      <hamear/>
+      <!-- Chota sa hilaane ka movement -->
+      <hammoveo/>
+      <hammovei/>
+    </hamnosys_manual>
+  </hns_sign>
+</sigml>

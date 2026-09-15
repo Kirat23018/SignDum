@@ -1,0 +1,70 @@
+﻿<!--    -->
+
+<sigml>
+	<hns_sign gloss="overhead_projector">
+		<hamnosys_nonmanual>
+			<hnm_head tag="SL"/>
+		</hamnosys_nonmanual>
+		<hamnosys_manual>
+			<hamsymmlr/>
+			<hamflathand/>
+			<hamparbegin/>
+			<hamextfingero/>
+			<hampalmd/>
+			<hamplus/>
+			<hamextfingero/>
+			<hampalmu/>
+			<hamparend/>
+			<hamseqbegin/>
+			<hamtouch/>
+			<hampalm/>
+			<hamseqend/>
+			<hamshoulders/>
+			<hamreplace/>
+			<hamparbegin/>
+			<hamextfingero/>
+			<hampalmd/>
+			<hamplus/>
+			<hamextfingero/>
+			<hampalmu/>
+			<hamparend/>
+			<hamreplace/>
+			<hamflathand/>
+			<hamfast/>
+			<hamparbegin/>
+			<hamreplace/>
+			<hamfist/>
+			<hamextfingero/>
+			<hambetween/>
+			<hamextfingeruo/>
+			<hamfast/>
+			<hamreplace/>
+			<hamfist/>
+			<hamfast/>
+			<hamplus/>
+			<hamnomotion/>
+			<hamparend/>
+			<hamparbegin/>
+			<hamparbegin/>
+			<hamparbegin/>
+			<hammoveor/>
+			<hamfast/>
+			<hammoveuo/>
+			<hamfast/>
+			<hamparend/>
+			<hamreplace/>
+			<hamfinger2345/>
+			<hamthumbopenmod/>
+			<hambetween/>
+			<hamfinger2345/>
+			<hamthumbacrossmod/>
+			<hamextfingeruo/>
+			<hamfast/>
+			<hamparend/>
+			<hamplus/>
+			<hamnomotion/>
+			<hamparend/>
+		</hamnosys_manual>
+	</hns_sign>
+
+</sigml>

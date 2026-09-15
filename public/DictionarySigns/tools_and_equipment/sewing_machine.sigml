@@ -1,0 +1,46 @@
+﻿<!--  -->
+<!--  -->
+<sigml>
+	<hns_sign gloss="$PROD">
+		<hamnosys_nonmanual>
+			<hnm_mouthpicture picture="&quot;s@U.IN"/>
+		</hamnosys_nonmanual>
+		<hamnosys_manual>
+			<hampinch12/>
+			<hamextfingerl/>
+			<hampalml/>
+			<hamneck/>
+			<hamlrat/>
+			<hamstircw/>
+			<hamfast/>
+		</hamnosys_manual>
+	</hns_sign>
+<hns_sign gloss="$PROD">
+		<hamnosys_nonmanual>
+			<hnm_mouthpicture picture="m@&quot;Si:n"/>
+			<hnm_eyegaze tag="DN"/><hnm_head tag="SL"/><hnm_head tag="SL"/>
+		</hamnosys_nonmanual>
+		<hamnosys_manual>
+			<hamsymmlr/>
+			<hamflathand/>
+			<hamthumboutmod/>
+			<hamparbegin/>
+			<hamextfingerol/>
+			<hampalmd/>
+			<hamplus/>
+			<hamextfingerol/>
+			<hampalmd/>
+			<hamparend/>
+			<hamchest/>
+			<hamclose/>
+			<hamparbegin/>
+			<hammoveol/>
+			<hamlargemod/>
+			<hamplus/>
+			<hammoveol/>
+			<hamlargemod/>
+			<hamparend/>
+		</hamnosys_manual>
+	</hns_sign>
+
+</sigml>

@@ -1,0 +1,34 @@
+﻿<!--     -->
+<!--  Mouth: L12  -->
+<!--  Limbs:   -->
+<!--   Face: RL -->
+
+<sigml>
+ <hns_sign gloss="$PROD">
+  <hamnosys_nonmanual>
+<hnm_mouthpicture picture="swIN"/>
+  
+   <hnm_eyebrows tag="RL"/>
+  </hamnosys_nonmanual>
+  <hamnosys_manual>
+   <hamsymmlr/>
+   <hamfist/>
+   <hambetween/>
+   <hamfist/>
+   <hamthumbacrossmod/>
+   <hamextfingero/>
+   <hambetween/>
+   <hamextfingeruo/>
+   <hampalml/>
+   <hamshouldertop/>
+   <hamlrat/>
+   <hammoveo/><hamlargemod/>
+   <hamarcd/><hamfast/>
+   <hamtense/>
+   <hamrepeatreverse/><hamrepeatreverse/>
+
+
+  </hamnosys_manual>
+ </hns_sign>
+
+</sigml>

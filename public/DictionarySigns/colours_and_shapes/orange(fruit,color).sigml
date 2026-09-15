@@ -1,0 +1,30 @@
+<!--  -->
+<sigml>
+	<hns_sign gloss="$PROD">
+		<hamnosys_nonmanual>
+			<hnm_mouthpicture picture="O:rVnd_Z"/>
+			<hnm_head tag="SR"/>
+			<hnm_eyegaze tag="HI"/>
+			<hnm_eyebrows tag="RB"/>
+			<hnm_eyelids tag="WB"/>
+		</hamnosys_nonmanual>
+		<hamnosys_manual>
+			<hamfinger23/>
+			<hamthumbopenmod/>
+			<hamextfingeru/>
+			<hampalml/>
+			<hamforehead/>
+			<hamlrbeside/>
+			<hamclose/>
+			<hamreplace/>
+			<hamcee12/>
+			<hamthumbopenmod/>
+			<hamindexfinger/>
+			<hammiddlefinger/>
+			<hamextfingeru/>
+			<hampalml/>
+			<hamrepeatfromstartseveral/>
+		</hamnosys_manual>
+	</hns_sign>
+
+</sigml>

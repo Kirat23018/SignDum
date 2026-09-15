@@ -1,0 +1,4 @@
+﻿<sigml> <!--  -->  <hns_sign gloss="mug" > <hamnosys_nonmanual><hnm_eyegaze tag="HI"/>
+			<hnm_eyebrows tag="RB"/>
+			<hnm_eyelids tag="WB"/>
+			<hnm_nose tag="WI"/></hamnosys_nonmanual><hamnosys_manual><hamflathand/><hamfingerstraightmod/><hambetween/><hamflathand/><hamextfingero/><hampalmd/><hamchest/><hamlrbeside/><hambetween/><hamchest/><hamparbegin/><hammoveu/><hamlargemod/><hamslow/><hammoveur/><hammoveu/><hamsmallmod/><hamslow/><hamparend/><hamhead/><hamlrbeside/><hambetween/><hamheadtop/><hamlrbeside/></hamnosys_manual></hns_sign></sigml>

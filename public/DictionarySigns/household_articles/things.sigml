@@ -1,0 +1,24 @@
+﻿<!--       -->
+
+
+
+<sigml>
+	<hns_sign gloss="$PROD">
+		<hamnosys_nonmanual>
+			<hnm_mouthpicture picture="TIN"/>
+		</hamnosys_nonmanual>
+		<hamnosys_manual>
+			<hamsymmlr/>
+			<hamfinger2345/>
+			<hamthumboutmod/>
+			<hambetween/>
+			<hamfinger2345/>
+			<hamextfingeruo/>
+			<hampalmu/>
+			<hamtouch/>
+			<hamshoulders/>
+			<hammover/>
+			<hamwavy/>
+		</hamnosys_manual>
+	</hns_sign>
+</sigml>

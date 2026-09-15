@@ -1,0 +1,27 @@
+<sigml>
+	<hns_sign gloss="shower">
+		<hamnosys_nonmanual>
+			<hnm_body tag="RR"/>
+			<hnm_head tag="SR"/>
+			<hnm_eyegaze tag="RU"/>
+			<hnm_eyebrows tag="FU"/>
+<hnm_mouthgesture tag="L08"/>
+		</hamnosys_nonmanual>
+		<hamnosys_manual>
+			<hamfist/>
+			<hamthumboutmod/>
+			<hamextfingeru/>
+			<hampalml/>
+			<hamlips/>
+			<hammoveuo/>
+			<hamreplace/>
+			<hamfinger2345/>
+			<hamthumboutmod/>
+			<hamfingerbendmod/>
+			<hamextfingeru/>
+			<hampalmu/>
+			<hamfingerplay/>
+		</hamnosys_manual>
+	</hns_sign>
+
+</sigml>

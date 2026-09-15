@@ -1,0 +1,45 @@
+
+
+
+<!--   -->
+<!--    -->
+
+<sigml>
+	<hns_sign gloss="school bus">
+		<hamnosys_nonmanual>
+			<hnm_mouthpicture picture="sku:l"/>
+		</hamnosys_nonmanual>
+		<hamnosys_manual>
+			<hamflathand/>
+			<hamthumboutmod/>
+			<hamextfingeru/>
+			<hampalmu/>
+			<hamchin/>
+			<hamclose/>
+			<hamreplace/>
+			<hamextfingeru/>
+			<hampalmu/>
+		</hamnosys_manual>
+	</hns_sign>
+
+
+	<hns_sign gloss="">
+		<hamnosys_nonmanual>
+			<hnm_mouthpicture picture="bas"/>
+		</hamnosys_nonmanual>
+		<hamnosys_manual>
+			<hamsymmlr/>
+			<hamfist/>
+			<hamextfingero/>
+			<hampalmul/>
+			<hamshoulders/>
+			<hamparbegin/>
+			<hammoveuo/>
+			<hamplus/>
+			<hammovedi/>
+			<hamparend/>
+			<hamrepeatreverse/>
+		</hamnosys_manual>
+	</hns_sign>
+
+</sigml>

@@ -1,0 +1,25 @@
+﻿<!--     -->
+<!-- MOUTH [L04] -->
+<sigml>
+	<hns_sign gloss="$PROD">
+		<hamnosys_nonmanual>
+			<hnm_mouthpicture picture="hu:z"/>
+			<hnm_eyebrows tag="FU"/>
+			<hnm_eyelids tag="SB"/>
+		</hamnosys_nonmanual>
+		<hamnosys_manual>
+			<hamfist/>
+			<hamextfingeru/>
+			<hampalmd/>
+			<hamshouldertop/>
+			<hammoveol/>
+			<hamfast/>
+			<hammoveir/>
+			<hamparbegin/>
+			<hamreplace/>
+			<hamfinger2/>
+			<hamswinging/>
+			<hamparend/>
+		</hamnosys_manual>
+	</hns_sign>
+</sigml>

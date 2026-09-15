@@ -1,0 +1,28 @@
+<!---->
+<sigml>
+	<hns_sign gloss="sunny">
+		<hamnosys_nonmanual>
+			<hnm_body tag="TL"/>
+			<hnm_head tag="SR"/>
+			<hnm_shoulder tag="UR"/>
+			<hnm_eyegaze tag="RU"/>
+			<hnm_eyelids tag="SB"/>
+		</hamnosys_nonmanual>
+		<hamnosys_manual>
+			<hamfinger2345/>
+			<hamthumbopenmod/>
+			<hamextfingerul/>
+			<hampalmd/>
+			<hamheadtop/>
+			<hamlrbeside/>
+			<hammoveir/>
+			<hammovedl/>
+			<hamsmallmod/>
+			<hammoveur/>
+			<hamsmallmod/>
+			<hammovedl/>
+			<hamsmallmod/>
+		</hamnosys_manual>
+	</hns_sign>
+
+</sigml>

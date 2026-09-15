@@ -1,0 +1,42 @@
+﻿<!--  -->
+
+<sigml>
+	<hns_sign gloss="rihno">
+		<hamnosys_nonmanual>
+			<hnm_mouthpicture picture="&quot;raI.@U"/>
+			<hnm_body tag="RR"/>
+			<hnm_head tag="SR"/>
+			<hnm_head tag="SR"/><hnm_head tag="SR"/><hnm_head tag="SR"/>
+			<hnm_eyegaze tag="RU"/>
+			<hnm_eyebrows tag="RB"/>
+			<hnm_eyelids tag="WB"/>
+		</hamnosys_nonmanual>
+		<hamnosys_manual>
+			<hamfinger2/>
+			<hamthumboutmod/>
+			<hamextfingeru/>
+			<hampalml/>
+			<hamnose/>
+			<hamseqbegin/>
+			<hamtouch/>
+			<hamthumb/>
+			<hamseqend/>
+			<hamplus/>
+			<hamfinger2/>
+			<hamthumboutmod/>
+			<hamextfingeru/>
+			<hampalml/>
+			<hamnose/>
+			<hamseqbegin/>
+			<hamtouch/>
+			<hamthumb/>
+			<hamseqend/>
+			<hamcircler/>
+			<hamsmallmod/>
+			<hamclockd/>
+			<hamclockr/>
+			<hamslow/>
+		</hamnosys_manual>
+	</hns_sign>
+
+</sigml>

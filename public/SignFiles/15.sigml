@@ -1,0 +1,24 @@
+<sigml>
+	<hns_sign gloss="fifteen">
+		<hamnosys_nonmanual>
+		</hamnosys_nonmanual>
+		<hamnosys_manual>
+			<!-- Chaaron ungliyan khuli aur angutha bahar ki taraf -->
+			<hamfinger2345/>
+			<hamthumboutmod/>
+			
+			<!-- Ungliyan upar aur Hatheli samne viewer ki taraf -->
+			<hamextfingeru/>
+			<hampalmu/>
+			
+			<hamchest/>
+			<hamclose/>
+			
+			<!-- Safe movement tags jo engine ko crash nahi hone denge -->
+			<hammovei/>
+			<hamsmallmod/>
+			<hammover/>
+			<hammovel/>
+		</hamnosys_manual>
+	</hns_sign>
+</sigml>

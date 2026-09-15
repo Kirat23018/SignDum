@@ -1,0 +1,6 @@
+﻿<sigml> <!--  -->  <hns_sign gloss="mug" > <hamnosys_nonmanual><hnm_mouthgesture tag ="L06"/>
+			<hnm_head tag="TR"/>
+			<hnm_head tag="PB"/>
+			<hnm_eyebrows tag="RB"/>
+			<hnm_eyelids tag="WB"/>
+</hamnosys_nonmanual><hamnosys_manual><hamfinger2/><hamthumbacrossmod/><hamextfingeru/><hampalml/><hamlips/><hamseqbegin/><hamtouch/><hamfingermidjoint/><hamseqend/><hamreplace/><hampalml/><hamreplace/><hamextfingero/><hamfast/><hamchest/></hamnosys_manual></hns_sign></sigml>

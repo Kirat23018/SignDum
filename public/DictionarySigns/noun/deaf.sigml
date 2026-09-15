@@ -1,0 +1,24 @@
+﻿<!---->
+<sigml>
+	<hns_sign gloss="deaf">
+		<hamnosys_nonmanual>
+		</hamnosys_nonmanual>
+		<hamnosys_manual>
+			<hamfinger2/>
+			<hamextfingeru/>
+			<hampalml/>
+			<hamear/>
+			<hammoveo/>
+			<hamsmallmod/>
+			<hamfast/>
+			<hamreplace/>
+			<hamfinger2/>
+			<hamextfingeru/>
+			<hampalml/>
+			<hamforehead/>
+			<hambetween/>
+			<hamneck/>
+		</hamnosys_manual>
+	</hns_sign>
+
+</sigml>

@@ -1,0 +1,5 @@
+﻿<sigml>  <!--  --> <hns_sign gloss="mug" > 
+<hamnosys_nonmanual><hnm_mouthpicture picture="SO:rt"/>
+			<hnm_body tag="HE"/>
+			<hnm_head tag="ND"/>
+			<hnm_body tag="TR"></hnm_body></hamnosys_nonmanual><hamnosys_manual><hamflathand/><hamfingerstraightmod/><hambetween/><hamflathand/><hamextfingero/><hampalmd/><hamshouldertop/><hambetween/><hamear/><hamparbegin/><hammoved/><hammoved/><hamsmallmod/><hamparend/></hamnosys_manual></hns_sign></sigml>

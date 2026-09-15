@@ -1,0 +1,3 @@
+<sigml><hns_sign gloss="process">
+<!---->
+<hamnosys_nonmanual><hnm_body tag=""/><hnm_shoulder tag=""/><hnm_head tag=""/><hnm_mouthpicture picture="prO:ses"/><hnm_eyegaze tag="DN"/><hnm_eyebrows tag=""/><hnm_nose tag=""/><hnm_eyelids tag="SB"/></hamnosys_nonmanual><hamnosys_manual><hamsymmpar/><hamfist/><hamthumboutmod/><hamparbegin/><hamextfingero/><hampalmd/><hamplus/><hamextfingero/><hampalmd/><hamparend/><hamparbegin/><hamshoulders/><hamlrat/><hamclose/><hamplus/><hamlrat/><hamshoulders/><hamparend/><hamparbegin/><hamcirclel/><hamplus/><hamcircler/><hamparend/><hamrepeatfromstart/><hamrepeatfromstart/></hamnosys_manual></hns_sign></sigml>

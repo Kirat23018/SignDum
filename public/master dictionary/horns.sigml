@@ -1,0 +1,50 @@
+﻿<!--   -->
+<sigml>
+	<hns_sign gloss="horns">
+		<hamnosys_nonmanual>
+			<hnm_mouthpicture picture="hO:rn"/>
+		</hamnosys_nonmanual>
+		<hamnosys_manual>
+			<hamsymmlr/>
+			<hamfinger23spread/>
+			<hamfingerbendmod/>
+			<hamparbegin/>
+			<hamextfingeru/>
+			<hambetween/>
+			<hamextfingeril/>
+			<hampalmd/>
+			<hamplus/>
+			<hamextfingeru/>
+			<hambetween/>
+			<hamextfingerir/>
+			<hampalmd/>
+			<hamparend/>
+			<hameyes/>
+			<hamlrbeside/>
+			<hambetween/>
+			<hamheadtop/>
+			<hamseqbegin/>
+			<hamtouch/>
+			<hamfingertip/>
+			<hamindexfinger/>
+			<hamseqend/>
+			<hamreplace/>
+			<hampalmd/>
+			<hamparbegin/>
+			<hamparbegin/>
+			<hammoveur/>
+			<hamplus/>
+			<hammoveul/>
+			<hamparend/>
+			<hamreplace/>
+			<hamfist/>
+			<hamthumbacrossmod/>
+			<hamindexfinger/>
+			<hamfingerstraightmod/>
+			<hammiddlefinger/>
+			<hamfingerstraightmod/>
+			<hamparend/>
+		</hamnosys_manual>
+	</hns_sign>
+
+</sigml>

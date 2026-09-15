@@ -1,0 +1,20 @@
+﻿<!--  -->
+<sigml>
+	<hns_sign gloss="$PROD">
+		<hamnosys_nonmanual>
+			<hnm_mouthpicture picture="Qf.Is"/>
+			<hnm_eyegaze tag="RD"/>
+			<hnm_eyebrows tag="FU"/>
+		</hamnosys_nonmanual>
+		<hamnosys_manual>
+			<hampinchall/>
+			<hamextfingeruo/>
+			<hampalmdl/>
+			<hamshoulders/>
+			<hammover/>
+			<hamwavy/>
+			<hamsmallmod/>
+		</hamnosys_manual>
+	</hns_sign>
+
+</sigml>

@@ -1,0 +1,4 @@
+﻿<sigml>  <!--  --> <hns_sign gloss="mug" > <hamnosys_nonmanual><hnm_mouthpicture picture="@&quot;laU"/>
+			<hnm_head tag="NO"/>
+			<hnm_eyegaze tag="HI"/>
+</hamnosys_nonmanual><hamnosys_manual><hamfinger2/><hamthumboutmod/><hamextfingerul/><hambetween/><hamextfingeru/><hampalmd/><hamlips/><hamreplace/><hamextfingero/><hambetween/><hamextfingeruo/><hampalmd/><hamshoulders/></hamnosys_manual></hns_sign></sigml>

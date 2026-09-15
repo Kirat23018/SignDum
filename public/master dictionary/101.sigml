@@ -1,0 +1,20 @@
+<sigml>
+	<hns_sign gloss="101">
+		<hamnosys_nonmanual>
+		</hamnosys_nonmanual>
+		<hamnosys_manual>
+			<!-- 101 ke liye sirf index finger -->
+			<hamfinger2/>
+			
+			<!-- Ungli upar, hatheli samne aur safe movement -->
+			<hamextfingeru/>
+			<hampalmu/>
+			<hamchest/>
+			<hamclose/>
+			<hammovei/>
+			<hamsmallmod/>
+			<hammover/>
+			<hammovel/>
+		</hamnosys_manual>
+	</hns_sign>
+</sigml>

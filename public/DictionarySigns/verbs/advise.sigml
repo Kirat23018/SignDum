@@ -1,0 +1,18 @@
+﻿<!---->
+<sigml>
+	<hns_sign gloss="advise">
+		<hamnosys_nonmanual>
+		</hamnosys_nonmanual>
+		<hamnosys_manual>
+			<hamflathand/>
+			<hamthumboutmod/>
+			<hamextfingerl/>
+			<hampalmu/>
+			<hamchin/>
+			<hammoveor/>
+			<hamsmallmod/>
+			<hamarcu/><hamrepeatfromstartseveral/>
+		</hamnosys_manual>
+	</hns_sign>
+
+</sigml>

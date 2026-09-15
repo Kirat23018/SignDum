@@ -1,0 +1,43 @@
+<!---->
+<sigml>
+	<hns_sign gloss="alcoholic">
+		<hamnosys_nonmanual>
+			<hnm_head tag="PB"/>
+			<hnm_eyebrows tag="FU"/>
+		</hamnosys_nonmanual>
+		<hamnosys_manual>
+			<hamfist/>
+			<hamthumboutmod/>
+			<hamextfingeru/>
+			<hampalmdl/>
+			<hamhead/>
+			<hamlrat/>
+			<hambetween/>
+			<hamshouldertop/>
+			<hamlrat/>
+			<hamreplace/>
+			<hamfinger2/>
+			<hamthumbacrossmod/>
+			<hamextfingeru/>
+			<hampalml/>
+			<hamhead/>
+			<hamlrbeside/>
+			<hamstircw/>
+			<hamlargemod/>
+			<hamreplace/>
+			<hamfinger2/>
+			<hamthumboutmod/>
+			<hamfingerbendmod/>
+			<hamextfingerr/>
+			<hampalml/>
+			<hamshouldertop/>
+			<hamlrbeside/>
+			<hambetween/>
+			<hamchin/>
+			<hamlrat/>
+			<hammoved/>
+			<hamlargemod/>
+		</hamnosys_manual>
+	</hns_sign>
+
+</sigml>

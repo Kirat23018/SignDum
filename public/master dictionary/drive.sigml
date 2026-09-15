@@ -1,0 +1,70 @@
+﻿<!--  -->
+
+<sigml>
+	<hns_sign gloss="$PROD">
+		<hamnosys_nonmanual>
+			<hnm_mouthpicture picture="draIv"/>
+			<hnm_head tag="NU"/>
+		</hamnosys_nonmanual>
+		<hamnosys_manual>
+			<hamsymmlr/>
+			<hamfist/>
+			<hamthumbacrossmod/>
+			<hamextfingero/>
+			<hampalmul/>
+			<hambetween/>
+			<hampalml/>
+			<hamshoulders/>
+			<hamparbegin/>
+			<hammoveu/>
+			<hamsmallmod/>
+			<hamarcr/>
+			<hamsmallmod/>
+			<hamplus/>
+			<hammoved/>
+			<hamsmallmod/>
+			<hamarcl/>
+			<hamsmallmod/>
+			<hamparend/>
+			<hamparbegin/>
+			<hammoved/>
+			<hamarcr/>
+			<hamsmallmod/>
+			<hamplus/>
+			<hammoveu/>
+			<hamarcl/>
+			<hamsmallmod/>
+			<hamparend/>
+			<hamparbegin/>
+			<hammoveu/>
+			<hamarcr/>
+			<hamsmallmod/>
+			<hamplus/>
+			<hammoved/>
+			<hamarcl/>
+			<hamsmallmod/>
+			<hamparend/>
+			<hamparbegin/>
+			<hammoved/>
+			<hamarcr/>
+			<hamsmallmod/>
+			<hamplus/>
+			<hammoveu/>
+			<hamarcl/>
+			<hamsmallmod/>
+			<hamparend/>
+			<hamparbegin/>
+			<hammoveu/>
+			<hamsmallmod/>
+			<hamarcr/>
+			<hamsmallmod/>
+			<hamplus/>
+			<hammoved/>
+			<hamsmallmod/>
+			<hamarcl/>
+			<hamsmallmod/>
+			<hamparend/>
+		</hamnosys_manual>
+	</hns_sign>
+
+</sigml>

@@ -1,0 +1,29 @@
+<!---->
+<sigml>
+	<hns_sign gloss="orange">
+		<hamnosys_nonmanual>
+			<hnm_mouthpicture picture="O:rVnd_Z"/>
+		</hamnosys_nonmanual>
+		<hamnosys_manual>
+			<hamfinger2/>
+			<hamthumbopenmod/>
+			<hamfingerbendmod/>
+			<hamextfingeru/>
+			<hampalmdl/>
+			<hameyebrows/>
+			<hamlrat/>
+			<hambetween/>
+			<hamhead/>
+			<hamlrat/>
+			<hamreplace/>
+			<hamfinger2/>
+			<hamdoublehooked/><hamreplace/><hamfinger2/>
+			<hamthumbopenmod/>
+			<hamfingerbendmod/><hamreplace/>
+			<hamfinger2/>
+			<hamdoublehooked/>
+			
+		</hamnosys_manual>
+	</hns_sign>
+
+</sigml>

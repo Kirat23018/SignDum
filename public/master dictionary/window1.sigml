@@ -1,0 +1,23 @@
+﻿<!---->
+<sigml>
+	<hns_sign gloss="window1">
+		<hamnosys_nonmanual>
+<hnm_mouthpicture picture="&quot;wIn.d@U"/>
+			<hnm_head tag="ND"/>
+		</hamnosys_nonmanual>
+		<hamnosys_manual>
+			<hamsymmlr/>
+			<hamflathand/>
+			<hamthumboutmod/>
+			<hamextfingerl/>
+			<hampalml/>
+			<hamtouch/>
+			<hamshouldertop/>
+			<hamnomotion/>
+			<hamreplace/>
+			<hamextfingero/>
+			<hampalml/>
+		</hamnosys_manual>
+	</hns_sign>
+
+</sigml>

@@ -1,0 +1,72 @@
+﻿<!---->
+<sigml>
+	<hns_sign gloss="tight">
+		<hamnosys_nonmanual>
+			<hnm_eyebrows tag="RB"/>
+		</hamnosys_nonmanual>
+		<hamnosys_manual>
+			<hamsymmlr/>
+			<hamfingerstraightmod/>
+			<hamlargemod/>
+			<hamfist/>
+			<hamparbegin/>
+			<hamextfingerol/>
+			<hampalml/>
+			<hamplus/>
+			<hamextfingeror/>
+			<hampalmr/>
+			<hamparend/>
+			<hamparbegin/>
+			<hamunderchin/>
+			<hamlrbeside/>
+			<hambetween/>
+			<hamshoulders/>
+			<hamlrat/>
+			<hamplus/>
+			<hamlrat/>
+			<hamshoulders/>
+			<hambetween/>
+			<hamlrbeside/>
+			<hamunderchin/>
+			<hamparend/>
+			<hamparbegin/>
+			<hammoved/>
+			<hamslow/>
+			<hamplus/>
+			<hammoved/>
+			<hamslow/>
+			<hamparend/>
+			<hamreplace/>
+			<hamflathand/>
+			<hamthumboutmod/>
+			<hamparbegin/>
+			<hamextfingerol/>
+			<hampalml/>
+			<hamplus/>
+			<hamextfingeror/>
+			<hampalmr/>
+			<hamparend/>
+			<hamparbegin/>
+			<hamunderchin/>
+			<hamlrbeside/>
+			<hambetween/>
+			<hamshoulders/>
+			<hamlrat/>
+			<hamplus/>
+			<hamlrat/>
+			<hamshoulders/>
+			<hambetween/>
+			<hamlrbeside/>
+			<hamunderchin/>
+			<hamparend/>
+			<hamparbegin/>
+			<hammoved/>
+			<hamslow/>
+			<hamplus/>
+			<hammoved/>
+			<hamslow/>
+			<hamparend/>
+		</hamnosys_manual>
+	</hns_sign>
+
+</sigml>

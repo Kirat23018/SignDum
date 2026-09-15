@@ -1,0 +1,128 @@
+﻿<!--  -->
+<sigml>
+	<hns_sign gloss="$PROD">
+		<hamnosys_nonmanual>
+			<hnm_mouthpicture picture="hedrabad"/>
+		</hamnosys_nonmanual>
+		<hamnosys_manual>
+			<hamsymmlr/>
+			<hamflathand/>
+			<hamparbegin/>
+			<hamextfingeruo/>
+			<hambetween/>
+			<hamextfingerl/>
+			<hampalmd/>
+			<hambetween/>
+			<hampalmdr/>
+			<hamplus/>
+			<hamextfingerr/>
+			<hambetween/>
+			<hamextfingeruo/>
+			<hampalmu/>
+			<hambetween/>
+			<hampalmr/>
+			<hamparend/>
+			<hamparbegin/>
+			<hamfingerpad/>
+			<hamthumb/>
+			<hamplus/>
+			<hamfingermidjoint/>
+			<hamparend/>
+			<hamtouch/>
+			<hamlrat/>
+			<hamshoulders/>
+			<hambetween/>
+			<hamneck/>
+			<hamparbegin/>
+			<hammoveur/>
+			<hamsmallmod/>
+			<hamfast/>
+			<hamplus/>
+			<hamnomotion/>
+			<hamparend/>
+			<hamplus/>
+			<hamsymmlr/>
+			<hamparbegin/>
+			<hamfinger2/>
+			<hamthumbacrossmod/>
+			<hambetween/>
+			<hamfinger2/>
+			<hamthumbopenmod/>
+			<hamfingerbendmod/>
+			<hamplus/>
+			<hamfinger2/>
+			<hamthumbopenmod/>
+			<hamparend/>
+			<hamparbegin/>
+			<hamextfingerul/>
+			<hambetween/>
+			<hamextfingero/>
+			<hampalmd/>
+			<hamplus/>
+			<hamextfingerur/>
+			<hambetween/>
+			<hamextfingerl/>
+			<hampalmd/>
+			<hambetween/>
+			<hampalmdr/>
+			<hamparend/>
+			<hamparbegin/>
+			<hamfingermidjoint/>
+			<hamthumb/>
+			<hamplus/>
+			<hamfingertip/>
+			<hamindexfinger/>
+			<hamparend/>
+			<hamtouch/>
+			<hamshouldertop/>
+			<hambetween/>
+			<hamlrat/>
+			<hamshoulders/>
+			<hamparbegin/>
+			<hammovedl/>
+			<hamsmallmod/>
+			<hamfast/>
+			<hamplus/>
+			<hamnomotion/>
+			<hamparend/>
+		</hamnosys_manual>
+	</hns_sign><!--      -->
+
+
+
+ <hns_sign gloss="D">
+  <hamnosys_nonmanual>
+	<hnm_mouthpicture picture="di:-"/>
+  </hamnosys_nonmanual>
+  <hamnosys_manual>
+   <hamparbegin/>
+   <hamfinger2/>
+   <hamthumbopenmod/>
+   <hamfingerbendmod/>
+   <hambetween/>
+   <hamfinger2/>
+   <hamthumbopenmod/>
+   <hamplus/>
+   <hamfinger2/>
+   <hamthumbacrossmod/>
+   <hamparend/>
+   <hamparbegin/>
+   <hamextfingerul/>
+   <hampalmd/>
+   <hamplus/>
+   <hamextfingeru/>
+   <hampalmr/>
+   <hamparend/>
+   <hamparbegin/>
+   <hamfingerpad/>
+   <hamplus/>
+   <hamfingerpad/>
+   <hamparend/>
+   <hamtouch/>
+   <hamshouldertop/>
+  </hamnosys_manual>
+ </hns_sign>
+<!--  --> <hns_sign gloss="mug" > <hamnosys_nonmanual></hamnosys_nonmanual><hamnosys_manual><hamfinger2/><hamthumbacrossmod/><hamextfingeror/><hambetween/><hamextfingeru/><hampalml/><hamshouldertop/><hamlrbeside/><hambetween/><hamhead/><hamlrbeside/></hamnosys_manual></hns_sign>
+
+
+</sigml>

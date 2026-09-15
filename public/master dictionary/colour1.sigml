@@ -1,0 +1,6 @@
+<sigml><!--  -->   <hns_sign gloss="colour" > <hamnosys_nonmanual><hnm_head tag="SR"/>
+			<hnm_head tag="SR"/>
+			<hnm_eyegaze tag="HI"/>
+			<hnm_eyebrows tag="RB"/>
+			<hnm_mouthpicture picture="&quot;kreI.Qn"/>
+	</hamnosys_nonmanual><hamnosys_manual><hamfinger23spread/><hamthumbacrossmod/><hamextfingerl/><hampalmd/><hamlrat/><hamlips/><hamseqbegin/><hamtouch/><hampinky/><hamindexfinger/><hamseqend/><hamparbegin/><hammover/><hamsmallmod/><hamfingerplay/><hamparend/></hamnosys_manual></hns_sign></sigml>

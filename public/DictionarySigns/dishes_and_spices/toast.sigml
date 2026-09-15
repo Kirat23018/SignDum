@@ -1,0 +1,68 @@
+﻿<!--    -->
+<!--  mouth: t@_U  -->
+
+<sigml>
+	<hns_sign gloss="$PROD">
+		<hamnosys_nonmanual>
+			<hnm_mouthpicture picture="tUst"/>
+		</hamnosys_nonmanual>
+		<hamnosys_manual>
+			<hamsymmlr/>
+			<hamflathand/>
+			<hamthumboutmod/>
+			<hambetween/>
+			<hamflathand/>
+			<hamparbegin/>
+			<hamextfingerol/>
+			<hamextfingeruo/>
+			<hamplus/>
+			<hamextfingeror/>
+			<hambetween/>
+			<hamextfingeruo/>
+			<hamparend/>
+			<hamparbegin/>
+			<hampalml/>
+			<hamplus/>
+			<hampalmu/>
+			<hambetween/>
+			<hampalmur/>
+			<hamparend/>
+			<hamparbegin/>
+			<hampalm/>
+			<hamplus/>
+			<hamfingertip/>
+			<hamparend/>
+			<hamclose/>
+			<hamlrat/>
+			<hamshoulders/>
+			<hambetween/>
+			<hamshoulders/>
+			<hamparbegin/>
+			<hamparbegin/>
+			<hammoveol/>
+			<hamsmallmod/>
+			<hamfast/>
+			<hammoveuo/>
+			<hamsmallmod/>
+			<hamfast/>
+			<hamparend/>
+			<hamrepeatfromstart/>
+			<hamdecreasing/>
+			<hamplus/>
+			<hamnomotion/>
+			<hamparend/>
+			<hamplus/>
+			<hamflathand/>
+			<hamthumboutmod/>
+			<hamfingerstraightmod/>
+			<hamextfingero/>
+			<hampalmd/>
+			<hamneck/>
+			<hambetween/>
+			<hamhead/>
+			<hamlrat/>
+			<hammoved/>
+		</hamnosys_manual>
+	</hns_sign>
+
+</sigml>

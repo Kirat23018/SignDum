@@ -1,0 +1,20 @@
+<sigml> <!--  -->  <hns_sign gloss="mug" > <hamnosys_nonmanual></hamnosys_nonmanual><hamnosys_manual><hamsymmlr/><hamparbegin/><hamflathand/><hamthumboutmod/><hamplus/><hamflathand/><hamthumboutmod/><hamparend/><hamparbegin/><hamextfingerol/><hamplus/><hamextfingeror/><hamparend/><hamparbegin/><hampalmd/><hamplus/><hampalmu/><hamparend/><hamparbegin/><hampalm/><hamplus/><hampalm/><hamparend/><hamtouch/><hamshoulders/><hamparbegin/><hammoveor/><hamplus/><hamnomotion/><hamparend/></hamnosys_manual></hns_sign><!--  --><hns_sign gloss="mug" > <hamnosys_nonmanual></hamnosys_nonmanual><hamnosys_manual><hampinchall/><hamextfingeru/><hampalml/><hamshouldertop/><hambetween/><hamshoulders/></hamnosys_manual></hns_sign><!---->
+	<hns_sign gloss="$PROD">
+		<hamnosys_nonmanual>
+			<hnm_mouthpicture picture="be:"/>
+		</hamnosys_nonmanual>
+		<hamnosys_manual>
+			<hamsymmlr/>
+			<hampinchall/>
+			<hamextfingeru/>
+			<hampalml/>
+			<hamparbegin/>
+			<hamfingertip/>
+			<hamplus/>
+			<hamfingertip/>
+			<hamparend/>
+			<hamtouch/>
+			<hamshoulders/><hammover/><hamsmallmod/><hammovel/><hamsmallmod/>
+		</hamnosys_manual>
+	</hns_sign><!--  -->   <hns_sign gloss="year" > <hamnosys_nonmanual></hamnosys_nonmanual><hamnosys_manual><hamsymmlr/><hamfingerstraightmod/><hamlargemod/><hamparbegin/><hamfinger2/><hamthumbacrossmod/><hamplus/><hamfinger2/><hamthumboutmod/><hamparend/><hamparbegin/><hamextfingero/><hampalml/><hamplus/><hamextfingeruo/><hampalmd/><hamparend/><hamparbegin/><hamfingerbase/><hamindexfinger/><hamplus/><hamfingertip/><hamindexfinger/><hamparend/><hamtouch/><hamshouldertop/><hamparbegin/><hamparbegin/><hammoveir/><hammoved/><hamparend/><hamplus/><hamnomotion/><hamparend/></hamnosys_manual></hns_sign>
+<hns_sign gloss=""><hamnosys_nonmanual><hnm_body tag=""/><hnm_shoulder tag=""/><hnm_head tag="NO"/><hnm_mouthpicture picture="h@_UbI"/><hnm_eyegaze tag=""/><hnm_eyebrows tag=""/><hnm_nose tag=""/><hnm_eyelids tag=""/></hamnosys_nonmanual><hamnosys_manual><hampinch12open/><hamextfingeru/><hampalml/><hamlrat/><hamshoulders/><hammoveir/><hamtwisting/></hamnosys_manual></hns_sign></sigml>

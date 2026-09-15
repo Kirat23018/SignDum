@@ -1,0 +1,22 @@
+﻿<!--    -->
+
+<sigml>
+ <hns_sign gloss="$" > 
+<hamnosys_nonmanual>
+	<hnm_mouthpicture picture="aveI"/>
+ 	<hnm_head tag="NF"/>
+</hamnosys_nonmanual>
+
+<hamnosys_manual>
+  	<hamsymmpar />
+  	<hamflathand/>
+  	<hamextfingero/>
+  	<hampalml/>
+  	<hamshoulders />
+  	<hamparbegin />
+  	<hammoveor />
+  	<hamlargemod />
+  	<hammoveor />
+  	<hamparend />
+</hamnosys_manual>
+</hns_sign></sigml>

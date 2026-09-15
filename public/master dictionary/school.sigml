@@ -1,0 +1,6 @@
+﻿<sigml> <!--  -->  <hns_sign gloss="mug" > <hamnosys_nonmanual><hnm_mouthpicture picture="stdi:"/>
+			<hnm_eyegaze tag="DN"/>
+			<hnm_eyelids tag="SB"/><hnm_mouthpicture picture="sku:l"/>
+			<hnm_head tag="SH"/>
+
+</hamnosys_nonmanual><hamnosys_manual><hamsymmlr/><hamflathand/><hamthumboutmod/><hambetween/><hamflathand/><hamextfingeruo/><hambetween/><hamextfingeru/><hampalmu/><hamseqbegin/><hamtouch/><hampinky/><hamseqend/><hamneck/><hambetween/><hamlips/><hammoveo/><hamsmallmod/><hamrepeatfromstart/><hamdecreasing/></hamnosys_manual></hns_sign></sigml>

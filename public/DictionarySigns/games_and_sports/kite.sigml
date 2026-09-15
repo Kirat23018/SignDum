@@ -1,0 +1,46 @@
+﻿<!--    -->
+
+<sigml>
+	<hns_sign gloss="$PROD">
+		<hamnosys_nonmanual>
+			<hnm_mouthpicture picture="kaIt"/>
+			<hnm_head tag="TL"/><hnm_head tag="NB"/><hnm_head tag="SR"/>
+			<hnm_shoulder tag="UR"/>
+			<hnm_eyegaze tag="RU"/>
+			<hnm_eyebrows tag="RR"/>
+		</hamnosys_nonmanual>
+		<hamnosys_manual>
+			<hamfinger2/>
+			<hamfingerhookmod/>
+			<hamextfingeru/>
+			<hampalml/>
+			<hamheadtop/>
+			<hamlrbeside/>
+			<hamclose/>
+			<hamparbegin/>
+			<hammovedl/>
+			<hamlargemod/>
+			<hamreplace/>
+			<hamextfingerul/>
+			<hampalmr/>
+			<hamfast/>
+			<hamparend/>
+			<hamparbegin/>
+			<hammoveur/>
+			<hamfast/>
+			<hamreplace/>
+			<hamextfingeru/>
+			<hampalmdl/>
+			<hamfast/>
+			<hamparend/>
+			<hamparbegin/>
+			<hammovedl/>
+			<hamfast/>
+			<hamreplace/>
+			<hamextfingerul/>
+			<hampalmr/>
+			<hamparend/>
+		</hamnosys_manual>
+	</hns_sign>
+
+</sigml>

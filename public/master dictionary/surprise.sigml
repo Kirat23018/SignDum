@@ -1,0 +1,4 @@
+﻿<sigml> <!--  -->  <hns_sign gloss="surprise" > <hamnosys_nonmanual><hnm_eyelids tag="CB"></hnm_eyelids><hnm_head tag="PF"></hnm_head></hamnosys_nonmanual><hamnosys_manual><hamsymmlr/><hampinchall/><hamfingerstraightmod/><hamextfingeru/><hambetween/><hamextfingeruo/><hampalmu/><hameyes/><hambetween/><hamcheek/><hamlrat/><hamseqbegin/><hamclose/><hamfingertip/><hamindexfinger/><hamseqend/></hamnosys_manual></hns_sign><!--  -->   <hns_sign gloss="" > <hamnosys_nonmanual><hnm_mouthpicture picture="s@&quot;praIz"/>
+   <hnm_eyebrows tag="RB"/>
+   
+<hnm_eyelids tag="WB"></hnm_eyelids><hnm_eyegaze tag="FR"></hnm_eyegaze></hamnosys_nonmanual><hamnosys_manual><hamsymmlr/><hamfinger2345/><hamthumboutmod/><hamextfingeru/><hambetween/><hamextfingeruo/><hampalmu/><hamlips/><hambetween/><hamshouldertop/><hammoveo/></hamnosys_manual></hns_sign></sigml>

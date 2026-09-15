@@ -1,0 +1,27 @@
+﻿<!--      -->
+<!--  Mouth: D07   -->
+<!--  Limbs: ND   -->
+<!--   Face:  -->
+
+
+<sigml>
+ 	<hns_sign gloss="$PROD:">
+  	<hamnosys_nonmanual>
+   		<hnm_mouthpicture picture="@k&quot;sep"/>
+   		<hnm_head tag="ND"/>
+ 	 </hamnosys_nonmanual>
+  	<hamnosys_manual>
+   	<hamsymmlr/>
+	   <hamfinger2345/>
+	   <hamextfingerol/>
+   <hampalml/>
+   <hamclose/>
+   <hamreplace/>
+   <hamfist/>
+   <hamthumbacrossmod/>
+   <hamchest/>
+   <hamtouch/>
+  </hamnosys_manual>
+ </hns_sign>
+
+</sigml>

@@ -1,0 +1,55 @@
+﻿<!---->
+<sigml>
+	<hns_sign gloss="identity card 2">
+		<hamnosys_nonmanual>
+<hnm_mouthpicture picture="aI&quot;den.tI.ti %kA:d"/>
+			<hnm_head tag="NO"/>
+			<hnm_eyebrows tag="RB"/>
+		</hamnosys_nonmanual>
+		<hamnosys_manual>
+			<hamfinger2/>
+			<hamthumbacrossmod/>
+			<hamextfingerul/>
+			<hampalmd/>
+			<hamcheek/>
+			<hamnomotion/>
+			<hamplus/>
+			<hamsymmpar/>
+			<hamparbegin/>
+			<hamcee12/>
+			<hamthumbopenmod/>
+			<hamextfingeru/>
+			<hambetween/>
+			<hamextfingerul/>
+			<hampalmd/>
+			<hamplus/>
+			<hamfinger2/>
+			<hamextfingeru/>
+			<hampalmr/>
+			<hamparend/>
+			<hamparbegin/>
+			<hamfingertip/>
+			<hamplus/>
+			<hamfingertip/>
+			<hamindexfinger/>
+			<hamparend/>
+			<hamtouch/>
+			<hamneck/>
+			<hambetween/>
+			<hamnostrils/>
+			<hamnomotion/>
+			<hamplus/>
+			<hamfinger2/>
+			<hamthumbopenmod/>
+			<hambetween/>
+			<hamfinger2/>
+			<hamthumbopenmod/>
+			<hamindexfinger/>
+			<hamfingerstraightmod/>
+			<hamextfingerur/>
+			<hampalmu/>
+			<hamneck/>
+		</hamnosys_manual>
+	</hns_sign>
+
+</sigml>

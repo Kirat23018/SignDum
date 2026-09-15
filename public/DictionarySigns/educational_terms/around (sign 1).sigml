@@ -1,0 +1,20 @@
+<sigml>
+	<hns_sign gloss="around (sign 1)">
+		<hamnosys_nonmanual>
+			<hnm_eyebrows tag="RB"/>
+			<hnm_eyelids tag="WB"/>
+		</hamnosys_nonmanual>
+		<hamnosys_manual>
+			<hamfinger2/>
+			<hamextfingerd/>
+			<hampalmd/>
+			<hamlrat/>
+			<hamshoulders/>
+			<hamcircled/>
+			<hamlargemod/>
+			<hamcircled/>
+			<hamlargemod/>
+		</hamnosys_manual>
+	</hns_sign>
+
+</sigml>

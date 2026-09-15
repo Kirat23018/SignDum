@@ -1,0 +1,29 @@
+﻿<!--  -->
+<sigml>
+	<hns_sign gloss="paws">
+		<hamnosys_nonmanual>
+			<hnm_mouthpicture picture="pO:"/>
+			<hnm_body tag="HE"/>
+		</hamnosys_nonmanual>
+		<hamnosys_manual>
+			<hamsymmlr/>
+			<hamfinger2345/>
+			<hamfingerhookmod/>
+			<hamthumbopenmod/>
+			<hambetween/>
+			<hamflathand/>
+			<hamfingerbendmod/>
+			<hamthumbopenmod/>
+			<hamextfingeru/>
+			<hambetween/>
+			<hamextfingerul/>
+			<hampalmr/>
+			<hambetween/>
+			<hampalmd/>
+			<hamchest/>
+			<hambetween/>
+			<hamheadtop/>
+		</hamnosys_manual>
+	</hns_sign>
+
+</sigml>

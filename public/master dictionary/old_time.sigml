@@ -1,0 +1,7 @@
+﻿<sigml> <!--  -->  <hns_sign gloss="mug" > 
+<hamnosys_nonmanual><hnm_mouthpicture picture="Uld"/>
+			<hnm_eyegaze tag="AD"/>
+			<hnm_eyebrows tag="FU"/>
+			<hnm_eyelids tag="SB"/>
+			<hnm_nose tag="WR"/>
+</hamnosys_nonmanual><hamnosys_manual><hamflathand/><hamextfingeru/><hampalmu/><hamshouldertop/><hamlrbeside/><hambetween/><hamheadtop/><hamlrbeside/><hamclose/><hamreplace/><hamextfingeri/><hambetween/><hamextfingerui/><hampalmd/><hamrepeatfromstartseveral/></hamnosys_manual></hns_sign></sigml>

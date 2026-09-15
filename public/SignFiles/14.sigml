@@ -1,0 +1,22 @@
+<sigml>
+	<hns_sign gloss="fourteen">
+		<hamnosys_nonmanual>
+		</hamnosys_nonmanual>
+		<hamnosys_manual>
+			<hamfinger2345/>
+			<hamthumbacrossmod/>
+			<!-- Ungliyan upar, aur hatheli samne viewer ki taraf -->
+			<hamextfingeru/>
+			<hampalmu/>
+			
+			<hamchest/>
+			<hamclose/>
+			
+			<!-- Safe movement tags jo crash nahi honge -->
+			<hammovei/>
+			<hamsmallmod/>
+			<hammover/>
+			<hammovel/>
+		</hamnosys_manual>
+	</hns_sign>
+</sigml>

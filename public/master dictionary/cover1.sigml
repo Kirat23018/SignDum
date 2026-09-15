@@ -1,0 +1,36 @@
+﻿<!--     -->
+<!--  Mouth: C08   -->
+<!--  Limbs: NF  -->
+<!--   Face: DN -->
+
+
+
+<sigml>
+ <hns_sign gloss="$PROD">
+  <hamnosys_nonmanual>
+   <hnm_mouthpicture picture="&quot;kVv@(r)"/>
+   <hnm_head tag="NF"/>
+   <hnm_eyegaze tag="DN"/>
+  </hamnosys_nonmanual>
+  <hamnosys_manual>
+			<hamsymmlr/>
+			<hamflathand/>
+			<hambetween/>
+			<hamflathand/>
+			<hamfingerstraightmod/>
+			<hamextfingero/>
+			<hampalmd/>
+			<hamtouch/>
+			<hamchest/>
+			<hamparbegin/>
+			<hammover/>
+			<hamarcu/>
+			<hamreplace/>
+			<hampalml/>
+			<hammoved/>
+			<hamparend/>
+		</hamnosys_manual>
+
+ </hns_sign>
+
+</sigml>

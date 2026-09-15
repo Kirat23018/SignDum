@@ -1,0 +1,32 @@
+﻿<!--      -->
+<!--  Mouth: L03    -->
+<!--  Limbs:  TL     -->
+<!--   Face:  DN  -->
+
+
+
+
+<sigml>
+ <hns_sign gloss="$PROD">
+  <hamnosys_nonmanual>
+<hnm_mouthpicture picture="spI"/>
+   
+   <hnm_body tag="TL"/>
+   <hnm_eyegaze tag="DN"/>
+  </hamnosys_nonmanual>
+  <hamnosys_manual>
+   <hamceeall/>
+   <hamthumbopenmod/>
+   <hamextfingero/>
+   <hampalml/>
+   <hamshoulders/>
+   <hambetween/>
+   <hamshoulders/>
+   <hamlrat/>
+   <hamreplace/>
+   <hamextfingero/>
+   <hampalmdl/>
+  </hamnosys_manual>
+ </hns_sign>
+
+</sigml>

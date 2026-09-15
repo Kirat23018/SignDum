@@ -1,0 +1,26 @@
+﻿<!--    -->
+<!--  mouth: [L03]  -->
+
+<sigml>
+	<hns_sign gloss="$PROD">
+		<hamnosys_nonmanual>
+			<hnm_mouthpicture picture="&quot;bIskI"/>
+		</hamnosys_nonmanual>
+		<hamnosys_manual>
+			<hamflathand/>
+			<hambetween/>
+			<hamflathand/>
+			<hamfingerstraightmod/>
+			<hamextfingerui/>
+			<hambetween/>
+			<hamextfingeru/>
+			<hampalmd/>
+			<hamlips/>
+			<hamseqbegin/>
+			<hamclose/>
+			<hammiddlefinger/>
+			<hamseqend/>
+		</hamnosys_manual>
+	</hns_sign>
+
+</sigml>

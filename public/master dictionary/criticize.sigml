@@ -1,0 +1,52 @@
+﻿<!--     -->
+<!--  Mouth: T17   -->
+<!--  Limbs: TR, TL  -->
+<!--   Face: LE,FU,SB,WR -->
+
+<sigml>
+ <hns_sign gloss="$PROD">
+  <hamnosys_nonmanual>
+   <hnm_mouthpicture picture="&quot;krIt.I.saIz"/>
+   <hnm_body tag="TR"/>
+   <hnm_head tag="TL"/>
+   <hnm_eyegaze tag="LE"/>
+   <hnm_eyebrows tag="FU"/>
+   <hnm_eyelids tag="SB"/>
+   <hnm_nose tag="WR"/>
+  </hamnosys_nonmanual>
+  <hamnosys_manual>
+   <hamsymmlr/>
+   <hamfinger2/>
+   <hamthumbacrossmod/>
+   <hampinky/>
+   <hamparbegin/>
+   <hamextfingerol/>
+   <hambetween/>
+   <hamextfingero/>
+   <hampalml/>
+   <hamplus/>
+   <hamextfingero/>
+   <hampalmr/>
+   <hamparend/>
+   <hamparbegin/>
+   <hamshoulders/>
+   <hamplus/>
+   <hamlrat/>
+   <hamchest/>
+   <hamparend/>
+   <hamparbegin/>
+   <hammovedl/>
+   <hamfast/>
+   <hamchest/>
+   <hambetween/>
+   <hamlrat/>
+   <hamchest/>
+   <hamplus/>
+   <hammoveu/>
+   <hamfast/>
+   <hamparend/>
+   <hamrepeatfromstart/>
+  </hamnosys_manual>
+ </hns_sign>
+
+</sigml>

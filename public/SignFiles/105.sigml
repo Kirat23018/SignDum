@@ -1,0 +1,21 @@
+<sigml>
+	<hns_sign gloss="105">
+		<hamnosys_nonmanual>
+		</hamnosys_nonmanual>
+		<hamnosys_manual>
+			<!-- 105 ke liye 4 ungliyan aur angutha bahar -->
+			<hamfinger2345/>
+			<hamthumboutmod/>
+			
+			<!-- Ungli upar, hatheli samne aur safe movement -->
+			<hamextfingeru/>
+			<hampalmu/>
+			<hamchest/>
+			<hamclose/>
+			<hammovei/>
+			<hamsmallmod/>
+			<hammover/>
+			<hammovel/>
+		</hamnosys_manual>
+	</hns_sign>
+</sigml>

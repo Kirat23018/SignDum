@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<sigml>
+
+  <!-- Pehla Hisa: Best (Tumhara Code) -->
+  <hns_sign gloss="best">
+    <hamnosys_nonmanual>
+    </hamnosys_nonmanual>
+    <hamnosys_manual>
+      <hamsymmpar/>
+      <hamfingerstraightmod/>
+      <hamfist/>
+      <hamthumboutmod/>
+      <hamextfingerol/>
+      <hampalmd/>
+      <hamchest/>
+      <hammoveo/>
+      <hamparbegin/>
+      <hamthumbside/>
+      <hamplus/>
+      <hamthumbside/>
+      <hamparend/>
+      <hamclose/>
+      <hammoveo/>
+      <hamsmallmod/>
+    </hamnosys_manual>
+  </hns_sign>
+
+  <!-- Dusra Hisa: Friend (Tumhara Code) -->
+  <hns_sign gloss="friend">
+    <hamnosys_nonmanual>
+      <hnm_body tag=""/>
+      <hnm_shoulder tag=""/>
+      <hnm_head tag="NO"/>
+      <hnm_mouthpicture picture="frend"/>
+      <hnm_eyegaze tag=""/>
+      <hnm_eyebrows tag=""/>
+      <hnm_nose tag=""/>
+      <hnm_eyelids tag=""/>
+    </hamnosys_nonmanual>
+    <hamnosys_manual>
+      <hamsymmlr/>
+      <hamflathand/>
+      <hamfingerbendmod/>
+      <hamparbegin/>
+      <hamextfingerul/>
+      <hampalml/>
+      <hamplus/>
+      <hamextfingerur/>
+      <hampalml/>
+      <hamparend/>
+      <hamshouldertop/>
+      <hamparbegin/>
+      <hammovel/>
+      <hamplus/>
+      <hammover/>
+      <hamparend/>
+      <hamparbegin/>
+      <hammoveo/>
+      <hamsmallmod/>
+      <hamplus/>
+      <hammoveo/>
+      <hamsmallmod/>
+      <hamparend/>
+      <hamparbegin/>
+      <hammovei/>
+      <hamsmallmod/>
+      <hamplus/>
+      <hammovei/>
+      <hamsmallmod/>
+      <hamparend/>
+      <hamparbegin/>
+      <hammoveo/>
+      <hamsmallmod/>
+      <hamplus/>
+      <hammoveo/>
+      <hamsmallmod/>
+      <hamparend/>
+      <hamparbegin/>
+      <hammovei/>
+      <hamsmallmod/>
+      <hamplus/>
+      <hammovei/>
+      <hamsmallmod/>
+      <hamparend/>
+    </hamnosys_manual>
+  </hns_sign>
+
+</sigml>

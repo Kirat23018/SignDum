@@ -1,0 +1,27 @@
+﻿<!---->
+<sigml>
+	<hns_sign gloss="$PROD">
+		<hamnosys_nonmanual>
+			<hnm_mouthpicture picture="fa_I"/>
+			<hnm_head tag="NO"/>
+			<hnm_eyebrows tag="FU"/><hnm_eyebrows tag="FU"/>
+		</hamnosys_nonmanual>
+		<hamnosys_manual>
+			<hamsymmlr/>
+			<hamfist/>
+			<hamextfingerl/>
+			<hampalml/>
+			<hamshoulders/>
+			<hamparbegin/>
+			<hammovel/>
+			<hamfast/>
+			<hamplus/>
+			<hammover/>
+			<hamfast/>
+			<hamparend/>
+			<hamtouch/>
+			<hamrepeatfromstartseveral/>
+		</hamnosys_manual>
+	</hns_sign>
+
+</sigml>

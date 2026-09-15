@@ -1,0 +1,34 @@
+﻿<!--       -->
+<!--  Mouth: la_It     -->
+<!--  Limbs:  SR       -->
+<!--   Face: RB BB   -->
+
+
+
+
+<sigml>
+	<hns_sign gloss="$PROD">
+		<hamnosys_nonmanual>
+			<hnm_mouthpicture picture="la_I"/>
+			<hnm_shoulder tag="SR"/>
+			<hnm_eyebrows tag="RB"/>
+			<hnm_eyelids tag="BB"/>
+		</hamnosys_nonmanual>
+		<hamnosys_manual>
+			<hampinchall/>
+			<hamextfingerul/>
+			<hampalmdr/>
+			<hamheadtop/>
+			<hamlrbeside/>
+			<hamparbegin/>
+			<hammovedl/>
+			<hamlargemod/>
+			<hamreplace/>
+			<hamfinger2345/>
+			<hamextfingerol/>
+			<hampalmdl/>
+			<hamparend/>
+		</hamnosys_manual>
+	</hns_sign>
+
+</sigml>

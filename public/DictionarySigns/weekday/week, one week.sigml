@@ -1,0 +1,24 @@
+<sigml>
+	<hns_sign gloss="week, one week">
+		<hamnosys_nonmanual>
+			<hnm_mouthpicture picture="wVn"/>
+		</hamnosys_nonmanual>
+		<hamnosys_manual>
+			<hamfinger2/><hamthumbacrossmod/>
+			<hamextfingeru/>
+			<hampalmd/>
+			<hamlrat/><hamshouldertop/><hambetween/><hamshouldertop/>
+		</hamnosys_manual>
+	</hns_sign>
+
+	<hns_sign gloss="">
+		<hamnosys_nonmanual>
+			<hnm_mouthpicture picture="wi:k"/>
+		</hamnosys_nonmanual>
+		<hamnosys_manual>
+			<hampinch12open/><hamfingerstraightmod/><hambetween/><hampinch12open/><hamextfingeru/><hampalmd/><hamlrat/><hamshouldertop/><hambetween/><hamshouldertop/>
+			<hammover/>
+		</hamnosys_manual>
+	</hns_sign>
+
+</sigml>

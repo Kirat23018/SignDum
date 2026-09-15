@@ -1,0 +1,5 @@
+﻿<sigml> <!--  -->  <hns_sign gloss="mug" > <hamnosys_nonmanual><hnm_mouthpicture picture="pO:r"/>
+			<hnm_eyegaze tag="FR"/>
+			<hnm_eyebrows tag="FU"/>
+			<hnm_eyelids tag="SB"/>
+			<hnm_nose tag="TW"/></hamnosys_nonmanual><hamnosys_manual><hamsymmlr/><hamparbegin/><hamfinger2345/><hamthumboutmod/><hambetween/><hamfinger2345/><hamfingerstraightmod/><hamextfingerul/><hambetween/><hamextfingerol/><hamextfingeruo/><hampalml/><hambetween/><hampalmul/><hamplus/><hamfist/><hamthumbacrossmod/><hamextfingeru/><hampalmu/><hamparend/><hamparbegin/><hamlrbeside/><hamelbowinside/><hamseqbegin/><hamtouch/><hamfingernail/><hamseqend/><hamplus/><hamlrat/><hamheadtop/><hambetween/><hamlrbeside/><hamneck/><hamclose/><hamparend/><hamparbegin/><hamparbegin/><hammoved/><hamslow/><hamreplace/><hampinchall/><hambetween/><hamfinger2345/><hamfingerstraightmod/><hamthumbopenmod/><hamparend/><hamplus/><hamnomotion/><hamparend/></hamnosys_manual></hns_sign></sigml>

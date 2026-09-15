@@ -1,0 +1,21 @@
+<!---->
+<sigml>
+	<hns_sign gloss="$PROD">
+		<hamnosys_nonmanual>
+			<hnm_mouthpicture picture="%sev.@n&quot;ti:n"/>
+		</hamnosys_nonmanual>
+		<hamnosys_manual>
+			<hamfinger2/>
+			<hamthumbacrossmod/>
+			<hamextfingeru/>
+			<hampalmd/>
+			<hamshouldertop/>
+			<hammover/>
+			<hamsmallmod/>
+			<hamarcl/>
+			<hamreplace/>
+			<hamcee12/><hamfingerbendmod/><hamthumbopenmod/>
+<hamextfingeru/><hampalml/>	</hamnosys_manual>
+	</hns_sign>
+
+</sigml>

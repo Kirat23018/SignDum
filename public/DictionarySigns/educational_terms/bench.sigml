@@ -1,0 +1,33 @@
+﻿<!--        -->
+<!-- Knee bend remaining   -->
+
+
+<sigml>
+	<hns_sign gloss="$PROD">
+		<hamnosys_nonmanual>
+			<hnm_mouthpicture picture="bentS"/>
+		</hamnosys_nonmanual>
+
+		<hamnosys_manual>
+			<hamsymmlr/>
+			<hamfist/>
+			<hamextfingero/>
+			<hampalml/>
+			<hamshoulders/>
+			<hammoved/>
+			<hamsmallmod/>
+			<hamrest/>
+			<hamreplace/>
+			<hamflathand/>
+			<hamextfingero/>
+			<hampalmd/>
+			<hamtouch/>
+			<hamshoulders/>
+			<hamparbegin/>
+			<hammover/>
+			<hamplus/>
+			<hammovel/>
+			<hamparend/>
+		</hamnosys_manual>
+	</hns_sign>
+</sigml>

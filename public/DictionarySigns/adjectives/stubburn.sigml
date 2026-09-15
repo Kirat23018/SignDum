@@ -1,0 +1,43 @@
+﻿<!--  -->
+<sigml>
+	<hns_sign gloss="$PROD">
+		<hamnosys_nonmanual>
+			<hnm_mouthpicture picture="&quot;stVbo:@n"/>
+			<hnm_body tag="SI"/>
+			<hnm_head tag="ND"/>
+			<hnm_eyegaze tag="HD"/>
+			<hnm_eyebrows tag="FU"/>
+			<hnm_nose tag="WR"/>
+		</hamnosys_nonmanual>
+		<hamnosys_manual>
+			<hamfinger2/>
+			<hamthumbacrossmod/>
+			<hamextfingerui/>
+			<hamextfingeril/>
+			<hambetween/>
+			<hamextfingeru/>
+			<hampalmdl/>
+			<hamforehead/>
+			<hamlrbeside/>
+			<hambetween/>
+			<hameyebrows/>
+			<hamlrbeside/>
+			<hamtouch/>
+			<hamreplace/>
+			<hampalmdl/>
+			<hamplus/>
+			<hamsymmpar/>
+			<hamfist/>
+			<hamthumbacrossmod/>
+			<hamextfingero/>
+			<hampalml/>
+			<hamshouldertop/>
+			<hamlrat/>
+			<hamclose/>
+			<hammoved/>
+			<hamsmallmod/>
+			<hamfast/>
+		</hamnosys_manual>
+	</hns_sign>
+
+</sigml>

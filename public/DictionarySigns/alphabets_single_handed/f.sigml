@@ -1,0 +1,16 @@
+﻿<!--        -->
+
+
+
+<sigml>
+	<hns_sign gloss="f">
+		<hamnosys_manual>
+			<hamflathand/>
+			<hamthumbopenmod/>
+			<hamindexfinger/>
+			<hamfingerstraightmod/>
+			<hamextfingeru/>
+			<hampalmd/>
+		</hamnosys_manual>
+	</hns_sign>
+</sigml>

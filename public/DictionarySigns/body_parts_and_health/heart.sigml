@@ -1,0 +1,27 @@
+<!--  -->
+<!--  -->
+<sigml>   <hns_sign gloss="heart" > <hamnosys_nonmanual></hamnosys_nonmanual><hamnosys_manual><hamfinger2/><hamthumbacrossmod/><hamextfingeril/><hambetween/><hamextfingerl/><hampalmr/><hamshouldertop/><hambetween/><hamshoulders/><hamreplace/><hamfinger2/><hamthumbacrossmod/><hamextfingeril/><hambetween/><hamextfingerl/><hampalmr/></hamnosys_manual></hns_sign>
+	<hns_sign gloss="">
+		<hamnosys_nonmanual>
+
+		</hamnosys_nonmanual>
+		<hamnosys_manual>
+			<hamfinger2345/>
+			<hamthumbopenmod/>
+			<hambetween/>
+			<hamflathand/>
+			<hamfingerbendmod/>
+			<hamthumbopenmod/>
+			<hamextfingeru/>
+			<hambetween/>
+			<hamextfingerol/>
+			<hampalmu/>
+			<hamshoulders/>
+			<hamreplace/>
+			<hampinchall/>
+			<hamrepeatfromstartseveral/>
+		</hamnosys_manual>
+	</hns_sign>
+
+
+</sigml>

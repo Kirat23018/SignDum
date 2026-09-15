@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<sigml>
+  <hns_sign gloss="niece">
+    <hamnosys_nonmanual></hamnosys_nonmanual>
+    <hamnosys_manual>
+      <!-- 'N' jaisa shape (2 fingers) -->
+      <hamfinger23/>
+      <hamthumbacrossmod/>
+      <hamextfingeru/>
+      <hampalml/>
+      <!-- Female relation: Gaal (Cheek) ke paas -->
+      <hamcheek/>
+      <hammoveo/>
+      <hammovei/>
+    </hamnosys_manual>
+  </hns_sign>
+</sigml>

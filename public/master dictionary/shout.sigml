@@ -1,0 +1,40 @@
+﻿<!--      -->
+<!--  Mouth: T11    -->
+<!--  Limbs:       -->
+<!--   Face:  HD, RB, WB, TW  -->
+
+
+
+
+<sigml>
+	<hns_sign gloss="$PROD">
+		<hamnosys_nonmanual>
+			<hnm_mouthpicture picture="SaUt"/>
+
+			<hnm_eyegaze tag="HD"/>
+			<hnm_eyebrows tag="RB"/>
+			<hnm_eyelids tag="WB"/>
+			<hnm_nose tag="TW"/>
+		</hamnosys_nonmanual>
+		<hamnosys_manual>
+			<hamsymmlr/>
+			<hamfinger2/>
+			<hamthumbacrossmod/>
+			<hamextfingerul/>
+			<hampalmdr/>
+			<hamtouch/>
+			<hamunderchin/>
+			<hambetween/>
+			<hamlips/>
+			<hamparbegin/>
+			<hammover/>
+			<hamlargemod/>
+			<hamfast/>
+			<hamreplace/>
+			<hamextfingerur/>
+			<hampalmul/>
+			<hamparend/>
+		</hamnosys_manual>
+	</hns_sign>
+
+</sigml>

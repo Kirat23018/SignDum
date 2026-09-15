@@ -1,0 +1,28 @@
+<sigml>
+	<hns_sign gloss="truck">
+		<hamnosys_nonmanual>
+			<hnm_mouthpicture picture="trVk"/>
+		</hamnosys_nonmanual>
+		<hamnosys_manual>
+			<hamsymmlr/>
+			<hamparbegin/>
+			<hamfinger23/>
+			<hamplus/>
+			<hamfist/>
+			<hamparend/>
+			<hamparbegin/>
+			<hamextfingerl/>
+			<hampalml/>
+			<hamplus/>
+			<hamextfingerd/>
+			<hampalmd/>
+			<hamparend/>
+			<hamparbegin/>
+			<hamchin/>
+			<hamplus/>
+			<hambelowstomach/>
+			<hamparend/>
+				</hamnosys_manual>
+	</hns_sign>
+<!--  --> <hns_sign gloss="mug" > <hamnosys_nonmanual></hamnosys_nonmanual><hamnosys_manual><hamsymmlr/><hamfist/><hamextfingero/><hampalmul/><hamshoulders/><hamparbegin/><hammoveuo/><hamplus/><hammovedi/><hamparend/><hamrepeatreverse/><hamrepeatreverse/></hamnosys_manual></hns_sign>
+</sigml>

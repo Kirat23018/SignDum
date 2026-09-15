@@ -1,0 +1,28 @@
+﻿<sigml> <!--  -->  <!--   -->
+<hns_sign gloss="grandmother" > <hamnosys_nonmanual><hnm_mouthpicture picture="ɡr{nfAD(r)"/>
+	</hamnosys_nonmanual><hamnosys_manual><hamfinger2/><hambetween/><hamfinger2/><hamfingerbendmod/><hamthumbacrossmod/><hamextfingeru/><hampalmul/><hambetween/><hampalml/><hamnose/><hamlrat/><hamseqbegin/><hamtouch/><hamfingermidjoint/><hamseqend/><hamreplace/><hamextfingeru/></hamnosys_manual></hns_sign> <hns_sign gloss="$PROD">
+		<hamnosys_nonmanual>
+			<hnm_body tag="TF"/>
+		</hamnosys_nonmanual>
+		<hamnosys_manual>
+			<hamfist/>
+			<hamextfingerol/>
+			<hamextfingeruo/>
+			<hambetween/>
+			<hamextfingeruo/>
+			<hampalml/>
+			<hambetween/>
+			<hampalmdl/>
+			<hamneck/>
+			<hamclose/>
+			<hammovedo/>
+			<hamsmallmod/>
+			<hamfast/>
+			<hammoveol/>
+			<hamsmallmod/>
+			<hamarcu/>
+			<hamlargemod/>
+			<hamtense/>
+		</hamnosys_manual>
+	</hns_sign>
+</sigml>

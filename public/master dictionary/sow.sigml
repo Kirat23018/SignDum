@@ -1,0 +1,51 @@
+﻿<!--      -->
+<!--  Mouth: L06    -->
+<!--  Limbs:       -->
+<!--   Face:  NF  -->
+
+
+
+
+<sigml>
+ <hns_sign gloss="$PROD">
+  <hamnosys_nonmanual>
+<hnm_mouthpicture picture="sao"/>
+   
+   <hnm_head tag="NF"/>
+  </hamnosys_nonmanual>
+  <hamnosys_manual>
+   <hampinch12/>
+   <hamfingerstraightmod/>
+   <hamindexfinger/>
+   <hammiddlefinger/>
+   <hamextfingerol/>
+   <hampalmd/>
+   <hamparbegin/>
+   <hammovel/>
+   <hamsmallmod/>
+   <hamarcu/>
+   <hamreplace/>
+   <hamextfingerol/>
+   <hampalmd/>
+   <hamparend/>
+   <hamparbegin/>
+   <hammoveo/>
+   <hamsmallmod/>
+   <hamarcu/>
+   <hamhalt/>
+   <hamreplace/>
+   <hamextfingerol/>
+   <hampalmd/>
+   <hamparend/>
+   <hamparbegin/>
+   <hammover/>
+   <hamsmallmod/>
+   <hamarcu/>
+   <hamreplace/>
+   <hamextfingerol/>
+   <hampalmd/>
+   <hamparend/>
+  </hamnosys_manual>
+ </hns_sign>
+
+</sigml>

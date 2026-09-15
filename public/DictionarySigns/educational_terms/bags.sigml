@@ -1,0 +1,33 @@
+<sigml>
+	<hns_sign gloss="bags">
+		<hamnosys_nonmanual>
+		</hamnosys_nonmanual>
+		<hamnosys_manual>
+			<hamsymmlr/>
+			<hamfingerstraightmod/>
+			<hamlargemod/>
+			<hamfist/>
+			<hamthumboutmod/>
+			<hamparbegin/>
+			<hamextfingerul/>
+			<hampalml/>
+			<hamplus/>
+			<hamextfingerur/>
+			<hampalmr/>
+			<hamparend/>
+			<hamshouldertop/>
+			<hamparbegin/>
+			<hamcircler/>
+			<hamsmallmod/>
+			<hamcircler/>
+			<hamsmallmod/>
+			<hamplus/>
+			<hamcircler/>
+			<hamsmallmod/>
+			<hamcircler/>
+			<hamsmallmod/>
+			<hamparend/>
+		</hamnosys_manual>
+	</hns_sign>
+
+</sigml>

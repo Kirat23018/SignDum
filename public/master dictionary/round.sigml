@@ -1,0 +1,25 @@
+﻿<!--  -->
+<sigml>
+	<hns_sign gloss="$PROD">
+		<hamnosys_nonmanual>
+			<hnm_mouthpicture picture="sarkl"/>
+			<hnm_body tag="ST"/>
+			<hnm_eyegaze tag="AD"/>
+		</hamnosys_nonmanual>
+		<hamnosys_manual>
+			<hamfinger2/>
+			<hamthumbacrossmod/>
+			<hamextfingeruo/>
+			<hampalmdl/>
+			<hambetween/>
+			<hampalmd/>
+			<hamneck/>
+			<hambetween/>
+			<hamshoulders/>
+			<hamcirclei/>
+			<hamlargemod/>
+			<hamslow/>
+		</hamnosys_manual>
+	</hns_sign>
+
+</sigml>

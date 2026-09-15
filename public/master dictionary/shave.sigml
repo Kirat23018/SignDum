@@ -1,0 +1,29 @@
+﻿<!--    -->
+
+
+<sigml>
+ <hns_sign gloss="$PROD">
+  <hamnosys_nonmanual>
+   <hnm_mouthpicture picture="SeIv"/>
+   <hnm_head tag="SR"/>
+   <hnm_head tag="TR"/>
+   <hnm_eyebrows tag="RB"/>
+  </hamnosys_nonmanual>
+		<hamnosys_manual>
+			<hamfinger2/>
+			<hamthumbacrossmod/>
+			<hamfingerbendmod/>
+			<hamextfingeru/>
+			<hambetween/>
+			<hamextfingerul/>
+			<hampalml/>
+			<hamlrat/>
+			<hamearlobe/>
+			<hammovedr/>
+			<hamlrat/>
+			<hamunderchin/>
+			<hamtouch/>
+		</hamnosys_manual>
+	</hns_sign>
+
+</sigml>

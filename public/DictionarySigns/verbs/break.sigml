@@ -1,0 +1,40 @@
+﻿<!--      -->
+<!--  Mouth: L08   -->
+<!--  Limbs:   -->
+<!--   Face: TF\NF -->
+
+
+
+<sigml>
+ <hns_sign gloss="$PROD">
+  <hamnosys_nonmanual>
+   <hnm_mouthpicture picture="brek"/>
+   <hnm_body tag="TF"/>
+   <hnm_head tag="NF"/>
+   <hnm_eyebrows tag="FU"/>
+  </hamnosys_nonmanual>
+  <hamnosys_manual>
+   <hamsymmlr/>
+   <hamfist/>
+   <hamthumbacrossmod/>
+   <hamextfingero/>
+   <hampalmd/>
+   <hamtouch/>
+   <hamshoulders/>
+   <hamarmextended/>
+   <hamreplace/>
+   <hamfist/>
+   <hamthumbacrossmod/>
+   <hamparbegin/>
+   <hamextfingero/>
+   <hampalml/>
+   <hamplus/>
+   <hamextfingero/>
+   <hampalmr/>
+   <hamparend/>
+   <hamclose/>
+   <hamshoulders/>
+  </hamnosys_manual>
+ </hns_sign>
+
+</sigml>

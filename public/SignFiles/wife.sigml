@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<sigml>
+  <hns_sign gloss="wife">
+    <hamnosys_nonmanual>
+    </hamnosys_nonmanual>
+    <hamnosys_manual>
+      <hamfist/>
+      <hamthumboutmod/>
+      <hamextfingeru/>
+      <hampalml/>
+      <hamnose/>
+      <hamtouch/>
+      <hamnomotion/>
+      <hamplus/>
+      <hamflathand/>
+      <hamextfingero/>
+      <hampalmu/>
+      <hamchest/>
+      <hamclose/>
+      <hamnomotion/>
+    </hamnosys_manual>
+  </hns_sign>
+</sigml>

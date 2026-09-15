@@ -1,0 +1,29 @@
+<sigml>
+	<hns_sign gloss="powder">
+		<hamnosys_nonmanual>
+		</hamnosys_nonmanual>
+		<hamnosys_manual>
+			<hamceeall/>
+			<hamextfingerul/>
+			<hampalmd/>
+			<hamshouldertop/>
+			<hammovei/><hamrepeatfromstart/>
+			<hamreplace/>
+			<hamceeall/>
+			<hamextfingerul/>
+			<hampalmd/>
+			<hamshouldertop/>
+			<hambetween/>
+			<hamlrbeside/>
+			<hamshouldertop/>
+			<hammovei/><hamrepeatfromstart/>
+			<hamreplace/>
+			<hamceeall/>
+			<hamextfingerul/>
+			<hampalmd/>
+			
+		
+		</hamnosys_manual>
+	</hns_sign>
+
+</sigml>

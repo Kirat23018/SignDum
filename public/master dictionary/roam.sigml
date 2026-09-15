@@ -1,0 +1,29 @@
+﻿<!--      -->
+<!--  Mouth: r@_Um   -->
+<!--  Limbs:       -->
+<!--   Face:  HD   -->
+
+
+
+<sigml>
+	<hns_sign gloss="$PROD">
+		<hamnosys_nonmanual>
+			<hnm_mouthpicture picture="r@_Um"/>
+			<hnm_eyegaze tag="HD"/>
+		</hamnosys_nonmanual>
+		<hamnosys_manual>
+			<hamfinger2/>
+			<hamthumbacrossmod/>
+			<hamextfingeru/>
+			<hampalmdl/>
+			<hamhead/>
+			<hamlrbeside/>
+			<hambetween/>
+			<hamforehead/>
+			<hamlrbeside/>
+			<hamcircleu/>
+			<hamclockfull/>
+		</hamnosys_manual>
+	</hns_sign>
+
+</sigml>

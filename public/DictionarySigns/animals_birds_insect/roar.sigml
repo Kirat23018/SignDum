@@ -1,0 +1,66 @@
+﻿<!--  -->
+<sigml>
+	<hns_sign gloss="roar">
+		<hamnosys_nonmanual>
+			<hnm_mouthpicture picture="roar"/>
+		</hamnosys_nonmanual>
+		<hamnosys_manual>
+			<hamsymmlr/>
+			<hamfinger2/>
+			<hamthumbacrossmod/>
+			<hamextfingerul/>
+			<hampalmr/>
+			<hambetween/>
+			<hampalmd/>
+			<hamlips/>
+			<hamlrat/>
+			<hambetween/>
+			<hamchin/>
+			<hamseqbegin/>
+			<hamtouch/>
+			<hamfingertip/>
+			<hamseqend/>
+			<hamreplace/>
+			<hampalmr/>
+			<hambetween/>
+			<hampalmd/>
+			<hamparbegin/>
+			<hamreplace/>
+			<hamfinger2/>
+			<hamthumbacrossmod/>
+			<hamextfingerul/>
+			<hampalmr/>
+			<hamparbegin/>
+			<hammoveur/>
+			<hamarcu/>
+			<hamsmallmod/>
+			<hamfast/>
+			<hamplus/>
+			<hammoveul/>
+			<hamarcu/>
+			<hamsmallmod/>
+			<hamfast/>
+			<hamparend/>
+			<hamparend/>
+			<hamreplace/>
+			<hampalmr/>
+			<hamparbegin/>
+			<hamparbegin/>
+			<hammoveur/>
+			<hamarcu/>
+			<hamsmallmod/>
+			<hamfast/>
+			<hamplus/>
+			<hammoveul/>
+			<hamarcu/>
+			<hamsmallmod/>
+			<hamfast/>
+			<hamparend/>
+			<hamreplace/>
+			<hamextfingeru/>
+			<hampalmd/>
+			<hamparend/>
+		</hamnosys_manual>
+	</hns_sign>
+
+</sigml>

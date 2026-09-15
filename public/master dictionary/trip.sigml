@@ -1,0 +1,61 @@
+<!---->
+<sigml>
+	<hns_sign gloss="$PROD">
+		<hamnosys_nonmanual>
+			<hnm_mouthpicture picture="ti:"/>
+		</hamnosys_nonmanual>
+		<hamnosys_manual>
+			<hamsymmlr/>
+			<hamfinger2/>
+			<hamthumbacrossmod/>
+			<hamparbegin/>
+			<hamextfingeru/>
+			<hamplus/>
+			<hamextfingerr/>
+			<hamparend/>
+			<hamparbegin/>
+			<hampalml/>
+			<hamplus/>
+			<hampalmd/>
+			<hamparend/>
+			<hamparbegin/>
+			<hamfingermidjoint/>
+			<hamplus/>
+			<hamfingertip/>
+			<hamparend/>
+			<hamtouch/>
+			<hamhead/><hambetween/><hamshouldertop/>
+		</hamnosys_manual>
+	</hns_sign><!--  -->
+
+
+<!--  Mouth: T16   -->
+<!--  Limbs:   SR   -->
+<!--   Face:  RO FU SB  -->
+	<hns_sign gloss="$PROD">
+		<hamnosys_nonmanual>
+			<hnm_mouthpicture picture="@&quot;l@Un"/>
+			
+			<hnm_head tag="SR"/>
+			<hnm_eyegaze tag="RO"/>
+			<hnm_eyebrows tag="FU"/>
+			<hnm_eyelids tag="SB"/>
+		</hamnosys_nonmanual>
+		<hamnosys_manual>
+			<hamfinger2/>
+			<hamthumbacrossmod/>
+			<hamextfingeru/>
+			<hampalmu/>
+			<hamhead/>
+			<hambetween/>
+			<hamshoulders/>
+			<hamlrat/>
+			<hamcircleu/>
+			<hambetween/>
+			<hamcircleuo/>
+			<hamclockfull/>
+		</hamnosys_manual>
+	</hns_sign>
+
+
+</sigml>

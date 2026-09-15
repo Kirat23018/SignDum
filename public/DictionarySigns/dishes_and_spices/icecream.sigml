@@ -1,0 +1,28 @@
+﻿<!--    -->
+<!--  mouth: a_Is  -->
+
+<sigml>
+	<hns_sign gloss="$PROD">
+		<hamnosys_nonmanual>
+			<hnm_mouthpicture picture="Iaskrem"/>
+		</hamnosys_nonmanual>
+		<hamnosys_manual>
+			<hamfist/>
+			<hamthumbacrossmod/>
+			<hamextfingeruo/>
+			<hampalml/>
+			<hamchin/>
+			<hamlrat/>
+			<hamclose/>
+			<hamparbegin/>
+			<hammovedi/>
+			<hamsmallmod/>
+			<hammoved/>
+			<hamsmallmod/>
+			<hamparend/>
+			<hamrepeatfromstart/>
+			<hamdecreasing/>
+		</hamnosys_manual>
+	</hns_sign>
+
+</sigml>

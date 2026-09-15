@@ -1,0 +1,23 @@
+﻿<!--  -->
+
+
+
+<sigml>
+	<hns_sign gloss="$PROD:">
+		<hamnosys_nonmanual>
+			<hnm_mouthpicture picture="breI"/>
+			<hnm_head tag="NF"/><hnm_head tag="SL"/>
+		</hamnosys_nonmanual>
+		<hamnosys_manual>
+			<hamceeopen/>
+			<hammiddlefinger/>
+			<hamextfingeril/>
+			<hampalmd/>
+			<hambetween/>
+			<hampalml/>
+			<hamheadtop/>
+			<hamtouch/>
+		</hamnosys_manual>
+	</hns_sign>
+
+</sigml>

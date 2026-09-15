@@ -1,0 +1,4 @@
+﻿<sigml>   <!--  --><hns_sign gloss="rest" > <hamnosys_nonmanual><hnm_mouthpicture picture="rest"/>
+			<hnm_body tag="TL"/>
+			<hnm_eyebrows tag="FU"/>
+		</hamnosys_nonmanual><hamnosys_manual><hamsymmlr/><hamfingerstraightmod/><hamlargemod/><hamfist/><hamthumboutmod/><hamextfingeru/><hampalmdl/><hamshouldertop/><hamseqbegin/><hamtouch/><hamfingertip/><hamthumb/><hamseqend/></hamnosys_manual></hns_sign></sigml>

@@ -1,0 +1,35 @@
+<sigml>
+	<!---->
+	<hns_sign gloss="stage"><hamnosys_nonmanual><hnm_body tag="TF"/><hnm_shoulder tag="HR"/><hnm_head tag="NF"/><hnm_mouthpicture picture=""/><hnm_eyegaze tag="DN"/><hnm_eyebrows tag=""/><hnm_nose tag=""/><hnm_eyelids tag="SB"/></hamnosys_nonmanual>
+		<hamnosys_manual>
+			<hamsymmpar/>
+			<hamparbegin/>
+			<hamflathand/>
+			<hamplus/>
+			<hamflathand/>
+			<hamparend/>
+			<hamextfingero/>
+			<hampalmd/>
+			<hamshoulders/>
+			<hamclose/>
+			<hamparbegin/>
+			<hammover/>
+			<hammover/>
+			<hamplus/>
+			<hammovel/>
+			<hammovel/>
+			<hamparend/>
+			<hamparbegin/>
+			<hamreplace/>
+			<hamextfingero/>
+			<hampalml/>
+			<hamplus/>
+			<hamreplace/>
+			<hamextfingero/>
+			<hampalmr/>
+			<hamparend/>
+			<hammoved/>
+		</hamnosys_manual>
+	</hns_sign>
+
+</sigml>

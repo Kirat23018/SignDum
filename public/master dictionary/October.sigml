@@ -1,0 +1,16 @@
+<sigml>
+	<hns_sign gloss="October">
+		<hamnosys_nonmanual><hnm_mouthgesture tag="L06"/>
+		</hamnosys_nonmanual>
+		<hamnosys_manual>
+			<hamceeall/>
+			<hamthumbacrossmod/>
+			<hamextfingeru/>
+			<hampalml/>
+			<hamhead/><hambetween/><hamshouldertop/><hamlrat/>
+			<hamcirclei/>
+			<hamrepeatfromstartseveral/>
+		</hamnosys_manual>
+	</hns_sign>
+
+</sigml>

@@ -1,0 +1,38 @@
+﻿<!--  -->
+<sigml>
+	<hns_sign gloss="$PROD">
+		<hamnosys_nonmanual>
+			<hnm_mouthpicture picture="SaI"/>
+			<hnm_head tag="SL"/>
+			<hnm_eyegaze tag="LD"/>
+		</hamnosys_nonmanual>
+		<hamnosys_manual>
+			<hamflathand/>
+			<hamextfingerl/>
+			<hampalmdl/>
+			<hambetween/>
+			<hampalmd/>
+			<hamlrat/>
+			<hamchest/>
+			<hambetween/>
+			<hamlrat/>
+			<hamshouldertop/>
+			<hamseqbegin/>
+			<hamreplace/>
+			<hamfinger2345/>
+			<hamthumboutmod/>
+			<hamextfingerl/>
+			<hampalmdl/>
+			<hambetween/>
+			<hampalmd/>
+			<hamtense/>
+			<hamchin/>
+			<hamseqbegin/>
+			<hamtouch/>
+			<hamthumb/>
+			<hamseqend/>
+			<hamseqend/>
+		</hamnosys_manual>
+	</hns_sign>
+
+</sigml>

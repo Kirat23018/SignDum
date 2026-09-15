@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<sigml>
+  <!-- Pehla Hisa: Step -->
+  <hns_sign gloss="step">
+    <hamnosys_nonmanual></hamnosys_nonmanual>
+    <hamnosys_manual>
+      <hamfinger23spread/><hamextfingeru/><hampalmd/><hamchest/><hammoveo/>
+    </hamnosys_manual>
+  </hns_sign>
+
+  <!-- Dusra Hisa: Sister -->
+  <hns_sign gloss="sister">
+    <hamnosys_nonmanual></hamnosys_nonmanual>
+    <hamnosys_manual>
+      <hamfist/><hamthumboutmod/><hamextfingeru/><hampalml/><hamnose/><hamtouch/><hammoveo/><hammovedo/>
+    </hamnosys_manual>
+  </hns_sign>
+</sigml>

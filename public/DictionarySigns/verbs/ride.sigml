@@ -1,0 +1,70 @@
+﻿<!--     -->
+
+
+
+
+<sigml>
+	<hns_sign gloss="$PROD:">
+		<hamnosys_nonmanual>
+			<hnm_mouthpicture picture="ra_Id"/>
+			<hnm_body tag="TL"/>
+			<hnm_head tag="NF"/><hnm_head tag="SR"/>
+			<hnm_shoulder tag="UR"/>
+			<hnm_eyegaze tag="HI"/>
+			<hnm_eyebrows tag="FU"/>
+		</hamnosys_nonmanual>
+		<hamnosys_manual>
+			<hamsymmpar/>
+			<hamparbegin/>
+			<hamfinger23spread/>
+			<hamthumbacrossmod/>
+			<hambetween/>
+			<hamfinger23spread/>
+			<hamthumbacrossmod/>
+			<hammiddlefinger/>
+			<hamfingerstraightmod/>
+			<hamextfingero/>
+			<hambetween/>
+			<hamextfingerd/>
+			<hampalmd/>
+			<hamplus/>
+			<hamfinger2/>
+			<hamthumbacrossmod/>
+			<hamextfingeror/>
+			<hambetween/>
+			<hamextfingerr/>
+			<hampalmr/>
+			<hambetween/>
+			<hampalmdr/>
+			<hamparend/>
+			<hamparbegin/>
+			<hamfingerbase/>
+			<hamplus/>
+			<hamfingermidjoint/>
+			<hamparend/>
+			<hamtouch/>
+			<hamshoulders/>
+			<hambetween/>
+			<hamchest/>
+			<hammoveor/>
+			<hamsmallmod/>
+			<hamarcu/>
+			<hamsmallmod/>
+			<hammover/>
+			<hamsmallmod/>
+			<hamarcu/>
+			<hamsmallmod/>
+			<hammoveor/>
+			<hamsmallmod/>
+			<hamarcu/>
+			<hamsmallmod/>
+			<hammover/>
+			<hamsmallmod/>
+			<hamarcu/>
+			<hamsmallmod/>
+		</hamnosys_manual>
+	</hns_sign>
+
+
+
+</sigml>

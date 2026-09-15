@@ -1,0 +1,39 @@
+﻿<!--    -->
+
+
+<sigml>
+	<hns_sign gloss="leafy_vegetables">
+		<hamnosys_nonmanual>
+		</hamnosys_nonmanual>
+		<hamnosys_manual>
+			<hamflathand/>
+			<hamthumbacrossmod/>
+			<hamfingerstraightmod/>
+			<hambetween/>
+			<hamflathand/>
+			<hamthumbacrossmod/>
+			<hamextfingeru/>
+			<hambetween/>
+			<hamextfingero/>
+			<hampalmu/>
+			<hamshouldertop/>
+			<hamnodding/>
+			<hamplus/>
+			<hamsymmlr/>
+			<hamfinger23spread/>
+			<hamthumboutmod/>
+			<hamfingerstraightmod/>
+			<hambetween/>
+			<hamfinger23spread/>
+			<hamthumboutmod/>
+			<hamextfingero/>
+			<hambetween/>
+			<hamextfingerl/>
+			<hampalmd/>
+			<hambetween/>
+			<hampalmdl/>
+			<hamshoulders/>
+			<hamtwisting/>
+			<hamrepeatfromstart/>
+		</hamnosys_manual>
+	</hns_sign>

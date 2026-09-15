@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<sigml>
+  <hns_sign gloss="employee">
+    <hamnosys_nonmanual></hamnosys_nonmanual>
+    <hamnosys_manual>
+      <!-- Both hands flat, moving out and in slightly at chest level to indicate work -->
+      <hamsymmlr/>
+      <hamflathand/>
+      <hamextfingero/>
+      <hampalmu/>
+      <hamchest/>
+      <hammoveo/>
+      <hammovei/>
+    </hamnosys_manual>
+  </hns_sign>
+</sigml>

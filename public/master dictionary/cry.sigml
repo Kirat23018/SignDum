@@ -1,0 +1,68 @@
+﻿<!--     -->
+<!--  Mouth: L29   -->
+<!--  Limbs:   -->
+<!--   Face: FU,SB,WR -->
+
+<sigml>
+ <hns_sign gloss="$PROD">
+  <hamnosys_nonmanual>
+   <hnm_mouthgesture tag="L29"/>
+   <hnm_eyebrows tag="FU"/>
+   <hnm_eyelids tag="SB"/>
+   <hnm_nose tag="WR"/>
+  </hamnosys_nonmanual>
+  <hamnosys_manual>
+   <hamsymmlr/>
+   <hamfinger2/>
+   <hamthumbacrossmod/>
+   <hamextfingeru/>
+   <hambetween/>
+   <hamextfingerul/>
+   <hampalmdl/>
+   <hamparbegin/>
+   <hameyes/>
+   <hamlrat/>
+   <hamplus/>
+   <hamlrat/>
+   <hameyes/>
+   <hamparend/>
+   <hamparbegin/>
+   <hammoved/>
+   <hamsmallmod/>
+   <hamplus/>
+   <hamnomotion/>
+   <hamparend/>
+   <hamparbegin/>
+   <hamnomotion/>
+   <hamplus/>
+   <hammoved/>
+   <hamsmallmod/>
+   <hamparend/>
+   <hamparbegin/>
+   <hameyes/>
+   <hamlrat/>
+   <hamplus/>
+   <hamlrat/>
+   <hamlips/>
+   <hamparend/>
+   <hamparbegin/>
+   <hammoved/>
+   <hamsmallmod/>
+   <hamplus/>
+   <hamnomotion/>
+   <hamparend/>
+   <hamparbegin/>
+   <hamlips/>
+   <hamlrat/>
+   <hamplus/>
+   <hamlrat/>
+   <hameyes/>
+   <hamparend/>
+   <hamparbegin/>
+   <hamnomotion/>
+   <hamplus/>
+   <hammoved/>
+   <hamsmallmod/>
+   <hamparend/>
+  </hamnosys_manual>
+ </hns_sign></sigml>

@@ -1,0 +1,46 @@
+﻿<!--  this sign should be run only in URL player for proper working  -->
+<!--    -->
+<!--  head SR  6-7 times  -->
+
+<sigml>
+	<hns_sign gloss="$PROD">
+		<hamnosys_nonmanual>
+			<hnm_mouthpicture picture="marati"/>
+			<hnm_head tag="SR"/>
+			<hnm_head tag="SR"/>
+			<hnm_head tag="SR"/>
+			<hnm_head tag="SR"/>
+			<hnm_head tag="SR"/>
+			<hnm_head tag="SR"/>
+			<hnm_head tag="SR"/>
+		</hamnosys_nonmanual>
+		<hamnosys_manual>
+			<hamfinger2/>
+			<hamthumbacrossmod/>
+			<hamfingerstraightmod/>
+			<hambetween/>
+			<hamfinger2/>
+			<hamthumbacrossmod/>
+			<hamextfingerul/>
+			<hampalmd/>
+			<hamheadtop/>
+			<hamlrat/>
+			<hambetween/>
+			<hamhead/>
+			<hamlrat/>
+			<hamreplace/>
+			<hamextfingerul/>
+			<hampalmd/>
+			<hamparbegin/>
+			<hammover/>
+			<hamarcd/>
+			<hamsmallmod/>
+			<hamfast/>
+			<hamreplace/>
+			<hamextfingeru/>
+			<hampalmd/>
+			<hamparend/>
+		</hamnosys_manual>
+	</hns_sign>
+
+</sigml>

@@ -1,0 +1,30 @@
+﻿<!--      -->
+<!--  Mouth: T17  -->
+<!--  Limbs:   ND-->
+<!--   Face:   -->
+
+
+<sigml>
+ <hns_sign gloss="$PROD">
+  <hamnosys_nonmanual>
+   <hnm_mouthpicture picture="bI&quot;ɡIn"/>
+   <hnm_head tag="ND"/>
+  </hamnosys_nonmanual>
+   <hamnosys_manual>
+   <hamsymmlr/>
+   <hampinchall/>
+   <hamextfingero/>
+   <hampalmu/>
+   <hamreplace/>
+   <hamfinger2345/>
+   <hamthumboutmod/>
+   <hamfingerstraightmod/>
+   <hambetween/>
+   <hamfinger2345/>
+   <hamthumbopenmod/>
+   <hamextfingero/>
+   <hampalmu/>
+   <hamshouldertop/>
+  </hamnosys_manual>
+ </hns_sign>
+</sigml>

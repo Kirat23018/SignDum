@@ -1,0 +1,17 @@
+<sigml>
+	<hns_sign gloss="$PROD">
+		<hamnosys_nonmanual>
+		</hamnosys_nonmanual>
+		<hamnosys_manual>
+			<hamfist/>
+			<hamextfingerl/>
+			<hambetween/>
+			<hamextfingerul/>
+			<hampalml/>
+			<hamshoulders/>
+			<hamclose/>
+			<hammovei/><hamrepeatfromstart/>
+		</hamnosys_manual>
+	</hns_sign><!---->	<hns_sign gloss="personal">		<hamnosys_nonmanual>			<hnm_eyegaze tag="DN"/>		</hamnosys_nonmanual>		<hamnosys_manual>			<hamfinger2/>			<hamthumboutmod/>			<hamextfingerul/>			<hampalml/>			<hamhead/>			<hammoved/>			<hamlargemod/>			<hammoved/>			<hamlargemod/>			<hammoved/>			<hamlargemod/>			<hamreplace/>			<hamflathand/>			<hamextfingerdl/>			<hampalml/>		</hamnosys_manual>	</hns_sign>
+
+</sigml>

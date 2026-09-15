@@ -1,0 +1,36 @@
+﻿<!--     -->
+<!--  Mouth: ask   -->
+<!--  Limbs:  TF -->
+<!--   Face:  -->
+
+
+
+
+<sigml>
+ <hns_sign gloss="$PROD">
+  <hamnosys_nonmanual>
+			<hnm_mouthpicture picture="ask"/>
+   <hnm_body tag="TF"/>
+  </hamnosys_nonmanual>
+  <hamnosys_manual>
+   <hampinch12open/>
+   <hamfingerstraightmod/>
+   <hambetween/>
+   <hampinch12open/>
+   <hamextfingeru/>
+   <hampalmul/>
+   <hamchin/>
+   <hamparbegin/>
+   <hammoveo/>
+   <hamlargemod/>
+   <hamarcu/>
+   <hamsmallmod/>
+   <hamtense/>
+   <hamreplace/>
+   <hamextfingero/>
+   <hampalml/>
+   <hamparend/>
+  </hamnosys_manual>
+ </hns_sign>
+
+</sigml>

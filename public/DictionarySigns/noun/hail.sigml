@@ -1,0 +1,29 @@
+<sigml>
+	<hns_sign gloss="hail">
+		<hamnosys_nonmanual>
+			<hnm_mouthpicture picture="eee"/>
+			<hnm_eyebrows tag="RR"/>
+			<hnm_eyelids tag="SB"/>
+		</hamnosys_nonmanual>
+		<hamnosys_manual>
+			<hamsymmlr/>
+			<hamfist/>
+			<hamextfingeru/>
+			<hampalml/>
+			<hamshouldertop/>
+			<hamnodding/>
+		</hamnosys_manual>
+	</hns_sign>
+
+	<hns_sign gloss="">
+		<hamnosys_nonmanual>
+			<hnm_eyebrows tag="RR"/>
+		</hamnosys_nonmanual>
+		<hamnosys_manual>
+			<hamcee12/>
+			<hamextfingerur/>
+			<hampalmu/>
+			<hamshouldertop/>
+		</hamnosys_manual>
+	</hns_sign>
+  <!--  -->   <hns_sign gloss="mug" > <hamnosys_nonmanual><hnm_eyelids tag="SB"></hnm_eyelids></hamnosys_nonmanual><hamnosys_manual><hamsymmlr/><hamfingerstraightmod/><hamlargemod/><hamfinger23/><hamfingerstraightmod/><hamthumbopenmod/><hambetween/><hamfinger23spread/><hamfingerbendmod/><hamthumbopenmod/><hamextfingeru/><hampalml/><hamshouldertop/><hamlrat/><hambetween/><hamheadtop/><hamlrat/><hamparbegin/><hammoveu/><hamlargemod/><hamplus/><hammoved/><hamlargemod/><hamparend/><hamparbegin/><hammoved/><hamlargemod/><hammoved/><hamplus/><hammoveu/><hamlargemod/><hammoveu/><hamparend/><hamrepeatfromstartseveral/></hamnosys_manual></hns_sign></sigml>

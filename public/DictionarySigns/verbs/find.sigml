@@ -1,0 +1,4 @@
+﻿<sigml>   <hns_sign gloss="mug" > <hamnosys_nonmanual><hnm_mouthpicture picture="faInd"/>
+			<hnm_head tag="SR"/>
+</hamnosys_nonmanual><hamnosys_manual><hamfinger2/><hamthumbacrossmod/><hampinky/><hamextfingeru/><hampalmul/><hameyes/><hamlrat/><hambetween/><hamcheek/><hamlrat/><hamreplace/><hamextfingeru/></hamnosys_manual></hns_sign><!---->
+<hns_sign gloss="find"><hamnosys_nonmanual><hnm_body tag=""/><hnm_shoulder tag="UL"/><hnm_head tag="TR"/><hnm_mouthpicture picture="fa_Ind"/><hnm_eyegaze tag="RI"/><hnm_eyebrows tag=""/><hnm_nose tag=""/><hnm_eyelids tag=""/></hamnosys_nonmanual><hamnosys_manual><hamflathand/><hamindexfinger/><hamdoublehooked/><hammiddlefinger/><hamdoublehooked/><hamringfinger/><hamdoublehooked/><hamextfingeru/><hampalmu/><hamhead/><hamlrbeside/><hamcircleu/><hamrepeatfromstart/></hamnosys_manual></hns_sign></sigml>

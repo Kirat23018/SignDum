@@ -1,0 +1,5 @@
+﻿<sigml> <!--  -->  <hns_sign gloss="bad" > <hamnosys_nonmanual><hnm_mouthpicture picture="/b{d/"/>
+			<hnm_eyegaze tag="HD"/><hnm_eyebrows tag="FU"/><hnm_eyebrows tag="FU"/><hnm_eyelids tag="SB"/>
+	
+	
+	</hamnosys_nonmanual><hamnosys_manual><hamfist/><hamthumbacrossmod/><hamextfingeru/><hampalmd/><hambetween/><hampalml/><hamunderchin/><hambetween/><hamshouldertop/><hamlrat/><hamreplace/><hampalmd/><hambetween/><hampalml/><hamparbegin/><hammoveo/><hamfast/><hamreplace/><hamfinger2345/><hamfast/><hamparend/><hamchest/></hamnosys_manual></hns_sign></sigml>

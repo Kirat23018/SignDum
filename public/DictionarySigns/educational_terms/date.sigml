@@ -1,0 +1,25 @@
+<!---->
+<sigml>
+	<hns_sign gloss="date">
+		<hamnosys_nonmanual>
+			<hnm_mouthpicture picture="de_It"/>
+			<hnm_head tag="SL"/>
+		</hamnosys_nonmanual>
+		<hamnosys_manual>
+			<hamflathand/>
+			<hamextfingerul/>
+			<hampalmd/>
+			<hamhead/>
+			<hamlrat/>
+			<hambetween/>
+			<hamchest/>
+			<hamlrbeside/>
+			<hammovei/>
+			<hamlargemod/>
+			<hamreplace/>
+			<hamextfingerul/>
+			<hampalml/>
+		</hamnosys_manual>
+	</hns_sign>
+
+</sigml>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<sigml>
+  <hns_sign gloss="grandmother">
+    <hamnosys_nonmanual></hamnosys_nonmanual>
+    <hamnosys_manual>
+      <hamfist/><hamthumboutmod/><hamextfingeru/><hampalml/><hamnose/><hamtouch/><hammoveo/><hammovedo/>
+    </hamnosys_manual>
+  </hns_sign>
+</sigml>

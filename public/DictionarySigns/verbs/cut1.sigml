@@ -1,0 +1,33 @@
+﻿<!--     -->
+<!--  Mouth: D05   -->
+<!--  Limbs:   -->
+<!--   Face:  -->
+
+<sigml>
+ <hns_sign gloss="$PROD">
+  <hamnosys_nonmanual>
+   <hnm_mouthgesture tag="D05"/>
+   
+  </hamnosys_nonmanual>
+  <hamnosys_manual>
+   <hamfinger23spread/>
+   <hamthumbacrossmod/>
+   <hamextfingerol/>
+   <hampalml/>
+   <hamshoulders/>
+   <hamlrat/>
+   <hamparbegin/>
+   <hamreplace/>
+   <hamfinger23/>
+   <hamthumbacrossmod/>
+   <hammovel/>
+   <hamsmallmod/>
+   <hamreplace/>
+   <hamfinger23spread/>
+   <hamthumbacrossmod/>
+   <hamparend/>
+   <hamrepeatcontinueseveral/>
+  </hamnosys_manual>
+ </hns_sign>
+
+</sigml>

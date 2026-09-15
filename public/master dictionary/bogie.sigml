@@ -1,0 +1,25 @@
+﻿<!--      -->
+<sigml>
+	<hns_sign gloss="$PROD">
+		<hamnosys_nonmanual>
+			<hnm_mouthpicture picture="&quot;boɡi"/>
+		</hamnosys_nonmanual>
+		<hamnosys_manual>
+			<hamsymmpar/>
+			<hamflathand/>
+			<hamextfingero/>
+			<hampalml/>
+			<hamcirclel/>
+			<hamrepeatfromstart/>
+			<hammovel/>
+			<hamlargemod/>
+			<hamarcu/>
+			<hammover/>
+			<hamarcu/>
+			<hamslow/>
+			<hamchest/>
+			<hamlrat/>
+		</hamnosys_manual>
+	</hns_sign>
+
+</sigml>

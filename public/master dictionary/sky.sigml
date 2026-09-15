@@ -1,0 +1,33 @@
+﻿<!---->
+<sigml>
+	<hns_sign gloss="$PROD">
+		<hamnosys_nonmanual>
+			<hnm_mouthpicture picture="skaI"/>
+			<hnm_head tag="NB"/><hnm_head tag="NB"/>
+			<hnm_eyebrows tag="RB"/>
+		</hamnosys_nonmanual>
+		<hamnosys_manual>
+			<hamfinger2345/>
+			<hamthumboutmod/>
+			<hamextfingeru/>
+			<hampalmd/>
+			<hamlrbeside/>
+			<hamneck/>
+			<hambetween/>
+			<hamunderchin/>
+			<hamparbegin/>
+			<hamreplace/>
+			<hamextfingeru/>
+			<hampalmd/>
+			<hammoveur/>
+			<hamlargemod/>
+			<hamarcu/>
+			<hamheadtop/>
+			<hambetween/>
+			<hamheadtop/>
+			<hamlrbeside/>
+			<hamparend/>
+		</hamnosys_manual>
+	</hns_sign>
+
+</sigml>

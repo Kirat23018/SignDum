@@ -1,0 +1,3 @@
+<sigml><hns_sign gloss="hug">
+<!---->
+<hamnosys_nonmanual><hnm_body tag=""/><hnm_shoulder tag=""/><hnm_head tag=""/><hnm_mouthpicture picture="hju"/><hnm_eyegaze tag=""/><hnm_eyebrows tag=""/><hnm_nose tag=""/><hnm_eyelids tag=""/></hamnosys_nonmanual><hamnosys_manual><hamsymmpar/><hamflathand/><hamparbegin/><hamextfingero/><hampalml/><hamplus/><hamextfingero/><hampalmr/><hamparend/><hamparbegin/><hamchest/><hamlrbeside/><hamplus/><hamlrbeside/><hamchest/><hamparend/><hamreplace/><hamparbegin/><hamextfingerl/><hampalml/><hamplus/><hamextfingerr/><hampalmr/><hamparend/><hamparbegin/><hamlrat/><hamshouldertop/><hamplus/><hamchest/><hamlrat/><hamparend/></hamnosys_manual></hns_sign></sigml>

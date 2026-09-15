@@ -1,0 +1,36 @@
+﻿<!--      -->
+<!--  Mouth: VvO_Id   -->
+<!--  Limbs: TL   -->
+<!--   Face:  DN,FU,SB,WR  -->
+
+
+<sigml>
+ <hns_sign gloss="$PROD">
+  <hamnosys_nonmanual>
+   <hnm_mouthpicture picture="VvO_Id"/>
+   <hnm_body tag="TL"/>
+   <hnm_eyegaze tag="DN"/>
+   <hnm_eyebrows tag="FU"/>
+   <hnm_eyelids tag="SB"/>
+   <hnm_nose tag="WR"/>
+  </hamnosys_nonmanual>
+  <hamnosys_manual>
+   <hamfinger2345/>
+   <hamthumboutmod/>
+   <hamextfingerul/>
+   <hampalmur/>
+   <hambetween/>
+   <hampalmdr/>
+   <hamshoulders/>
+   <hamparbegin/>
+   <hammovedr/>
+   <hamlargemod/>
+   <hamfast/>
+   <hamreplace/>
+   <hamextfingero/>
+   <hampalmdr/>
+   <hamparend/>
+  </hamnosys_manual>
+ </hns_sign>
+
+</sigml>

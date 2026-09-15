@@ -1,0 +1,23 @@
+<!---->
+<sigml>
+	<hns_sign gloss="blue">
+		<hamnosys_nonmanual>
+			<hnm_mouthpicture picture="blu"/>
+		</hamnosys_nonmanual>
+		<hamnosys_manual>
+			<hamfinger2/>
+			<hamthumbacrossmod/>
+			<hamfingerbendmod/>
+			<hamextfingeru/>
+			<hampalml/>
+			<hameyebrows/>
+			<hambetween/>
+			<hamhead/>
+			<hammovei/>
+			<hamsmallmod/>
+			<hammoved/>
+			<hamslow/><hamrepeatfromstartseveral/>
+		</hamnosys_manual>
+	</hns_sign>
+
+</sigml>

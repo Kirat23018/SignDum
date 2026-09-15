@@ -1,0 +1,31 @@
+﻿<!--  this sign should be run only in URL player for proper working  -->
+<!--    -->
+<!--  head SR  6-7 times  -->
+
+<sigml>
+	<hns_sign gloss="$PROD">
+		<hamnosys_nonmanual>
+			<hnm_mouthpicture picture="hende"/>
+				</hamnosys_nonmanual>
+		<hamnosys_manual>
+			<hamfist/>
+			<hamthumboutmod/>
+			<hamextfingerul/>
+			<hambetween/>
+			<hamextfingerl/>
+			<hampalmr/>
+			<hamheadtop/>
+			<hamlrat/>
+			<hamclose/>
+			<hamreplace/>
+			<hampalmr/>
+			<hamreplace/>
+			<hamextfingerur/>
+			<hambetween/>
+			<hamextfingeru/>
+			<hampalml/>
+			<hamfast/>
+		</hamnosys_manual>
+	</hns_sign>
+
+</sigml>
