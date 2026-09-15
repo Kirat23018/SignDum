@@ -1,184 +1,350 @@
-.counter {
-  font-size: 16px;
-  padding: 5px 10px;
-  border-radius: 5px;
-  color: var(--accent);
-  background: var(--accent-bg);
-  border: 2px solid transparent;
-  transition: border-color 0.3s;
-  margin-bottom: 24px;
+/* ====================================================
+   SignVerse Design System & Responsive Layout Utilities
+   ==================================================== */
 
-  &:hover {
-    border-color: var(--accent-border);
-  }
-  &:focus-visible {
-    outline: 2px solid var(--accent);
-    outline-offset: 2px;
-  }
+:root {
+  --primary-blue: #004080;
+  --primary-hover: #003366;
+  --accent-green: #689f38;
+  --accent-green-hover: #558b2f;
+  --accent-cyan: #38bdf8;
+  --bg-page: #f8fafc;
+  --text-dark: #0f172a;
+  --text-muted: #64748b;
+  --border-light: #e2e8f0;
 }
 
-.hero {
+/* Global Box Sizing */
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+/* ================= 1. DUAL-PANEL 3D AVATAR LAYOUT ================= */
+.signverse-split-container {
+  display: flex;
+  flex: 1;
+  width: 100%;
+  max-width: 100vw;
+  height: calc(100vh - 56px);
+  overflow: hidden;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  background-color: var(--bg-page);
   position: relative;
-
-  .base,
-  .framework,
-  .vite {
-    inset-inline: 0;
-    margin: 0 auto;
-  }
-
-  .base {
-    width: 170px;
-    position: relative;
-    z-index: 0;
-  }
-
-  .framework,
-  .vite {
-    position: absolute;
-  }
-
-  .framework {
-    z-index: 1;
-    top: 34px;
-    height: 28px;
-    transform: perspective(2000px) rotateZ(300deg) rotateX(44deg) rotateY(39deg)
-      scale(1.4);
-  }
-
-  .vite {
-    z-index: 0;
-    top: 107px;
-    height: 26px;
-    width: auto;
-    transform: perspective(2000px) rotateZ(300deg) rotateX(40deg) rotateY(39deg)
-      scale(0.8);
-  }
 }
 
-#center {
+/* Desktop: Side-by-Side (Left 45% Inputs/Lists, Right 55% 3D Avatar) */
+.signverse-panel-left {
+  width: 45%;
+  height: 100%;
+  padding: 26px 30px;
+  background-color: #ffffff;
+  overflow-y: auto;
+  overflow-x: hidden;
+  border-right: 2px solid var(--border-light);
   display: flex;
   flex-direction: column;
-  gap: 25px;
-  place-content: center;
-  place-items: center;
-  flex-grow: 1;
-
-  @media (max-width: 1024px) {
-    padding: 32px 20px 24px;
-    gap: 18px;
-  }
+  order: 1;
 }
 
-#next-steps {
+.signverse-panel-right {
+  width: 55%;
+  height: 100%;
   display: flex;
-  border-top: 1px solid var(--border);
-  text-align: left;
-
-  & > div {
-    flex: 1 1 0;
-    padding: 32px;
-    @media (max-width: 1024px) {
-      padding: 24px 20px;
-    }
-  }
-
-  .icon {
-    margin-bottom: 16px;
-    width: 22px;
-    height: 22px;
-  }
-
-  @media (max-width: 1024px) {
-    flex-direction: column;
-    text-align: center;
-  }
-}
-
-#docs {
-  border-right: 1px solid var(--border);
-
-  @media (max-width: 1024px) {
-    border-right: none;
-    border-bottom: 1px solid var(--border);
-  }
-}
-
-#next-steps ul {
-  list-style: none;
-  padding: 0;
-  display: flex;
-  gap: 8px;
-  margin: 32px 0 0;
-
-  .logo {
-    height: 18px;
-  }
-
-  a {
-    color: var(--text-h);
-    font-size: 16px;
-    border-radius: 6px;
-    background: var(--social-bg);
-    display: flex;
-    padding: 6px 12px;
-    align-items: center;
-    gap: 8px;
-    text-decoration: none;
-    transition: box-shadow 0.3s;
-
-    &:hover {
-      box-shadow: var(--shadow);
-    }
-    .button-icon {
-      height: 18px;
-      width: 18px;
-    }
-  }
-
-  @media (max-width: 1024px) {
-    margin-top: 20px;
-    flex-wrap: wrap;
-    justify-content: center;
-
-    li {
-      flex: 1 1 calc(50% - 8px);
-    }
-
-    a {
-      width: 100%;
-      justify-content: center;
-      box-sizing: border-box;
-    }
-  }
-}
-
-#spacer {
-  height: 88px;
-  border-top: 1px solid var(--border);
-  @media (max-width: 1024px) {
-    height: 48px;
-  }
-}
-
-.ticks {
+  flex-direction: column;
+  background-color: #e5e7eb;
   position: relative;
+  overflow: hidden;
+  order: 2;
+}
+
+.signverse-avatar-frame {
+  flex: 1;
   width: 100%;
+  height: 100%;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
-  &::before,
-  &::after {
-    content: '';
-    position: absolute;
-    top: -4.5px;
-    border: 5px solid transparent;
+.signverse-avatar-iframe {
+  width: 100%;
+  height: 100%;
+  border: none;
+  display: block;
+}
+
+/* Mobile & Small Screens (<= 768px):
+   Top: 3D Avatar (Sticky/Visual)
+   Bottom: Inputs / Alphabet Grid / Controls */
+@media (max-width: 768px) {
+  .signverse-split-container {
+    flex-direction: column !important;
+    height: calc(100vh - 56px) !important;
+    overflow: hidden !important;
   }
 
-  &::before {
-    left: 0;
-    border-left-color: var(--border);
+  /* 3D Avatar on TOP for small screens */
+  .signverse-panel-right {
+    width: 100% !important;
+    height: 40vh !important;
+    min-height: 240px !important;
+    max-height: 45vh !important;
+    flex: none !important;
+    order: 1 !important;
+    border-bottom: 2px solid var(--border-light) !important;
   }
-  &::after {
-    right: 0;
-    border-right-color: var(--border);
+
+  /* Controls/Inputs on BOTTOM */
+  .signverse-panel-left {
+    width: 100% !important;
+    height: auto !important;
+    flex: 1 !important;
+    order: 2 !important;
+    padding: 14px 16px !important;
+    border-right: none !important;
+    overflow-y: auto !important;
+    box-shadow: 0 -4px 12px rgba(0, 0, 0, 0.05) !important;
   }
 }
+
+/* ================= 2. RESPONSIVE NAVBAR ================= */
+.signverse-navbar-wrapper {
+  background-color: #004080;
+  padding: 10px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.12);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  min-height: 56px;
+  width: 100%;
+}
+
+.signverse-nav-brand {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  flex-shrink: 0;
+}
+
+.signverse-nav-logo {
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 21px;
+  font-weight: 800;
+  letter-spacing: -0.5px;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.signverse-nav-badge {
+  background-color: rgba(255, 255, 255, 0.16);
+  color: #ffffff;
+  padding: 3px 9px;
+  border-radius: 14px;
+  font-size: 11.5px;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  border: 1px solid rgba(255, 255, 255, 0.22);
+  white-space: nowrap;
+  text-decoration: none;
+  transition: background 0.2s;
+}
+
+.signverse-nav-badge:hover {
+  background-color: rgba(255, 255, 255, 0.25);
+}
+
+.signverse-nav-links-desktop {
+  display: flex;
+  gap: 14px;
+  align-items: center;
+}
+
+.signverse-nav-auth-desktop {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+/* Hamburger button: hidden on desktop (> 920px) */
+.signverse-nav-mobile-toggle {
+  display: none;
+  background: transparent;
+  border: none;
+  color: #ffffff;
+  font-size: 26px;
+  cursor: pointer;
+  padding: 4px 8px;
+  border-radius: 6px;
+  line-height: 1;
+}
+
+.signverse-nav-mobile-toggle:hover {
+  background-color: rgba(255, 255, 255, 0.15);
+}
+
+/* Mobile Drawer */
+.signverse-nav-drawer {
+  display: none;
+}
+
+@media (max-width: 920px) {
+  .signverse-nav-links-desktop,
+  .signverse-nav-auth-desktop {
+    display: none !important;
+  }
+
+  .signverse-nav-mobile-toggle {
+    display: block !important;
+  }
+
+  .signverse-nav-drawer {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 56px;
+    left: 0;
+    width: 100%;
+    background-color: #003366;
+    padding: 16px 20px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+    z-index: 999;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    max-height: calc(100vh - 56px);
+    overflow-y: auto;
+    gap: 10px;
+  }
+
+  .signverse-nav-drawer-link {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 15px;
+    font-weight: 600;
+    padding: 8px 12px;
+    border-radius: 6px;
+    display: block;
+    transition: background 0.15s;
+  }
+
+  .signverse-nav-drawer-link:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+  }
+
+  .signverse-nav-drawer-link.active {
+    background-color: rgba(56, 189, 248, 0.2);
+    color: #38bdf8;
+  }
+
+  .signverse-nav-drawer-divider {
+    height: 1px;
+    background: rgba(255, 255, 255, 0.15);
+    margin: 6px 0;
+  }
+}
+
+/* ================= 3. RESPONSIVE GRID HELPERS ================= */
+.signverse-alpha-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 12px;
+  margin-bottom: 20px;
+}
+
+@media (max-width: 768px) {
+  .signverse-alpha-grid {
+    grid-template-columns: repeat(auto-fill, minmax(48px, 1fr)) !important;
+    gap: 8px !important;
+    margin-bottom: 12px !important;
+  }
+}
+
+/* Responsive Card Grids (Dashboard, Home, Pricing) */
+.signverse-responsive-grid-3 {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+}
+
+@media (max-width: 960px) {
+  .signverse-responsive-grid-3 {
+    grid-template-columns: repeat(2, 1fr) !important;
+  }
+}
+
+@media (max-width: 640px) {
+  .signverse-responsive-grid-3 {
+    grid-template-columns: 1fr !important;
+    gap: 16px !important;
+  }
+}
+
+/* Hero Split (Home Page) */
+.signverse-hero-grid {
+  display: grid;
+  grid-template-columns: 1.1fr 0.9fr;
+  gap: 40px;
+  align-items: center;
+}
+
+@media (max-width: 860px) {
+  .signverse-hero-grid {
+    grid-template-columns: 1fr !important;
+    text-align: center;
+    gap: 28px !important;
+  }
+}
+
+/* Sign-to-Text Camera & Sentence Grid */
+.signverse-signtotext-grid {
+  display: grid;
+  grid-template-columns: minmax(0, 1.3fr) minmax(0, 1fr);
+  gap: 24px;
+  align-items: start;
+}
+
+@media (max-width: 860px) {
+  .signverse-signtotext-grid {
+    grid-template-columns: 1fr !important;
+    gap: 20px !important;
+  }
+}
+
+/* AI Chatbot Floating Window Responsive */
+.signverse-chat-window {
+  position: fixed;
+  bottom: 92px;
+  right: 24px;
+  z-index: 9998;
+  width: 420px;
+  max-width: calc(100vw - 32px);
+  height: 600px;
+  max-height: calc(100vh - 120px);
+  background-color: #ffffff;
+  border-radius: 20px;
+  box-shadow: 0 20px 60px rgba(15, 23, 42, 0.25), 0 0 1px rgba(0, 0, 0, 0.2);
+  border: 1px solid rgba(226, 232, 240, 0.8);
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  font-family: system-ui, -apple-system, sans-serif;
+  animation: chatSlideUp 0.35s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+@media (max-width: 480px) {
+  .signverse-chat-window {
+    width: calc(100vw - 20px) !important;
+    right: 10px !important;
+    bottom: 84px !important;
+    height: calc(100vh - 100px) !important;
+    max-height: calc(100vh - 100px) !important;
+    border-radius: 16px !important;
+  }
+}
+

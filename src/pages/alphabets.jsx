@@ -41,26 +41,26 @@ export default function Alphabets() {
   };
 
   return (
-    <div style={{ display: 'flex', flex: 1, height: 'calc(100vh - 45px)', overflow: 'hidden', fontFamily: 'sans-serif', width: '100%' }}>
+    <div className="signverse-split-container">
       
-      {/* Left Panel: 4-Column Grid of Alphabets */}
-      <div style={{ width: '45%', padding: '30px', backgroundColor: '#ffffff', overflowY: 'auto', borderRight: '2px solid #ecf0f1', display: 'flex', flexDirection: 'column', justifyContent: 'space-between' }}>
+      {/* Left Panel: Grid of Alphabets */}
+      <div className="signverse-panel-left" style={{ justifyContent: 'space-between' }}>
         <div>
-          <h2 style={{ color: '#003366', marginTop: 0, marginBottom: '10px', fontSize: '26px', textAlign: 'left' }}>Learn Sign Alphabets (A-Z)</h2>
-          <p style={{ color: '#666', fontSize: '14px', marginBottom: '25px', textAlign: 'left' }}>Click or use Tab & Enter on any alphabet to view its sign language animation.</p>
+          <h2 style={{ color: '#003366', marginTop: 0, marginBottom: '8px', fontSize: '24px', textAlign: 'left' }}>Learn Sign Alphabets (A-Z)</h2>
+          <p style={{ color: '#666', fontSize: '13.5px', marginBottom: '20px', textAlign: 'left' }}>Click or use Tab & Enter on any alphabet to view its sign language animation.</p>
           
-          {/* 4-Column Grid */}
-          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(4, 1fr)', gap: '12px', marginBottom: '20px' }}>
+          {/* Responsive Alphabet Grid */}
+          <div className="signverse-alpha-grid">
             {alphabetList.map((item) => (
               <div
                 key={item.label}
-                tabIndex={0} // Keyboard support ke liye
+                tabIndex={0}
                 role="button"
                 onClick={() => handleAction(item)}
-                onKeyDown={(e) => handleKeyDown(e, item)} // Enter/Space handle
+                onKeyDown={(e) => handleKeyDown(e, item)}
                 style={{
-                  padding: '15px 0', 
-                  fontSize: '18px', 
+                  padding: '14px 0', 
+                  fontSize: '17px', 
                   fontWeight: 'bold', 
                   borderRadius: '8px', 
                   cursor: 'pointer',
@@ -70,7 +70,7 @@ export default function Alphabets() {
                   textAlign: 'center',
                   boxShadow: '0 2px 4px rgba(0,0,0,0.05)',
                   transition: 'all 0.2s',
-                  outline: 'none' // Keyboard outline hide
+                  outline: 'none'
                 }}
                 onFocus={(e) => e.target.style.boxShadow = '0 0 0 3px #003366'}
                 onBlur={(e) => e.target.style.boxShadow = '0 2px 4px rgba(0,0,0,0.05)'}
@@ -81,13 +81,13 @@ export default function Alphabets() {
           </div>
         </div>
 
-        <div>
+        <div style={{ paddingTop: '10px' }}>
           <button 
             tabIndex={0}
             onClick={playAnimation}
             style={{
-              width: '100%', padding: '14px', backgroundColor: '#689f38', color: 'white', border: 'none', 
-              borderRadius: '6px', fontSize: '16px', fontWeight: 'bold', cursor: 'pointer', outline: 'none',
+              width: '100%', padding: '13px', backgroundColor: '#689f38', color: 'white', border: 'none', 
+              borderRadius: '6px', fontSize: '15.5px', fontWeight: 'bold', cursor: 'pointer', outline: 'none',
               transition: '0.2s'
             }}
             onFocus={(e) => e.target.style.boxShadow = '0 0 0 3px #003366'}
@@ -99,19 +99,19 @@ export default function Alphabets() {
       </div>
 
       {/* Right Panel: Avatar Viewer */}
-      <div style={{ width: '55%', display: 'flex', flexDirection: 'column', backgroundColor: '#e5e7eb' }}>
-        <div style={{ flex: 1, position: 'relative', display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
+      <div className="signverse-panel-right">
+        <div className="signverse-avatar-frame">
           <iframe 
             ref={iframeRef} 
             src="/player-applet.html" 
             title="CWASA Avatar Player"
-            style={{ width: '100%', height: '100%', border: 'none' }}
+            className="signverse-avatar-iframe"
             onLoad={() => {
               if (activeItem && iframeRef.current) {
                 try {
                   iframeRef.current.contentWindow.startPlayer(`SignFiles/${activeItem.file}.sigml`);
                 } catch (err) {
-                  console.log("Player not ready yet");
+                  console.log("Player not ready yet", err);
                 }
               }
             }}

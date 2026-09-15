@@ -284,15 +284,15 @@ export default function Translate() {
   };
 
   return (
-    <div style={{ display: 'flex', flex: 1, height: 'calc(100vh - 45px)', overflow: 'hidden', fontFamily: 'system-ui, -apple-system, sans-serif', width: '100%' }}>
+    <div className="signverse-split-container">
       
       {/* Left Panel: Text & Voice Input & Controls */}
-      <div style={{ width: '45%', padding: '28px', backgroundColor: '#ffffff', overflowY: 'auto', borderRight: '2px solid #e2e8f0', display: 'flex', flexDirection: 'column' }}>
+      <div className="signverse-panel-left">
         
         {/* Header with Credits & Plan Badge */}
-        <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'flex-start', marginBottom: '8px' }}>
+        <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'flex-start', marginBottom: '8px', flexWrap: 'wrap', gap: '8px' }}>
           <div>
-            <h2 style={{ color: '#0f172a', margin: 0, fontSize: '24px', fontWeight: '800', display: 'flex', alignItems: 'center', gap: '8px' }}>
+            <h2 style={{ color: '#0f172a', margin: 0, fontSize: '22px', fontWeight: '800', display: 'flex', alignItems: 'center', gap: '8px' }}>
               <span>AI Text & Voice to Sign</span>
               <span style={{ fontSize: '11.5px', backgroundColor: '#e0f2fe', color: '#004080', padding: '3px 8px', borderRadius: '12px', fontWeight: '700' }}>
                 Voice 🎙️
@@ -307,7 +307,7 @@ export default function Translate() {
           </Link>
         </div>
         
-        <p style={{ color: '#64748b', fontSize: '13.5px', marginBottom: '16px', lineHeight: '1.4' }}>
+        <p style={{ color: '#64748b', fontSize: '13px', marginBottom: '14px', lineHeight: '1.4' }}>
           Speak or type sentences. High-speed $O(1)$ offline matcher animates 3D avatars instantly!
         </p>
 
@@ -321,7 +321,7 @@ export default function Translate() {
         <div style={{ 
           backgroundColor: isListening ? '#fff3e0' : '#f8fafc', 
           border: isListening ? '2px solid #ff9800' : '1px solid #e2e8f0', 
-          borderRadius: '12px', padding: '12px 16px', marginBottom: '16px',
+          borderRadius: '12px', padding: '12px 14px', marginBottom: '14px',
           display: 'flex', alignItems: 'center', justifyContent: 'space-between', flexWrap: 'wrap', gap: '10px',
           transition: 'all 0.3s ease'
         }}>
@@ -333,9 +333,9 @@ export default function Translate() {
                 backgroundColor: isListening ? '#ef4444' : '#004080',
                 color: 'white',
                 border: 'none',
-                padding: '9px 16px',
+                padding: '8px 14px',
                 borderRadius: '25px',
-                fontSize: '14px',
+                fontSize: '13.5px',
                 fontWeight: '700',
                 cursor: isPlaying ? 'not-allowed' : 'pointer',
                 display: 'flex',
@@ -357,7 +357,7 @@ export default function Translate() {
           </div>
 
           {/* Auto Translate Toggle */}
-          <label style={{ display: 'flex', alignItems: 'center', gap: '6px', fontSize: '12.5px', color: '#475569', cursor: 'pointer', fontWeight: '500' }}>
+          <label style={{ display: 'flex', alignItems: 'center', gap: '6px', fontSize: '12px', color: '#475569', cursor: 'pointer', fontWeight: '500' }}>
             <input 
               type="checkbox" 
               checked={autoTranslateVoice} 
@@ -369,16 +369,16 @@ export default function Translate() {
         </div>
         
         {/* Text Area with Clear Button */}
-        <div style={{ position: 'relative', marginBottom: '15px' }}>
+        <div style={{ position: 'relative', marginBottom: '14px' }}>
           <textarea 
             placeholder={isListening ? "Listening to your voice... speak now!" : "Enter text here or speak using the mic above (e.g., Hello father it is crucial)..."}
             value={inputText}
             onChange={(e) => setInputText(e.target.value)}
             onKeyDown={handleKeyDown}
             style={{ 
-              width: '100%', height: '120px', padding: '14px 38px 14px 14px', borderRadius: '10px', 
+              width: '100%', height: '110px', padding: '12px 36px 12px 12px', borderRadius: '10px', 
               border: isListening ? '2px solid #ff9800' : '1.5px solid #cbd5e1', boxSizing: 'border-box', 
-              fontSize: '15px', resize: 'none', outline: 'none', fontFamily: 'inherit',
+              fontSize: '14.5px', resize: 'none', outline: 'none', fontFamily: 'inherit',
               color: '#0f172a', backgroundColor: '#ffffff',
               transition: 'border-color 0.2s, box-shadow 0.2s'
             }}
@@ -402,13 +402,13 @@ export default function Translate() {
 
         {/* Interactive High-Contrast Speed Controller Card */}
         <div style={{
-          marginBottom: '18px', padding: '12px 14px', backgroundColor: '#f1f5f9',
+          marginBottom: '16px', padding: '12px 14px', backgroundColor: '#f1f5f9',
           borderRadius: '12px', border: '1.5px solid #cbd5e1',
           display: 'flex', flexDirection: 'column', gap: '8px'
         }}>
-          <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between' }}>
-            <span style={{ fontSize: '13px', fontWeight: '800', color: '#0f172a', display: 'flex', alignItems: 'center', gap: '6px' }}>
-              <span>⏱️ Signing Speed:</span>
+          <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', flexWrap: 'wrap', gap: '6px' }}>
+            <span style={{ fontSize: '12.5px', fontWeight: '800', color: '#0f172a', display: 'flex', alignItems: 'center', gap: '6px' }}>
+              <span>⏱️ Speed:</span>
               <span style={{ 
                 fontSize: '11px', 
                 backgroundColor: speedMultiplier === 1.5 ? '#dcfce7' : speedMultiplier <= 0.8 ? '#fef3c7' : '#e0e7ff',
@@ -416,19 +416,19 @@ export default function Translate() {
                 border: speedMultiplier === 1.5 ? '1px solid #86efac' : speedMultiplier <= 0.8 ? '1px solid #fcd34d' : '1px solid #c7d2fe',
                 padding: '2px 8px', borderRadius: '12px', fontWeight: '800'
               }}>
-                {speedMultiplier === 0.8 ? '0.8x Fast 🐇' : speedMultiplier === 1.0 ? '1.0x Normal 🚶' : speedMultiplier === 1.5 ? '1.5x Slow (Recommended) 🐢' : '2.2x Step-by-Step 🔍'}
+                {speedMultiplier === 0.8 ? '0.8x Fast 🐇' : speedMultiplier === 1.0 ? '1.0x Normal 🚶' : speedMultiplier === 1.5 ? '1.5x Slow (Recommended) 🐢' : '2.2x Step 🔍'}
               </span>
             </span>
-            <span style={{ fontSize: '11.5px', color: '#64748b', fontWeight: '600' }}>
-              Press <kbd style={{ backgroundColor: '#ffffff', color: '#0f172a', padding: '2px 6px', borderRadius: '4px', border: '1px solid #94a3b8', fontSize: '11px', fontWeight: '700' }}>Enter ↵</kbd>
+            <span style={{ fontSize: '11px', color: '#64748b', fontWeight: '600' }}>
+              Press <kbd style={{ backgroundColor: '#ffffff', color: '#0f172a', padding: '2px 5px', borderRadius: '4px', border: '1px solid #94a3b8', fontSize: '10.5px', fontWeight: '700' }}>Enter ↵</kbd>
             </span>
           </div>
 
           {/* Segmented Speed Button Grid */}
-          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(4, 1fr)', gap: '8px' }}>
+          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(4, 1fr)', gap: '6px' }}>
             {[
               { label: '⚡ Fast', value: 0.8, desc: 'Advanced' },
-              { label: '🚶 Normal', value: 1.0, desc: '1.0x Speed' },
+              { label: '🚶 Normal', value: 1.0, desc: '1.0x' },
               { label: '🐢 Slow', value: 1.5, desc: 'Recommended' },
               { label: '🔍 Step', value: 2.2, desc: 'Detailed' }
             ].map((option) => {
@@ -440,7 +440,7 @@ export default function Translate() {
                   onClick={() => setSpeedMultiplier(option.value)}
                   disabled={isPlaying}
                   style={{
-                    padding: '8px 4px',
+                    padding: '7px 4px',
                     borderRadius: '8px',
                     border: isSelected ? '2.5px solid #002d62' : '1.5px solid #94a3b8',
                     backgroundColor: isSelected ? '#004080' : '#ffffff',
@@ -450,10 +450,10 @@ export default function Translate() {
                     boxShadow: isSelected ? '0 4px 10px rgba(0, 64, 128, 0.3)' : '0 1px 2px rgba(0,0,0,0.05)'
                   }}
                 >
-                  <span style={{ fontSize: '13px', fontWeight: '800', color: isSelected ? '#ffffff' : '#0f172a', display: 'block' }}>
+                  <span style={{ fontSize: '12px', fontWeight: '800', color: isSelected ? '#ffffff' : '#0f172a', display: 'block' }}>
                     {option.label}
                   </span>
-                  <span style={{ fontSize: '10px', fontWeight: '700', color: isSelected ? '#e0f2fe' : '#475569', display: 'block' }}>
+                  <span style={{ fontSize: '9.5px', fontWeight: '700', color: isSelected ? '#e0f2fe' : '#475569', display: 'block' }}>
                     {option.desc}
                   </span>
                 </button>
@@ -467,10 +467,10 @@ export default function Translate() {
           onClick={() => handleTranslate()}
           disabled={isPlaying || !inputText.trim()}
           style={{
-            width: '100%', padding: '14px', 
+            width: '100%', padding: '13px', 
             backgroundColor: isPlaying || !inputText.trim() ? '#94a3b8' : '#10b981', 
             color: 'white', border: 'none', borderRadius: '10px', 
-            fontSize: '16px', fontWeight: '800', cursor: isPlaying ? 'not-allowed' : 'pointer',
+            fontSize: '15.5px', fontWeight: '800', cursor: isPlaying ? 'not-allowed' : 'pointer',
             transition: 'all 0.2s', display: 'flex', justifyContent: 'center', alignItems: 'center', gap: '8px',
             boxShadow: isPlaying || !inputText.trim() ? 'none' : '0 4px 14px rgba(16, 185, 129, 0.35)'
           }}
@@ -489,15 +489,15 @@ export default function Translate() {
 
         {/* Live Status Indicator Card */}
         <div style={{ 
-          marginTop: '20px', padding: '14px 18px', backgroundColor: isPlaying ? '#dcfce7' : isListening ? '#fef3c7' : '#f8fafc', 
+          marginTop: '16px', padding: '12px 16px', backgroundColor: isPlaying ? '#dcfce7' : isListening ? '#fef3c7' : '#f8fafc', 
           borderRadius: '10px', border: isPlaying ? '1px solid #86efac' : isListening ? '1px solid #fcd34d' : '1px solid #e2e8f0',
           textAlign: 'center', transition: 'all 0.3s ease'
         }}>
-          <h4 style={{ margin: '0 0 4px 0', color: '#64748b', fontSize: '11.5px', textTransform: 'uppercase', letterSpacing: '0.5px', fontWeight: '700' }}>
+          <h4 style={{ margin: '0 0 4px 0', color: '#64748b', fontSize: '11px', textTransform: 'uppercase', letterSpacing: '0.5px', fontWeight: '700' }}>
             System Status
           </h4>
           <p style={{ 
-            fontSize: '15px', fontWeight: '800', color: isPlaying ? '#15803d' : isListening ? '#b45309' : '#004080', margin: 0,
+            fontSize: '14px', fontWeight: '800', color: isPlaying ? '#15803d' : isListening ? '#b45309' : '#004080', margin: 0,
             animation: isPlaying || isListening ? 'pulse 1.5s infinite' : 'none' 
           }}>
             {currentAction}
@@ -505,20 +505,20 @@ export default function Translate() {
         </div>
 
         {!voiceSupported && (
-          <p style={{ fontSize: '12px', color: '#ef4444', marginTop: '10px', textAlign: 'center' }}>
+          <p style={{ fontSize: '11.5px', color: '#ef4444', marginTop: '10px', textAlign: 'center' }}>
             ℹ️ Note: Voice input requires a browser with Web Speech API support (Google Chrome or Microsoft Edge).
           </p>
         )}
       </div>
 
       {/* Right Panel: 3D Avatar Viewer */}
-      <div style={{ width: '55%', display: 'flex', flexDirection: 'column', backgroundColor: '#e2e8f0' }}>
-        <div style={{ flex: 1, position: 'relative', display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
+      <div className="signverse-panel-right">
+        <div className="signverse-avatar-frame">
           <iframe 
             ref={iframeRef} 
             src="/player-applet.html" 
             title="CWASA Avatar Player"
-            style={{ width: '100%', height: '100%', border: 'none' }}
+            className="signverse-avatar-iframe"
           />
         </div>
       </div>

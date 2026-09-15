@@ -25,7 +25,7 @@ export default function Pricing() {
   };
 
   return (
-    <div style={{ padding: '40px 20px', backgroundColor: '#f8fafc', minHeight: 'calc(100vh - 45px)', fontFamily: 'system-ui, -apple-system, sans-serif' }}>
+    <div style={{ padding: 'clamp(20px, 4vw, 40px) clamp(14px, 3vw, 20px)', backgroundColor: '#f8fafc', minHeight: 'calc(100vh - 45px)', fontFamily: 'system-ui, -apple-system, sans-serif' }}>
       <div style={{ maxWidth: '1050px', margin: '0 auto' }}>
         
         {/* Header Title */}
@@ -33,7 +33,7 @@ export default function Pricing() {
           <span style={{ backgroundColor: '#ede9fe', color: '#6d28d9', padding: '6px 16px', borderRadius: '20px', fontSize: '13.5px', fontWeight: '800', display: 'inline-block', marginBottom: '12px' }}>
             💎 Flexible & Affordable Pricing
           </span>
-          <h1 style={{ color: '#0f172a', fontSize: '36px', fontWeight: '800', margin: '0 0 10px 0', letterSpacing: '-0.5px' }}>
+          <h1 style={{ color: '#0f172a', fontSize: 'clamp(26px, 5vw, 36px)', fontWeight: '800', margin: '0 0 10px 0', letterSpacing: '-0.5px' }}>
             Choose the Perfect Plan for SignVerse
           </h1>
           <p style={{ color: '#64748b', fontSize: '16px', maxWidth: '620px', margin: '0 auto', lineHeight: '1.6' }}>
@@ -44,7 +44,8 @@ export default function Pricing() {
           <div style={{
             display: 'inline-flex', alignItems: 'center', gap: '10px',
             backgroundColor: '#ffffff', padding: '10px 20px', borderRadius: '30px',
-            border: '1.5px solid #e2e8f0', marginTop: '20px', boxShadow: '0 2px 8px rgba(0,0,0,0.04)'
+            border: '1.5px solid #e2e8f0', marginTop: '20px', boxShadow: '0 2px 8px rgba(0,0,0,0.04)',
+            maxWidth: '100%', flexWrap: 'wrap', justifyContent: 'center'
           }}>
             <span style={{ width: '10px', height: '10px', borderRadius: '50%', backgroundColor: subStatus.isPaidPlan ? '#10b981' : subStatus.isTrialActive ? '#f59e0b' : '#ef4444' }} />
             <span style={{ fontSize: '13.5px', fontWeight: '700', color: '#1e293b' }}>
@@ -67,7 +68,7 @@ export default function Pricing() {
         </div>
 
         {/* Pricing Cards Grid */}
-        <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(300px, 1fr))', gap: '28px', marginBottom: '40px' }}>
+        <div className="signverse-responsive-grid-3" style={{ marginBottom: '40px' }}>
           
           {/* Plan 1: 3-Day Free Trial */}
           <div style={{

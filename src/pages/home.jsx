@@ -6,28 +6,28 @@ export default function Home() {
     <div style={{ fontFamily: 'sans-serif', backgroundColor: '#ffffff', minHeight: 'calc(100vh - 65px)', display: 'flex', flexDirection: 'column' }}>
 
       {/* ================= 1. HERO SECTION ================= */}
-      <div style={{ textAlign: 'center', padding: '80px 20px 40px 20px' }}>
-        <div style={{ display: 'inline-block', backgroundColor: '#eef2ff', color: '#0056b3', padding: '8px 18px', borderRadius: '30px', fontSize: '14px', fontWeight: 'bold', marginBottom: '25px', border: '1px solid #d1d5db' }}>
+      <div style={{ textAlign: 'center', padding: 'clamp(40px, 7vw, 80px) 20px 40px 20px' }}>
+        <div style={{ display: 'inline-block', backgroundColor: '#eef2ff', color: '#0056b3', padding: '8px 18px', borderRadius: '30px', fontSize: '13.5px', fontWeight: 'bold', marginBottom: '20px', border: '1px solid #d1d5db' }}>
           ✨ Next-Gen Accessibility Platform
         </div>
         
-        <h1 style={{ fontSize: '52px', fontWeight: '900', color: '#111827', maxWidth: '900px', margin: '0 auto 20px auto', lineHeight: '1.2' }}>
+        <h1 style={{ fontSize: 'clamp(28px, 5.5vw, 52px)', fontWeight: '900', color: '#111827', maxWidth: '900px', margin: '0 auto 16px auto', lineHeight: '1.2' }}>
           Break Communication Barriers with <br/> 
           <span style={{ color: '#003366' }}>3D Sign Language</span>
         </h1>
         
-        <p style={{ fontSize: '20px', color: '#4b5563', maxWidth: '700px', margin: '0 auto 40px auto', lineHeight: '1.6' }}>
+        <p style={{ fontSize: 'clamp(15px, 2.5vw, 20px)', color: '#4b5563', maxWidth: '700px', margin: '0 auto 32px auto', lineHeight: '1.6' }}>
           An interactive platform to translate text, practice flashcards, and test your skills with intelligent 3D avatars.
         </p>
         
-        <div style={{ display: 'flex', justifyContent: 'center', gap: '20px' }}>
+        <div style={{ display: 'flex', justifyContent: 'center', gap: '16px', flexWrap: 'wrap' }}>
           <Link to="/dashboard" style={{ textDecoration: 'none' }}>
-            <button style={{ backgroundColor: '#003366', color: 'white', border: 'none', padding: '14px 30px', borderRadius: '8px', fontSize: '16px', fontWeight: 'bold', cursor: 'pointer', display: 'flex', alignItems: 'center', gap: '8px' }}>
+            <button style={{ backgroundColor: '#003366', color: 'white', border: 'none', padding: '14px 28px', borderRadius: '8px', fontSize: '15.5px', fontWeight: 'bold', cursor: 'pointer', display: 'flex', alignItems: 'center', gap: '8px' }}>
               Open Dashboard ➔
             </button>
           </Link>
           <Link to="/translate" style={{ textDecoration: 'none' }}>
-            <button style={{ backgroundColor: 'white', color: '#111827', border: '1px solid #d1d5db', padding: '14px 30px', borderRadius: '8px', fontSize: '16px', fontWeight: 'bold', cursor: 'pointer' }}>
+            <button style={{ backgroundColor: 'white', color: '#111827', border: '1px solid #d1d5db', padding: '14px 28px', borderRadius: '8px', fontSize: '15.5px', fontWeight: 'bold', cursor: 'pointer' }}>
               Try Translator
             </button>
           </Link>

@@ -19,10 +19,13 @@ import { getSubscriptionStatus } from './utils/subscriptionManager';
 // Navbar Component with Credits & 3-Day Trial Badge
 function NavigationBar({ isAuthenticated, handleLogout }) {
   const location = useLocation();
-  const isActive = (path) => location.pathname === path;
+  const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   const [subStatus, setSubStatus] = useState(getSubscriptionStatus());
 
+  const isActive = (path) => location.pathname === path;
+
   useEffect(() => {
+    setIsMobileMenuOpen(false);
     setSubStatus(getSubscriptionStatus());
   }, [location.pathname]);
 
@@ -37,19 +40,16 @@ function NavigationBar({ isAuthenticated, handleLogout }) {
   });
 
   return (
-    <nav style={{ backgroundColor: '#004080', padding: '12px 24px', display: 'flex', alignItems: 'center', justifyContent: 'space-between', boxShadow: '0 2px 10px rgba(0,0,0,0.1)', flexWrap: 'wrap', gap: '10px' }}>
-      <div style={{ display: 'flex', alignItems: 'center', gap: '16px' }}>
-        <Link to="/" style={{ color: 'white', textDecoration: 'none', fontSize: '22px', fontWeight: '800', letterSpacing: '-0.5px' }}>
+    <nav className="signverse-navbar-wrapper">
+      {/* Brand & Badge */}
+      <div className="signverse-nav-brand">
+        <Link to="/" className="signverse-nav-logo">
           SignVerse 🤟
         </Link>
 
         {/* 3-Day Trial & Credits Badge */}
         <Link to="/pricing" style={{ textDecoration: 'none' }}>
-          <div style={{
-            backgroundColor: 'rgba(255,255,255,0.15)', color: '#ffffff', padding: '4px 10px',
-            borderRadius: '16px', fontSize: '11.5px', fontWeight: '700', display: 'flex', alignItems: 'center', gap: '5px',
-            border: '1px solid rgba(255,255,255,0.2)', transition: 'background 0.2s'
-          }}>
+          <div className="signverse-nav-badge">
             <span>🪙 {subStatus.credits}</span>
             <span style={{ opacity: 0.7 }}>•</span>
             <span>{subStatus.isPaidPlan ? 'Pro ✨' : `Trial: ${subStatus.trialDaysRemaining}d`}</span>
@@ -57,7 +57,8 @@ function NavigationBar({ isAuthenticated, handleLogout }) {
         </Link>
       </div>
 
-      <div style={{ display: 'flex', gap: '16px', alignItems: 'center', flexWrap: 'wrap' }}>
+      {/* Desktop Links (Visible on desktop > 920px) */}
+      <div className="signverse-nav-links-desktop">
         <Link to="/" style={linkStyle('/')}>Home</Link>
         <Link to="/about" style={linkStyle('/about')}>About Us</Link>
         <Link to="/pricing" style={linkStyle('/pricing')}>Pricing 💎</Link>
@@ -76,7 +77,8 @@ function NavigationBar({ isAuthenticated, handleLogout }) {
         )}
       </div>
 
-      <div style={{ display: 'flex', gap: '10px', alignItems: 'center' }}>
+      {/* Desktop Auth Buttons (Visible on desktop > 920px) */}
+      <div className="signverse-nav-auth-desktop">
         {isAuthenticated ? (
           <button onClick={handleLogout} style={{ backgroundColor: '#ef4444', color: 'white', border: 'none', padding: '7px 14px', borderRadius: '8px', fontWeight: '700', cursor: 'pointer', fontSize: '13.5px' }}>
             Logout
@@ -92,6 +94,56 @@ function NavigationBar({ isAuthenticated, handleLogout }) {
           </>
         )}
       </div>
+
+      {/* Mobile Hamburger Button (Visible only on mobile <= 920px) */}
+      <button 
+        className="signverse-nav-mobile-toggle"
+        onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
+        aria-label="Toggle navigation menu"
+      >
+        {isMobileMenuOpen ? '✕' : '☰'}
+      </button>
+
+      {/* Mobile Drawer Dropdown */}
+      {isMobileMenuOpen && (
+        <div className="signverse-nav-drawer">
+          <Link to="/" className={`signverse-nav-drawer-link ${isActive('/') ? 'active' : ''}`} onClick={() => setIsMobileMenuOpen(false)}>Home</Link>
+          <Link to="/about" className={`signverse-nav-drawer-link ${isActive('/about') ? 'active' : ''}`} onClick={() => setIsMobileMenuOpen(false)}>About Us</Link>
+          <Link to="/pricing" className={`signverse-nav-drawer-link ${isActive('/pricing') ? 'active' : ''}`} onClick={() => setIsMobileMenuOpen(false)}>Pricing 💎</Link>
+          
+          {isAuthenticated && (
+            <>
+              <div className="signverse-nav-drawer-divider" />
+              <Link to="/alphabets" className={`signverse-nav-drawer-link ${isActive('/alphabets') ? 'active' : ''}`} onClick={() => setIsMobileMenuOpen(false)}>Alphabets (A-Z)</Link>
+              <Link to="/words" className={`signverse-nav-drawer-link ${isActive('/words') ? 'active' : ''}`} onClick={() => setIsMobileMenuOpen(false)}>Sign Dictionary & Words</Link>
+              <Link to="/translate" className={`signverse-nav-drawer-link ${isActive('/translate') ? 'active' : ''}`} onClick={() => setIsMobileMenuOpen(false)}>3D Translate (Voice & Text)</Link>
+              <Link to="/sign-to-text" className={`signverse-nav-drawer-link ${isActive('/sign-to-text') ? 'active' : ''}`} onClick={() => setIsMobileMenuOpen(false)}>🤟 Camera Sign to Text</Link>
+              <Link to="/practice" className={`signverse-nav-drawer-link ${isActive('/practice') ? 'active' : ''}`} onClick={() => setIsMobileMenuOpen(false)}>Practice Studio</Link>
+              <Link to="/quiz" className={`signverse-nav-drawer-link ${isActive('/quiz') ? 'active' : ''}`} onClick={() => setIsMobileMenuOpen(false)}>Interactive Quiz</Link>
+              <Link to="/dashboard" className={`signverse-nav-drawer-link ${isActive('/dashboard') ? 'active' : ''}`} onClick={() => setIsMobileMenuOpen(false)}>Dashboard & Progress</Link>
+            </>
+          )}
+
+          <div className="signverse-nav-drawer-divider" />
+          {isAuthenticated ? (
+            <button 
+              onClick={() => { setIsMobileMenuOpen(false); handleLogout(); }} 
+              style={{ width: '100%', padding: '10px', backgroundColor: '#ef4444', color: 'white', border: 'none', borderRadius: '8px', fontWeight: '700', cursor: 'pointer', fontSize: '15px' }}
+            >
+              Logout
+            </button>
+          ) : (
+            <div style={{ display: 'flex', gap: '10px', marginTop: '4px' }}>
+              <Link to="/login" style={{ flex: 1, textDecoration: 'none' }} onClick={() => setIsMobileMenuOpen(false)}>
+                <button style={{ width: '100%', backgroundColor: 'transparent', color: 'white', border: '1px solid rgba(255,255,255,0.6)', padding: '10px', borderRadius: '8px', fontWeight: '700', cursor: 'pointer', fontSize: '14px' }}>Login</button>
+              </Link>
+              <Link to="/signup" style={{ flex: 1, textDecoration: 'none' }} onClick={() => setIsMobileMenuOpen(false)}>
+                <button style={{ width: '100%', backgroundColor: '#2563eb', color: 'white', border: 'none', padding: '10px', borderRadius: '8px', fontWeight: '700', cursor: 'pointer', fontSize: '14px' }}>Sign Up</button>
+              </Link>
+            </div>
+          )}
+        </div>
+      )}
     </nav>
   );
 }

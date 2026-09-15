@@ -188,7 +188,7 @@ export default function Dashboard() {
   };
 
   return (
-    <div style={{ padding: '36px 40px', backgroundColor: '#f8fafc', minHeight: 'calc(100vh - 45px)', fontFamily: 'system-ui, -apple-system, sans-serif', boxSizing: 'border-box', width: '100%' }}>
+    <div style={{ padding: 'clamp(16px, 3.5vw, 36px) clamp(16px, 3.5vw, 40px)', backgroundColor: '#f8fafc', minHeight: 'calc(100vh - 45px)', fontFamily: 'system-ui, -apple-system, sans-serif', boxSizing: 'border-box', width: '100%' }}>
       
       {/* Hidden File Input for Device Upload */}
       <input 

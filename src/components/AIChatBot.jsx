@@ -388,18 +388,7 @@ export default function AIChatBot() {
 
       {/* 2. Floating AI Chatbot Window */}
       {isOpen && (
-        <div 
-          style={{
-            position: 'fixed', bottom: '92px', right: '24px', zIndex: 9998,
-            width: '420px', maxWidth: 'calc(100vw - 32px)', height: '600px', maxHeight: 'calc(100vh - 120px)',
-            backgroundColor: '#ffffff', borderRadius: '20px',
-            boxShadow: '0 20px 60px rgba(15, 23, 42, 0.25), 0 0 1px rgba(0, 0, 0, 0.2)',
-            border: '1px solid rgba(226, 232, 240, 0.8)',
-            display: 'flex', flexDirection: 'column', overflow: 'hidden',
-            fontFamily: 'system-ui, -apple-system, sans-serif', 
-            animation: 'chatSlideUp 0.35s cubic-bezier(0.16, 1, 0.3, 1)'
-          }}
-        >
+        <div className="signverse-chat-window">
           {/* Futuristic Cosmic Header */}
           <div style={{
             background: 'linear-gradient(135deg, #0f172a 0%, #1e1b4b 50%, #312e81 100%)',

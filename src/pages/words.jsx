@@ -73,22 +73,22 @@ export default function Words() {
   };
 
   return (
-    <div style={{ display: 'flex', flex: 1, height: 'calc(100vh - 45px)', overflow: 'hidden', fontFamily: 'sans-serif', width: '100%' }}>
+    <div className="signverse-split-container">
       
       {/* Left Panel */}
-      <div style={{ width: '45%', padding: '30px', backgroundColor: '#ffffff', overflowY: 'auto', borderRight: '2px solid #ecf0f1', display: 'flex', flexDirection: 'column' }}>
-        <h2 style={{ color: '#003366', marginTop: 0, marginBottom: '10px', fontSize: '26px' }}>Sign Dictionary & Words</h2>
-        <p style={{ color: '#666', fontSize: '14px', marginBottom: '20px' }}>Learn basic words instantly or search our full database.</p>
+      <div className="signverse-panel-left">
+        <h2 style={{ color: '#003366', marginTop: 0, marginBottom: '8px', fontSize: '24px' }}>Sign Dictionary & Words</h2>
+        <p style={{ color: '#666', fontSize: '13.5px', marginBottom: '16px' }}>Learn basic words instantly or search our full database.</p>
         
         <input 
           type="text"
           placeholder="Search from 12,000+ words..."
           value={searchTerm}
           onChange={(e) => setSearchTerm(e.target.value)}
-          style={{ width: '100%', padding: '12px', borderRadius: '6px', border: '1px solid #ccc', marginBottom: '20px', boxSizing: 'border-box', fontSize: '15px' }}
+          style={{ width: '100%', padding: '12px', borderRadius: '8px', border: '1px solid #cbd5e1', marginBottom: '16px', boxSizing: 'border-box', fontSize: '15px' }}
         />
 
-        <h4 style={{ color: '#333', marginBottom: '10px', fontSize: '14px' }}>
+        <h4 style={{ color: '#333', marginBottom: '10px', fontSize: '13.5px' }}>
           {searchTerm.trim() === '' ? 'Basic Examples (Use ↑ ↓ arrows & Enter):' : 'Search Results:'}
         </h4>
 
@@ -103,17 +103,17 @@ export default function Words() {
                   tabIndex={0} 
                   role="button"
                   onClick={() => handleWordAction(item)}
-                  onKeyDown={(e) => handleKeyDown(e, item)} // Arrow Key Handler Attached Here
+                  onKeyDown={(e) => handleKeyDown(e, item)}
                   style={{
-                    padding: '12px 15px', 
-                    borderRadius: '6px', 
+                    padding: '11px 14px', 
+                    borderRadius: '8px', 
                     cursor: 'pointer', 
-                    fontSize: '15px', 
-                    fontWeight: '500',
+                    fontSize: '14.5px', 
+                    fontWeight: '600',
                     textAlign: 'left',
                     backgroundColor: isSelected ? '#689f38' : '#f8f9fa',
                     color: isSelected ? 'white' : '#333',
-                    border: '1px solid #e0e0e0',
+                    border: '1px solid #e2e8f0',
                     transition: 'all 0.2s ease',
                     outline: 'none'
                   }}
@@ -131,13 +131,13 @@ export default function Words() {
       </div>
 
       {/* Right Panel */}
-      <div style={{ width: '55%', display: 'flex', flexDirection: 'column', backgroundColor: '#e5e7eb' }}>
-        <div style={{ flex: 1, position: 'relative', display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
+      <div className="signverse-panel-right">
+        <div className="signverse-avatar-frame">
           <iframe 
             ref={iframeRef} 
             src="/player-applet.html" 
             title="CWASA Avatar Player"
-            style={{ width: '100%', height: '100%', border: 'none' }}
+            className="signverse-avatar-iframe"
           />
         </div>
       </div>

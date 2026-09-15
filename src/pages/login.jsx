@@ -17,8 +17,8 @@ export default function Login({ setIsAuthenticated }) {
   };
 
   return (
-    <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', height: 'calc(100vh - 65px)', backgroundColor: '#f4f7f6', fontFamily: 'sans-serif' }}>
-      <div style={{ backgroundColor: 'white', padding: '40px', borderRadius: '16px', boxShadow: '0 8px 30px rgba(0,0,0,0.1)', width: '100%', maxWidth: '400px', textAlign: 'center' }}>
+    <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', minHeight: 'calc(100vh - 65px)', backgroundColor: '#f4f7f6', fontFamily: 'sans-serif', padding: '20px', boxSizing: 'border-box' }}>
+      <div style={{ backgroundColor: 'white', padding: 'clamp(24px, 5vw, 40px)', borderRadius: '16px', boxShadow: '0 8px 30px rgba(0,0,0,0.1)', width: '100%', maxWidth: '400px', textAlign: 'center' }}>
         <h1 style={{ color: '#003366', fontSize: '28px', margin: '0 0 10px 0' }}>Welcome Back!</h1>
         <p style={{ color: '#666', fontSize: '14px', marginBottom: '30px' }}>Login to access your 3D Sign Language Hub</p>
 

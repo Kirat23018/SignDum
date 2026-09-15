@@ -122,10 +122,10 @@ export default function Practice() {
   };
 
   return (
-    <div style={{ display: 'flex', flex: 1, height: 'calc(100vh - 45px)', overflow: 'hidden', fontFamily: 'sans-serif', width: '100%' }}>
+    <div className="signverse-split-container">
       
       {/* Left Panel: Practice Interface */}
-      <div style={{ width: '45%', padding: '30px', backgroundColor: '#ffffff', overflowY: 'auto', borderRight: '2px solid #ecf0f1', display: 'flex', flexDirection: 'column' }}>
+      <div className="signverse-panel-left">
         
         {/* --- SETUP SCREEN --- */}
         {practiceState === 'setup' && (
@@ -322,13 +322,13 @@ export default function Practice() {
       </div>
 
       {/* Right Panel: 3D Avatar Viewer with Anti-Cheating Mask */}
-      <div style={{ width: '55%', display: 'flex', flexDirection: 'column', backgroundColor: '#e5e7eb', position: 'relative', overflow: 'hidden' }}>
-        <div style={{ flex: 1, position: 'relative', width: '100%', height: '100%' }}>
+      <div className="signverse-panel-right">
+        <div className="signverse-avatar-frame">
           <iframe 
             ref={iframeRef} 
             src="/player-applet.html" 
             title="CWASA Avatar Player"
-            style={{ width: '100%', height: '100%', border: 'none' }}
+            className="signverse-avatar-iframe"
           />
           <div style={{
             position: 'absolute', bottom: 0, left: 0, right: 0, height: '40px', 

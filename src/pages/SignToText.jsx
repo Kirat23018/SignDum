@@ -156,7 +156,7 @@ export default function SignToText() {
   const categories = ['All', 'Greetings', 'Manners', 'Expressions', 'Responses', 'Family'];
 
   return (
-    <div style={{ padding: '30px', backgroundColor: '#f8fafc', minHeight: 'calc(100vh - 45px)', fontFamily: 'system-ui, -apple-system, sans-serif', width: '100%', boxSizing: 'border-box' }}>
+    <div style={{ padding: 'clamp(16px, 3vw, 30px)', backgroundColor: '#f8fafc', minHeight: 'calc(100vh - 45px)', fontFamily: 'system-ui, -apple-system, sans-serif', width: '100%', boxSizing: 'border-box' }}>
       
       {/* Top Banner with Subscription & Credits Info */}
       <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: '24px', flexWrap: 'wrap', gap: '14px' }}>
@@ -204,7 +204,7 @@ export default function SignToText() {
       )}
 
       {/* Main Grid: Left Camera Scanner + Right Recognized Sentences & Guide */}
-      <div style={{ display: 'grid', gridTemplateColumns: 'minmax(0, 1.3fr) minmax(0, 1fr)', gap: '24px', alignItems: 'start' }}>
+      <div className="signverse-signtotext-grid">
         
         {/* LEFT COLUMN: LIVE WEBCAM SCANNER & HUD */}
         <div style={{ backgroundColor: '#ffffff', borderRadius: '20px', padding: '24px', boxShadow: '0 4px 20px rgba(0,0,0,0.04)', border: '1px solid #e2e8f0' }}>

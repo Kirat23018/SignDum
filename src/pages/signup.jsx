@@ -27,8 +27,8 @@ export default function Signup({ setIsAuthenticated }) {
   };
 
   return (
-    <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', minHeight: 'calc(100vh - 65px)', backgroundColor: '#f8fafc', fontFamily: 'system-ui, -apple-system, sans-serif', padding: '20px' }}>
-      <div style={{ backgroundColor: 'white', padding: '40px', borderRadius: '20px', boxShadow: '0 8px 30px rgba(0,0,0,0.06)', width: '100%', maxWidth: '420px', textAlign: 'center', border: '1px solid #e2e8f0' }}>
+    <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', minHeight: 'calc(100vh - 65px)', backgroundColor: '#f8fafc', fontFamily: 'system-ui, -apple-system, sans-serif', padding: '20px', boxSizing: 'border-box' }}>
+      <div style={{ backgroundColor: 'white', padding: 'clamp(24px, 5vw, 40px)', borderRadius: '20px', boxShadow: '0 8px 30px rgba(0,0,0,0.06)', width: '100%', maxWidth: '420px', textAlign: 'center', border: '1px solid #e2e8f0' }}>
         
         {/* Trial Badge */}
         <span style={{ backgroundColor: '#dcfce7', color: '#15803d', padding: '6px 14px', borderRadius: '20px', fontSize: '12px', fontWeight: '800', display: 'inline-block', marginBottom: '12px' }}>

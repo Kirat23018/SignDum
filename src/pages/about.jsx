@@ -3,16 +3,16 @@ import { Link } from 'react-router-dom';
 
 export default function About() {
   return (
-    <div style={{ padding: '40px 20px', backgroundColor: '#f8fafc', minHeight: 'calc(100vh - 45px)', fontFamily: 'system-ui, -apple-system, sans-serif', boxSizing: 'border-box', overflowY: 'auto' }}>
+    <div style={{ padding: 'clamp(20px, 4vw, 40px) clamp(12px, 3vw, 20px)', backgroundColor: '#f8fafc', minHeight: 'calc(100vh - 45px)', fontFamily: 'system-ui, -apple-system, sans-serif', boxSizing: 'border-box', overflowY: 'auto' }}>
       
-      <div style={{ maxWidth: '1000px', margin: '0 auto', backgroundColor: 'white', padding: '45px', borderRadius: '20px', boxShadow: '0 4px 20px rgba(0,0,0,0.05)', border: '1px solid #e2e8f0' }}>
+      <div style={{ maxWidth: '1000px', margin: '0 auto', backgroundColor: 'white', padding: 'clamp(20px, 4vw, 45px)', borderRadius: '20px', boxShadow: '0 4px 20px rgba(0,0,0,0.05)', border: '1px solid #e2e8f0' }}>
         
         {/* Header Badge */}
         <div style={{ textAlign: 'center', marginBottom: '32px' }}>
           <span style={{ backgroundColor: '#e0f2fe', color: '#004080', padding: '6px 16px', borderRadius: '20px', fontSize: '13px', fontWeight: '800', display: 'inline-block' }}>
             🌍 Our Mission & Vision
           </span>
-          <h1 style={{ color: '#0f172a', fontSize: '36px', fontWeight: '800', margin: '14px 0 10px 0', letterSpacing: '-0.5px' }}>
+          <h1 style={{ color: '#0f172a', fontSize: 'clamp(26px, 5vw, 36px)', fontWeight: '800', margin: '14px 0 10px 0', letterSpacing: '-0.5px' }}>
             About SignVerse 3D Platform
           </h1>
           <p style={{ color: '#64748b', fontSize: '16.5px', maxWidth: '700px', margin: '0 auto', lineHeight: '1.6' }}>
