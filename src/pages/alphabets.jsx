@@ -1,17 +1,44 @@
-import React, { useState, useRef, useEffect, useCallback } from 'react';
+import React, { useState, useRef, useEffect, useCallback, useMemo } from 'react';
+import modulesData from '../modulesData.json';
 
 export default function Alphabets() {
-  const alphabetList = Array.from({ length: 26 }, (_, i) => {
-    const letter = String.fromCharCode(65 + i); // 'A' to 'Z'
-    return { label: letter, file: letter.toUpperCase() }; 
-  });
+  const [handMode, setHandMode] = useState('double'); // 'double' | 'single'
 
+  const doubleHandedList = useMemo(() => {
+    if (Array.isArray(modulesData['Alphabets double handed'])) {
+      return modulesData['Alphabets double handed'];
+    }
+    return Array.from({ length: 26 }, (_, i) => {
+      const letter = String.fromCharCode(65 + i);
+      return { label: letter, file: `DictionarySigns/alphabets_double_handed/${letter.toLowerCase()}` };
+    });
+  }, []);
+
+  const singleHandedList = useMemo(() => {
+    if (Array.isArray(modulesData['Alphabets single handed'])) {
+      return modulesData['Alphabets single handed'];
+    }
+    return Array.from({ length: 26 }, (_, i) => {
+      const letter = String.fromCharCode(65 + i);
+      return { label: letter, file: `DictionarySigns/alphabets_single_handed/${letter.toLowerCase()}` };
+    });
+  }, []);
+
+  const alphabetList = handMode === 'double' ? doubleHandedList : singleHandedList;
   const [activeItem, setActiveItem] = useState(alphabetList[0]);
   const iframeRef = useRef(null);
 
-  const playSigml = useCallback((fileOrLetter) => {
-    const file = typeof fileOrLetter === 'object' ? fileOrLetter.file : fileOrLetter;
-    const sigmlPath = `SignFiles/${file}.sigml`;
+  const playSigml = useCallback((itemOrFile) => {
+    if (!itemOrFile) return;
+    let filePath = typeof itemOrFile === 'object' ? itemOrFile.file : itemOrFile;
+    let sigmlPath = '';
+    if (filePath.endsWith('.sigml')) {
+      sigmlPath = filePath;
+    } else if (filePath.includes('DictionarySigns') || filePath.includes('SignFiles')) {
+      sigmlPath = `${filePath}.sigml`;
+    } else {
+      sigmlPath = `DictionarySigns/alphabets_double_handed/${filePath.toLowerCase()}.sigml`;
+    }
 
     if (iframeRef.current && iframeRef.current.contentWindow) {
       try {
@@ -19,28 +46,37 @@ export default function Alphabets() {
           iframeRef.current.contentWindow.startPlayer(sigmlPath);
         }
       } catch (err) {
-        console.warn("Direct startPlayer call failed, falling back to postMessage:", err);
+        console.warn("Direct startPlayer call failed, trying postMessage:", err);
       }
       try {
         iframeRef.current.contentWindow.postMessage({ type: 'PLAY_SIGML', file: sigmlPath }, '*');
-      } catch (err) {
-        console.warn("postMessage dispatch failed:", err);
-      }
+      } catch (e) {}
     }
   }, []);
 
   const handleAction = (item) => {
     setActiveItem(item);
-    playSigml(item.file);
+    playSigml(item);
+  };
+
+  const handleModeChange = (newMode) => {
+    setHandMode(newMode);
+    const list = newMode === 'double' ? doubleHandedList : singleHandedList;
+    const currentLetter = activeItem ? activeItem.label : 'A';
+    const nextItem = list.find(x => x.label.toUpperCase() === currentLetter.toUpperCase()) || list[0];
+    setActiveItem(nextItem);
+    playSigml(nextItem);
   };
 
   // Auto-play initial letter A when the component mounts after avatar loads
   useEffect(() => {
     const timer = setTimeout(() => {
-      playSigml('A');
-    }, 1200);
+      if (activeItem) {
+        playSigml(activeItem);
+      }
+    }, 1500);
     return () => clearTimeout(timer);
-  }, [playSigml]);
+  }, [playSigml, activeItem]);
 
   // Keyboard Event Handler for Enter and Space
   const handleKeyDown = (e, item) => {
@@ -52,7 +88,7 @@ export default function Alphabets() {
 
   const playAnimation = () => {
     if (activeItem) {
-      playSigml(activeItem.file);
+      playSigml(activeItem);
     }
   };
 
@@ -88,38 +124,81 @@ export default function Alphabets() {
         }}
       >
         <div>
-          <h2 style={{ color: '#003366', marginTop: 0, marginBottom: '8px', fontSize: '24px', textAlign: 'left' }}>Learn Sign Alphabets (A-Z)</h2>
-          <p style={{ color: '#666', fontSize: '13.5px', marginBottom: '20px', textAlign: 'left' }}>Click or use Tab & Enter on any alphabet to view its sign language animation.</p>
+          <h2 style={{ color: '#003366', marginTop: 0, marginBottom: '6px', fontSize: '24px', textAlign: 'left' }}>Learn Sign Alphabets (A-Z)</h2>
+          <p style={{ color: '#666', fontSize: '13.5px', marginBottom: '14px', textAlign: 'left' }}>Click or use Tab & Enter on any alphabet to view its sign language animation.</p>
           
+          {/* Hand Mode Toggle */}
+          <div style={{ display: 'flex', gap: '8px', marginBottom: '18px' }}>
+            <button
+              type="button"
+              onClick={() => handleModeChange('double')}
+              style={{
+                flex: 1,
+                padding: '8px 12px',
+                borderRadius: '8px',
+                fontSize: '13px',
+                fontWeight: '700',
+                border: handMode === 'double' ? '2px solid #003366' : '1px solid #cbd5e1',
+                backgroundColor: handMode === 'double' ? '#003366' : '#ffffff',
+                color: handMode === 'double' ? '#ffffff' : '#475569',
+                cursor: 'pointer',
+                transition: 'all 0.2s ease'
+              }}
+            >
+              🤲 Double Handed (ISL)
+            </button>
+            <button
+              type="button"
+              onClick={() => handleModeChange('single')}
+              style={{
+                flex: 1,
+                padding: '8px 12px',
+                borderRadius: '8px',
+                fontSize: '13px',
+                fontWeight: '700',
+                border: handMode === 'single' ? '2px solid #003366' : '1px solid #cbd5e1',
+                backgroundColor: handMode === 'single' ? '#003366' : '#ffffff',
+                color: handMode === 'single' ? '#ffffff' : '#475569',
+                cursor: 'pointer',
+                transition: 'all 0.2s ease'
+              }}
+            >
+              ✋ Single Handed
+            </button>
+          </div>
+
           {/* Responsive Alphabet Grid */}
           <div className="signverse-alpha-grid">
-            {alphabetList.map((item) => (
-              <div
-                key={item.label}
-                tabIndex={0}
-                role="button"
-                onClick={() => handleAction(item)}
-                onKeyDown={(e) => handleKeyDown(e, item)}
-                style={{
-                  padding: '14px 0', 
-                  fontSize: '17px', 
-                  fontWeight: 'bold', 
-                  borderRadius: '8px', 
-                  cursor: 'pointer',
-                  border: activeItem.file === item.file ? 'none' : '1px solid #ccc',
-                  backgroundColor: activeItem.file === item.file ? '#689f38' : '#f8f9fa',
-                  color: activeItem.file === item.file ? 'white' : '#333',
-                  textAlign: 'center',
-                  boxShadow: '0 2px 4px rgba(0,0,0,0.05)',
-                  transition: 'all 0.2s',
-                  outline: 'none'
-                }}
-                onFocus={(e) => e.target.style.boxShadow = '0 0 0 3px #003366'}
-                onBlur={(e) => e.target.style.boxShadow = '0 2px 4px rgba(0,0,0,0.05)'}
-              >
-                {item.label}
-              </div>
-            ))}
+            {alphabetList.map((item) => {
+              const isSelected = activeItem && activeItem.label.toUpperCase() === item.label.toUpperCase();
+              return (
+                <div
+                  key={item.label}
+                  tabIndex={0}
+                  role="button"
+                  onClick={() => handleAction(item)}
+                  onKeyDown={(e) => handleKeyDown(e, item)}
+                  style={{
+                    padding: '14px 0', 
+                    fontSize: '17px', 
+                    fontWeight: 'bold', 
+                    borderRadius: '8px', 
+                    cursor: 'pointer',
+                    border: isSelected ? 'none' : '1px solid #ccc',
+                    backgroundColor: isSelected ? '#689f38' : '#f8f9fa',
+                    color: isSelected ? 'white' : '#333',
+                    textAlign: 'center',
+                    boxShadow: '0 2px 4px rgba(0,0,0,0.05)',
+                    transition: 'all 0.2s',
+                    outline: 'none'
+                  }}
+                  onFocus={(e) => e.target.style.boxShadow = '0 0 0 3px #003366'}
+                  onBlur={(e) => e.target.style.boxShadow = '0 2px 4px rgba(0,0,0,0.05)'}
+                >
+                  {item.label}
+                </div>
+              );
+            })}
           </div>
         </div>
 
@@ -135,7 +214,7 @@ export default function Alphabets() {
             onFocus={(e) => e.target.style.boxShadow = '0 0 0 3px #003366'}
             onBlur={(e) => e.target.style.boxShadow = 'none'}
           >
-            Play Animation ({activeItem ? activeItem.label : ''})
+            Play Animation ({activeItem ? activeItem.label : 'A'})
           </button>
         </div>
       </div>
@@ -177,7 +256,9 @@ export default function Alphabets() {
               display: 'block'
             }}
             onLoad={() => {
-              playSigml(activeItem ? activeItem.file : 'A');
+              if (activeItem) {
+                playSigml(activeItem);
+              }
             }}
           />
         </div>
