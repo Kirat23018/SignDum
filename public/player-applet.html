@@ -40,9 +40,6 @@
 </style>
 <script type="text/javascript" src="https://vhg.cmp.uea.ac.uk/tech/jas/vhg2017/cwa/allcsa.js"></script>
 <script language="javascript">
-	window.isCwasaReady = false;
-	window.pendingSiGML = null;
-
 	// Initial configuration with explicit HTTPS URLs to avoid mixed content blocking on deployed HTTPS sites
 	var initCfg = {
 		"jasBase": "https://vhg.cmp.uea.ac.uk/tech/jas/vhg2017/",
@@ -52,17 +49,7 @@
 		"avJARBase": "https://vhg.cmp.uea.ac.uk/tech/jas/vhg2017/avatars/",
 		"sigmlBase": "https://vhg.cmp.uea.ac.uk/tech/jas/vhg2017/sigml/",
 		"avsbsl": ["luna", "siggi", "anna", "marc", "francoise"],
-		"avSettings": { "avList": "avsbsl", "initAv": "luna" },
-		"initCallback": function() {
-			window.isCwasaReady = true;
-			if (window.pendingSiGML) {
-				var toPlay = window.pendingSiGML;
-				window.pendingSiGML = null;
-				setTimeout(function() {
-					startPlayer(toPlay);
-				}, 200);
-			}
-		}
+		"avSettings": { "avList": "avsbsl", "initAv": "luna" }
 	};
 </script>
 
@@ -75,12 +62,9 @@
 function playText(stext) {
 	if (!stext) return;
 	try {
-		if (typeof CWASA !== 'undefined' && CWASA.playSiGMLText) {
-			try { CWASA.stop(); } catch(e) {}
-			CWASA.playSiGMLText(stext);
-		}
+		CWASA.playSiGMLText(stext);
 	} catch (e) {
-		console.warn("playText error:", e);
+		console.warn("CWASA playText error:", e);
 	}
 }
 
@@ -103,40 +87,10 @@ function setSiGMLURL(sigmlURL) {
 function startPlayer(sigmlURL) {
 	if (!sigmlURL) return;
 	var fullUrl = setSiGMLURL(sigmlURL);
-	
-	var isReady = false;
 	try {
-		if (typeof CWASA !== 'undefined' && CWASA.isInitialised && CWASA.isInitialised()) {
-			isReady = true;
-		} else if (window.isCwasaReady) {
-			isReady = true;
-		}
-	} catch(e) {
-		isReady = false;
-	}
-
-	if (!isReady) {
-		window.pendingSiGML = fullUrl;
-		return;
-	}
-
-	try {
-		if (typeof CWASA !== 'undefined' && CWASA.playSiGMLURL) {
-			try { CWASA.stop(); } catch(e) {}
-			CWASA.playSiGMLURL(fullUrl);
-		}
+		CWASA.playSiGMLURL(fullUrl);
 	} catch (err) {
-		console.warn("Error in CWASA.playSiGMLURL, trying fallback text fetch:", err);
-		fetch(fullUrl)
-			.then(function(res) { return res.text(); })
-			.then(function(xmlText) {
-				if (xmlText && typeof CWASA !== 'undefined' && CWASA.playSiGMLText) {
-					CWASA.playSiGMLText(xmlText);
-				}
-			})
-			.catch(function(e) {
-				console.error("SiGML fetch fallback failed:", e);
-			});
+		console.warn("CWASA.playSiGMLURL error:", err);
 	}
 }
 
@@ -155,21 +109,6 @@ window.addEventListener("message", function(event) {
 		startPlayer(data);
 	}
 });
-
-// Periodic check in case initCallback is not fired by the library
-var readyChecker = setInterval(function() {
-	try {
-		if (typeof CWASA !== 'undefined' && CWASA.isInitialised && CWASA.isInitialised()) {
-			window.isCwasaReady = true;
-			if (window.pendingSiGML) {
-				var toPlay = window.pendingSiGML;
-				window.pendingSiGML = null;
-				startPlayer(toPlay);
-			}
-			clearInterval(readyChecker);
-		}
-	} catch(e) {}
-}, 400);
 
 </script>
 
