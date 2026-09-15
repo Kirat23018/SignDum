@@ -284,10 +284,35 @@ export default function Translate() {
   };
 
   return (
-    <div className="signverse-split-container">
+    <div 
+      className="signverse-split-container"
+      style={{
+        display: 'flex',
+        flex: 1,
+        width: '100%',
+        height: 'calc(100vh - 56px)',
+        overflow: 'hidden',
+        fontFamily: 'system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif',
+        backgroundColor: '#f8fafc',
+        position: 'relative'
+      }}
+    >
       
       {/* Left Panel: Text & Voice Input & Controls */}
-      <div className="signverse-panel-left">
+      <div 
+        className="signverse-panel-left"
+        style={{
+          width: '45%',
+          height: '100%',
+          padding: '26px 30px',
+          backgroundColor: '#ffffff',
+          overflowY: 'auto',
+          overflowX: 'hidden',
+          borderRight: '2px solid #e2e8f0',
+          display: 'flex',
+          flexDirection: 'column'
+        }}
+      >
         
         {/* Header with Credits & Plan Badge */}
         <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'flex-start', marginBottom: '8px', flexWrap: 'wrap', gap: '8px' }}>
@@ -512,13 +537,41 @@ export default function Translate() {
       </div>
 
       {/* Right Panel: 3D Avatar Viewer */}
-      <div className="signverse-panel-right">
-        <div className="signverse-avatar-frame">
+      <div 
+        className="signverse-panel-right"
+        style={{
+          width: '55%',
+          height: '100%',
+          display: 'flex',
+          flexDirection: 'column',
+          backgroundColor: '#e5e7eb',
+          position: 'relative',
+          overflow: 'hidden'
+        }}
+      >
+        <div 
+          className="signverse-avatar-frame"
+          style={{
+            flex: 1,
+            width: '100%',
+            height: '100%',
+            position: 'relative',
+            display: 'flex',
+            justifyContent: 'center',
+            alignItems: 'center'
+          }}
+        >
           <iframe 
             ref={iframeRef} 
             src="/player-applet.html" 
             title="CWASA Avatar Player"
             className="signverse-avatar-iframe"
+            style={{
+              width: '100%',
+              height: '100%',
+              border: 'none',
+              display: 'block'
+            }}
           />
         </div>
       </div>

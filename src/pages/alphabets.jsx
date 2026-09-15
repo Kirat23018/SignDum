@@ -41,10 +41,36 @@ export default function Alphabets() {
   };
 
   return (
-    <div className="signverse-split-container">
+    <div 
+      className="signverse-split-container"
+      style={{
+        display: 'flex',
+        flex: 1,
+        width: '100%',
+        height: 'calc(100vh - 56px)',
+        overflow: 'hidden',
+        fontFamily: 'system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif',
+        backgroundColor: '#f8fafc',
+        position: 'relative'
+      }}
+    >
       
       {/* Left Panel: Grid of Alphabets */}
-      <div className="signverse-panel-left" style={{ justifyContent: 'space-between' }}>
+      <div 
+        className="signverse-panel-left" 
+        style={{ 
+          width: '45%',
+          height: '100%',
+          padding: '26px 30px',
+          backgroundColor: '#ffffff',
+          overflowY: 'auto',
+          overflowX: 'hidden',
+          borderRight: '2px solid #e2e8f0',
+          display: 'flex',
+          flexDirection: 'column',
+          justifyContent: 'space-between' 
+        }}
+      >
         <div>
           <h2 style={{ color: '#003366', marginTop: 0, marginBottom: '8px', fontSize: '24px', textAlign: 'left' }}>Learn Sign Alphabets (A-Z)</h2>
           <p style={{ color: '#666', fontSize: '13.5px', marginBottom: '20px', textAlign: 'left' }}>Click or use Tab & Enter on any alphabet to view its sign language animation.</p>
@@ -99,13 +125,41 @@ export default function Alphabets() {
       </div>
 
       {/* Right Panel: Avatar Viewer */}
-      <div className="signverse-panel-right">
-        <div className="signverse-avatar-frame">
+      <div 
+        className="signverse-panel-right"
+        style={{
+          width: '55%',
+          height: '100%',
+          display: 'flex',
+          flexDirection: 'column',
+          backgroundColor: '#e5e7eb',
+          position: 'relative',
+          overflow: 'hidden'
+        }}
+      >
+        <div 
+          className="signverse-avatar-frame"
+          style={{
+            flex: 1,
+            width: '100%',
+            height: '100%',
+            position: 'relative',
+            display: 'flex',
+            justifyContent: 'center',
+            alignItems: 'center'
+          }}
+        >
           <iframe 
             ref={iframeRef} 
             src="/player-applet.html" 
             title="CWASA Avatar Player"
             className="signverse-avatar-iframe"
+            style={{
+              width: '100%',
+              height: '100%',
+              border: 'none',
+              display: 'block'
+            }}
             onLoad={() => {
               if (activeItem && iframeRef.current) {
                 try {

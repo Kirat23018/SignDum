@@ -73,10 +73,35 @@ export default function Words() {
   };
 
   return (
-    <div className="signverse-split-container">
+    <div 
+      className="signverse-split-container"
+      style={{
+        display: 'flex',
+        flex: 1,
+        width: '100%',
+        height: 'calc(100vh - 56px)',
+        overflow: 'hidden',
+        fontFamily: 'system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif',
+        backgroundColor: '#f8fafc',
+        position: 'relative'
+      }}
+    >
       
       {/* Left Panel */}
-      <div className="signverse-panel-left">
+      <div 
+        className="signverse-panel-left"
+        style={{
+          width: '45%',
+          height: '100%',
+          padding: '26px 30px',
+          backgroundColor: '#ffffff',
+          overflowY: 'auto',
+          overflowX: 'hidden',
+          borderRight: '2px solid #e2e8f0',
+          display: 'flex',
+          flexDirection: 'column'
+        }}
+      >
         <h2 style={{ color: '#003366', marginTop: 0, marginBottom: '8px', fontSize: '24px' }}>Sign Dictionary & Words</h2>
         <p style={{ color: '#666', fontSize: '13.5px', marginBottom: '16px' }}>Learn basic words instantly or search our full database.</p>
         
@@ -131,13 +156,41 @@ export default function Words() {
       </div>
 
       {/* Right Panel */}
-      <div className="signverse-panel-right">
-        <div className="signverse-avatar-frame">
+      <div 
+        className="signverse-panel-right"
+        style={{
+          width: '55%',
+          height: '100%',
+          display: 'flex',
+          flexDirection: 'column',
+          backgroundColor: '#e5e7eb',
+          position: 'relative',
+          overflow: 'hidden'
+        }}
+      >
+        <div 
+          className="signverse-avatar-frame"
+          style={{
+            flex: 1,
+            width: '100%',
+            height: '100%',
+            position: 'relative',
+            display: 'flex',
+            justifyContent: 'center',
+            alignItems: 'center'
+          }}
+        >
           <iframe 
             ref={iframeRef} 
             src="/player-applet.html" 
             title="CWASA Avatar Player"
             className="signverse-avatar-iframe"
+            style={{
+              width: '100%',
+              height: '100%',
+              border: 'none',
+              display: 'block'
+            }}
           />
         </div>
       </div>

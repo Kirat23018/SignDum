@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { BrowserRouter as Router, Routes, Route, Link, useLocation, Navigate } from 'react-router-dom';
+import './App.css';
 
 import Home from './pages/home';
 import Alphabets from './pages/alphabets';
@@ -40,16 +41,31 @@ function NavigationBar({ isAuthenticated, handleLogout }) {
   });
 
   return (
-    <nav className="signverse-navbar-wrapper">
+    <nav 
+      className="signverse-navbar-wrapper"
+      style={{
+        backgroundColor: '#004080',
+        padding: '10px 20px',
+        display: 'flex',
+        alignItems: 'center',
+        justifyContent: 'space-between',
+        boxShadow: '0 2px 10px rgba(0, 0, 0, 0.12)',
+        position: 'sticky',
+        top: 0,
+        zIndex: 1000,
+        minHeight: '56px',
+        width: '100%'
+      }}
+    >
       {/* Brand & Badge */}
-      <div className="signverse-nav-brand">
-        <Link to="/" className="signverse-nav-logo">
+      <div className="signverse-nav-brand" style={{ display: 'flex', alignItems: 'center', gap: '12px', flexShrink: 0 }}>
+        <Link to="/" className="signverse-nav-logo" style={{ color: '#ffffff', textDecoration: 'none', fontSize: '21px', fontWeight: '800', letterSpacing: '-0.5px', display: 'flex', alignItems: 'center', gap: '6px' }}>
           SignVerse 🤟
         </Link>
 
         {/* 3-Day Trial & Credits Badge */}
         <Link to="/pricing" style={{ textDecoration: 'none' }}>
-          <div className="signverse-nav-badge">
+          <div className="signverse-nav-badge" style={{ backgroundColor: 'rgba(255, 255, 255, 0.16)', color: '#ffffff', padding: '3px 9px', borderRadius: '14px', fontSize: '11.5px', fontWeight: '700', display: 'flex', alignItems: 'center', gap: '4px', border: '1px solid rgba(255, 255, 255, 0.22)', whiteSpace: 'nowrap' }}>
             <span>🪙 {subStatus.credits}</span>
             <span style={{ opacity: 0.7 }}>•</span>
             <span>{subStatus.isPaidPlan ? 'Pro ✨' : `Trial: ${subStatus.trialDaysRemaining}d`}</span>
@@ -58,7 +74,7 @@ function NavigationBar({ isAuthenticated, handleLogout }) {
       </div>
 
       {/* Desktop Links (Visible on desktop > 920px) */}
-      <div className="signverse-nav-links-desktop">
+      <div className="signverse-nav-links-desktop" style={{ display: 'flex', gap: '14px', alignItems: 'center' }}>
         <Link to="/" style={linkStyle('/')}>Home</Link>
         <Link to="/about" style={linkStyle('/about')}>About Us</Link>
         <Link to="/pricing" style={linkStyle('/pricing')}>Pricing 💎</Link>
@@ -78,7 +94,7 @@ function NavigationBar({ isAuthenticated, handleLogout }) {
       </div>
 
       {/* Desktop Auth Buttons (Visible on desktop > 920px) */}
-      <div className="signverse-nav-auth-desktop">
+      <div className="signverse-nav-auth-desktop" style={{ display: 'flex', gap: '10px', alignItems: 'center' }}>
         {isAuthenticated ? (
           <button onClick={handleLogout} style={{ backgroundColor: '#ef4444', color: 'white', border: 'none', padding: '7px 14px', borderRadius: '8px', fontWeight: '700', cursor: 'pointer', fontSize: '13.5px' }}>
             Logout
@@ -95,7 +111,7 @@ function NavigationBar({ isAuthenticated, handleLogout }) {
         )}
       </div>
 
-      {/* Mobile Hamburger Button (Visible only on mobile <= 920px) */}
+      {/* Mobile Hamburger Button (Visible only on mobile <= 920px via CSS) */}
       <button 
         className="signverse-nav-mobile-toggle"
         onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
