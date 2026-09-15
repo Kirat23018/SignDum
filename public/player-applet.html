@@ -27,11 +27,17 @@
 </style>
 <script type="text/javascript" src="https://vhg.cmp.uea.ac.uk/tech/jas/vhg2017/cwa/allcsa.js"></script>
 <script language="javascript">
-	// Initial configuration
+	// Initial configuration with explicit HTTPS URLs to avoid mixed content blocking on deployed HTTPS sites
 	var initCfg = {
-		"avsbsl" : ["luna", "siggi", "anna", "marc", "francoise"],
-		"avSettings" : { "avList": "avsbsl", "initAv": "luna" }
-		};
+		"jasBase": "https://vhg.cmp.uea.ac.uk/tech/jas/vhg2017/",
+		"cwaBase": "https://vhg.cmp.uea.ac.uk/tech/jas/vhg2017/cwa/",
+		"useCwaConfig": false,
+		"useAvatarJARs": true,
+		"avJARBase": "https://vhg.cmp.uea.ac.uk/tech/jas/vhg2017/avatars/",
+		"sigmlBase": "https://vhg.cmp.uea.ac.uk/tech/jas/vhg2017/sigml/",
+		"avsbsl": ["luna", "siggi", "anna", "marc", "francoise"],
+		"avSettings": { "avList": "avsbsl", "initAv": "luna" }
+	};
 </script>
 
 </head>
