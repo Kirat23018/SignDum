@@ -117,19 +117,42 @@ select option {
 @media (max-width: 768px) {
   .signverse-split-container {
     flex-direction: column !important;
-    height: calc(100vh - 56px) !important;
+    height: auto !important;
+    min-height: calc(100vh - 56px) !important;
+    overflow-y: auto !important;
+  }
+
+  /* 3D Avatar on TOP for small screens: fully visible, centered, clear height */
+  .signverse-panel-right {
+    width: 100% !important;
+    height: 48vh !important;
+    min-height: 280px !important;
+    max-height: 380px !important;
+    flex: none !important;
+    order: 1 !important;
+    background-color: #e5e7eb !important;
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+    position: relative !important;
+    border-bottom: 2px solid var(--border-light) !important;
     overflow: hidden !important;
   }
 
-  /* 3D Avatar on TOP for small screens */
-  .signverse-panel-right {
+  .signverse-avatar-frame {
     width: 100% !important;
-    height: 40vh !important;
-    min-height: 240px !important;
-    max-height: 45vh !important;
-    flex: none !important;
-    order: 1 !important;
-    border-bottom: 2px solid var(--border-light) !important;
+    height: 100% !important;
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+  }
+
+  .signverse-avatar-iframe {
+    width: 100% !important;
+    height: 100% !important;
+    min-height: 100% !important;
+    border: none !important;
+    display: block !important;
   }
 
   /* Controls/Inputs on BOTTOM */
@@ -138,9 +161,9 @@ select option {
     height: auto !important;
     flex: 1 !important;
     order: 2 !important;
-    padding: 14px 16px !important;
+    padding: 16px 18px !important;
     border-right: none !important;
-    overflow-y: auto !important;
+    overflow-y: visible !important;
     box-shadow: 0 -4px 12px rgba(0, 0, 0, 0.05) !important;
   }
 }
