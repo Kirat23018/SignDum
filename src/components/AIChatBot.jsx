@@ -301,6 +301,7 @@ export default function AIChatBot() {
     <>
       {/* 1. Eye-Catching Futuristic Floating Trigger Button (Bottom-Right) */}
       <div 
+        className="signverse-chat-trigger-container"
         style={{ 
           position: 'fixed', bottom: '24px', right: '24px', zIndex: 9999,
           display: 'flex', alignItems: 'center'
@@ -312,6 +313,7 @@ export default function AIChatBot() {
             setIsOpen(!isOpen);
           }}
           aria-label="Open AI Assistant"
+          className="signverse-chat-trigger-btn"
           style={{
             position: 'relative',
             background: isOpen 
@@ -365,7 +367,7 @@ export default function AIChatBot() {
             }} />
           </div>
 
-          <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'flex-start' }}>
+          <div className="signverse-chat-trigger-text" style={{ display: 'flex', flexDirection: 'column', alignItems: 'flex-start' }}>
             <span style={{ letterSpacing: '0.3px', textShadow: '0 1px 3px rgba(0,0,0,0.2)' }}>
               {isOpen ? 'Close Assistant' : 'Ask SignAI ⚡'}
             </span>
