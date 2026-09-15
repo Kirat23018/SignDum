@@ -1,33 +1,36 @@
 <sigml>
-	<hns_sign gloss="$PROD">
+
+	<hns_sign gloss="P">
 		<hamnosys_nonmanual>
-			<hnm_mouthpicture picture="pi:"/>
+			<hnm_mouthpicture picture="PE:"/>
 		</hamnosys_nonmanual>
 		<hamnosys_manual>
-			<hamsymmlr/>
 			<hamparbegin/>
-			<hampinch12/>
+			<hampinch12open/>
 			<hamplus/>
 			<hamfinger2/>
 			<hamthumbacrossmod/>
 			<hamparend/>
 			<hamparbegin/>
-			<hamextfingerul/>
+			<hamextfingeru/>
+			<hampalml/>
 			<hamplus/>
 			<hamextfingeru/>
+			<hambetween/>
+			<hamextfingerur/>
+			<hampalmd/>
 			<hamparend/>
 			<hamparbegin/>
-			<hampalmdr/>
-			<hamplus/>
-			<hampalmr/>
-			<hamparend/>
-			<hamparbegin/>
+			<hamindexfinger/>
 			<hamfingertip/>
 			<hamplus/>
+			<hamthumb/>
+			<hamindexfinger/>
 			<hamfingertip/>
 			<hamparend/>
 			<hamtouch/>
 			<hamshoulders/>
+			<hamclose/>
 		</hamnosys_manual>
 	</hns_sign>
 

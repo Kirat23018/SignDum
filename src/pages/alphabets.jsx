@@ -5,19 +5,13 @@ export default function Alphabets() {
   const [handMode, setHandMode] = useState('double'); // 'double' | 'single'
 
   const doubleHandedList = useMemo(() => {
-    if (Array.isArray(modulesData['Alphabets double handed'])) {
-      return modulesData['Alphabets double handed'];
-    }
     return Array.from({ length: 26 }, (_, i) => {
       const letter = String.fromCharCode(65 + i);
-      return { label: letter, file: `DictionarySigns/alphabets_double_handed/${letter.toLowerCase()}` };
+      return { label: letter, file: `SignFiles/${letter}` };
     });
   }, []);
 
   const singleHandedList = useMemo(() => {
-    if (Array.isArray(modulesData['Alphabets single handed'])) {
-      return modulesData['Alphabets single handed'];
-    }
     return Array.from({ length: 26 }, (_, i) => {
       const letter = String.fromCharCode(65 + i);
       return { label: letter, file: `DictionarySigns/alphabets_single_handed/${letter.toLowerCase()}` };
@@ -25,7 +19,7 @@ export default function Alphabets() {
   }, []);
 
   const alphabetList = handMode === 'double' ? doubleHandedList : singleHandedList;
-  const [activeItem, setActiveItem] = useState(alphabetList[0]);
+  const [activeItem, setActiveItem] = useState(doubleHandedList[0]);
   const iframeRef = useRef(null);
 
   const playSigml = useCallback((itemOrFile) => {
@@ -37,7 +31,7 @@ export default function Alphabets() {
     } else if (filePath.includes('DictionarySigns') || filePath.includes('SignFiles')) {
       sigmlPath = `${filePath}.sigml`;
     } else {
-      sigmlPath = `DictionarySigns/alphabets_double_handed/${filePath.toLowerCase()}.sigml`;
+      sigmlPath = `SignFiles/${filePath}.sigml`;
     }
 
     if (iframeRef.current && iframeRef.current.contentWindow) {
@@ -68,14 +62,14 @@ export default function Alphabets() {
     playSigml(nextItem);
   };
 
-  // Auto-play initial letter A when the component mounts after avatar loads
+  // Auto-play when activeItem changes or on initial mount
   useEffect(() => {
-    const timer = setTimeout(() => {
-      if (activeItem) {
+    if (activeItem) {
+      const timer = setTimeout(() => {
         playSigml(activeItem);
-      }
-    }, 1500);
-    return () => clearTimeout(timer);
+      }, 500);
+      return () => clearTimeout(timer);
+    }
   }, [playSigml, activeItem]);
 
   // Keyboard Event Handler for Enter and Space

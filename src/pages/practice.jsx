@@ -1,4 +1,4 @@
-import React, { useState, useRef, useMemo, useEffect } from 'react';
+import React, { useState, useRef, useMemo, useEffect, useCallback } from 'react';
 import modulesData from '../modulesData.json';
 import { updateStreak } from '../utils/streakManager';
 
@@ -9,6 +9,7 @@ export default function Practice() {
   const [practiceState, setPracticeState] = useState('setup');
   const [selectedTotal, setSelectedTotal] = useState(10);
 
+  const [cardIndex, setCardIndex] = useState(0);
   const [currentWord, setCurrentWord] = useState(null);
   const [isRevealed, setIsRevealed] = useState(false);
   
@@ -23,7 +24,7 @@ export default function Practice() {
     for (const category in modulesData) {
       if (Array.isArray(modulesData[category])) {
         modulesData[category].forEach(item => {
-          if (item.type !== 'video' && item.label) {
+          if (item.type !== 'video' && item.label && item.file) {
             list.push(item);
           }
         });
@@ -40,35 +41,19 @@ export default function Practice() {
 
   const getRandomWord = (list) => list[Math.floor(Math.random() * list.length)];
 
-  // 2. Start Practice Session
-  const startPractice = (totalCards) => {
-    setSelectedTotal(totalCards);
-    setSessionCorrect(0);
-    setSessionTotal(0);
-    setPracticeState('playing');
-    
-    setTimeout(() => {
-      generatePractice();
-    }, 500);
-  };
-
-  // 3. Generate a new practice word
-  const generatePractice = () => {
-    setIsRevealed(false);
-    const word = getRandomWord(allWords);
-    setCurrentWord(word);
-    playAnimation(word);
-  };
-
-  // 4. Play Avatar Animation
-  const playAnimation = (wordItem) => {
+  // Play Avatar Animation helper
+  const playAnimation = useCallback((wordItem) => {
     if (!wordItem || !iframeRef.current) return;
     let sigmlFilePath = '';
-    if (wordItem.file.includes('DictionarySigns') || wordItem.file.includes('SignFiles')) {
-      sigmlFilePath = `${wordItem.file}.sigml`;
+    const file = wordItem.file || '';
+    if (file.endsWith('.sigml')) {
+      sigmlFilePath = file;
+    } else if (file.includes('DictionarySigns') || file.includes('SignFiles')) {
+      sigmlFilePath = `${file}.sigml`;
     } else {
-      sigmlFilePath = `SignFiles/${wordItem.file}.sigml`;
+      sigmlFilePath = `SignFiles/${file}.sigml`;
     }
+
     if (iframeRef.current.contentWindow) {
       try {
         if (typeof iframeRef.current.contentWindow.startPlayer === 'function') {
@@ -81,7 +66,38 @@ export default function Practice() {
         iframeRef.current.contentWindow.postMessage({ type: 'PLAY_SIGML', file: sigmlFilePath }, '*');
       } catch (e) {}
     }
+  }, []);
+
+  // 2. Start Practice Session
+  const startPractice = (totalCards) => {
+    setSelectedTotal(totalCards);
+    setSessionCorrect(0);
+    setSessionTotal(0);
+    setCardIndex(0);
+    setPracticeState('playing');
+    
+    setTimeout(() => {
+      generatePractice();
+    }, 400);
   };
+
+  // 3. Generate a new practice word
+  const generatePractice = () => {
+    setIsRevealed(false);
+    const word = getRandomWord(allWords);
+    setCurrentWord(word);
+  };
+
+  // React Avatar Lifecycle Bridge:
+  // Explicitly triggers the CWASA player whenever moving to a new card (cardIndex) or when currentWord updates
+  useEffect(() => {
+    if (practiceState === 'playing' && currentWord) {
+      const timer = setTimeout(() => {
+        playAnimation(currentWord);
+      }, 150);
+      return () => clearTimeout(timer);
+    }
+  }, [practiceState, cardIndex, currentWord, playAnimation]);
 
   // 5. Handle Reveal
   const handleReveal = () => {
@@ -100,6 +116,7 @@ export default function Practice() {
     if (newTotal >= selectedTotal) {
       handleGameOver(newCorrect, newTotal);
     } else {
+      setCardIndex(prev => prev + 1);
       generatePractice(); // Go to next flashcard
     }
   };
@@ -388,6 +405,11 @@ export default function Practice() {
               height: '100%',
               border: 'none',
               display: 'block'
+            }}
+            onLoad={() => {
+              if (practiceState === 'playing' && currentWord) {
+                playAnimation(currentWord);
+              }
             }}
           />
           <div style={{

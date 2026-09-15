@@ -1,76 +1,47 @@
 <sigml>
-	<hns_sign gloss="$PROD">
-		<hamnosys_nonmanual>
 
-			<hnm_mouthpicture picture="ZeI"/>
+	<hns_sign gloss="J">
+		<hamnosys_nonmanual>
+			<hnm_mouthpicture picture="d_Z@i:"/>
 		</hamnosys_nonmanual>
 		<hamnosys_manual>
-			<hamsymmlr/>
 			<hamparbegin/>
 			<hamfinger2/>
 			<hamthumbacrossmod/>
 			<hamplus/>
-			<hamfinger2/>
+			<hamflathand/>
 			<hamthumboutmod/>
 			<hamparend/>
 			<hamparbegin/>
+			<hamextfingerul/>
+			<hampalmdl/>
+			<hamplus/>
+			<hamextfingeru/>
+			<hambetween/>
 			<hamextfingero/>
-			<hamplus/>
-			<hamextfingerur/>
-			<hamparend/>
-			<hamparbegin/>
-			<hampalmd/>
-			<hamplus/>
 			<hampalmr/>
 			<hamparend/>
 			<hamparbegin/>
 			<hamfingertip/>
+			<hamindexfinger/>
 			<hamplus/>
-			<hamfingernail/>
-			<hampalm/>
+			<hamfingertip/>
+			<hamindexfinger/>
 			<hamparend/>
 			<hamtouch/>
-			<hamshoulders/>
+			<hamchest/>
 			<hambetween/>
-			<hamshoulders/>
-			<hamlrat/>
+			<hamstomach/>
+			<hamclose/>
+			<hammoved/>
+			<hamarcu/>
 			<hamparbegin/>
-			<hamparbegin/>
-			<hamcircleo/>
-			<hamsmallmod/>
-			<hamclockdr/>
-			<hamclockr/>
-			<hamslow/>
+			<hamthumbball/>
 			<hamplus/>
-			<hamnomotion/>
+			<hamindexfinger/>
+			<hamfingertip/>
 			<hamparend/>
-			<hamparbegin/>
-			<hamcircleo/>
-			<hamsmallmod/>
-			<hamclockdr/>
-			<hamclockr/>
-			<hamslow/>
-			<hamplus/>
-			<hamnomotion/>
-			<hamparend/>
-			<hamparbegin/>
-			<hammovedl/>
-			<hamsmallmod/>
-			<hamslow/>
-			<hamparbegin/>
-			<hammoveu/>
-			<hamsmallmod/>
-			<hamslow/>
-			<hamreplace/>
-			<hampalmdl/>
-			<hambetween/>
-			<hampalml/>
-			<hamslow/>
-			<hamparend/>
-			<hamplus/>
-			<hamnomotion/>
-			<hamparend/>
-			<hamparend/>
+			<hamtouch/>
 		</hamnosys_manual>
 	</hns_sign>
 

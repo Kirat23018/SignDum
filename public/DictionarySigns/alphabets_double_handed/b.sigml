@@ -1,20 +1,26 @@
 <sigml>
-	<hns_sign gloss="$PROD">
+
+	<hns_sign gloss="B">
 		<hamnosys_nonmanual>
-			<hnm_mouthpicture picture="be:"/>
+			<hnm_mouthpicture picture="bi:"/>
 		</hamnosys_nonmanual>
 		<hamnosys_manual>
 			<hamsymmlr/>
-			<hampinchall/>
+			<hampinch12open/>
 			<hamextfingeru/>
 			<hampalml/>
 			<hamparbegin/>
 			<hamfingertip/>
+			<hamthumb/>
+			<hamindexfinger/>
 			<hamplus/>
 			<hamfingertip/>
+			<hamthumb/>
+			<hamindexfinger/>
 			<hamparend/>
 			<hamtouch/>
-			<hamshoulders/>
+			<hamchest/>
+			<hamclose/>
 		</hamnosys_manual>
 	</hns_sign>
 

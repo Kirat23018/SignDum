@@ -1,4 +1,4 @@
-import React, { useState, useRef, useMemo, useEffect } from 'react';
+import React, { useState, useRef, useMemo, useEffect, useCallback } from 'react';
 import modulesData from '../modulesData.json';
 import { updateStreak } from '../utils/streakManager';
 
@@ -10,6 +10,7 @@ export default function Quiz() {
   const [selectedTotal, setSelectedTotal] = useState(10); 
   const [timeLeft, setTimeLeft] = useState(60); 
 
+  const [questionIndex, setQuestionIndex] = useState(0);
   const [currentWord, setCurrentWord] = useState(null);
   const [options, setOptions] = useState([]);
   const [score, setScore] = useState(0);
@@ -24,7 +25,7 @@ export default function Quiz() {
     for (const category in modulesData) {
       if (Array.isArray(modulesData[category])) {
         modulesData[category].forEach(item => {
-          if (item.type !== 'video' && item.label) {
+          if (item.type !== 'video' && item.label && item.file) {
             list.push(item);
           }
         });
@@ -84,19 +85,47 @@ export default function Quiz() {
   const getRandomWord = (list) => list[Math.floor(Math.random() * list.length)];
   const shuffleArray = (array) => array.sort(() => Math.random() - 0.5);
 
+  // Play Animation helper
+  const playAnimation = useCallback((wordItem) => {
+    if (!wordItem || !iframeRef.current) return;
+    let sigmlFilePath = '';
+    const file = wordItem.file || '';
+    if (file.endsWith('.sigml')) {
+      sigmlFilePath = file;
+    } else if (file.includes('DictionarySigns') || file.includes('SignFiles')) {
+      sigmlFilePath = `${file}.sigml`;
+    } else {
+      sigmlFilePath = `SignFiles/${file}.sigml`;
+    }
+
+    if (iframeRef.current.contentWindow) {
+      try {
+        if (typeof iframeRef.current.contentWindow.startPlayer === 'function') {
+          iframeRef.current.contentWindow.startPlayer(sigmlFilePath);
+        }
+      } catch (err) {
+        console.warn("Player error:", err);
+      }
+      try {
+        iframeRef.current.contentWindow.postMessage({ type: 'PLAY_SIGML', file: sigmlFilePath }, '*');
+      } catch (e) {}
+    }
+  }, []);
+
   // 2. Start Quiz
   const startQuiz = (totalQs) => {
     setSelectedTotal(totalQs);
     setTimeLeft(totalQs * 6); 
     setScore(0);
     setAttempts(0);
+    setQuestionIndex(0);
     setFeedback('');
     setHasGuessed(false);
     setQuizState('playing');
     
     setTimeout(() => {
       generateQuestion();
-    }, 500); 
+    }, 400); 
   };
 
   // 3. Generate Question
@@ -117,31 +146,18 @@ export default function Quiz() {
 
     const allOptions = shuffleArray([correct, ...wrongOptions]);
     setOptions(allOptions);
-    playAnimation(correct);
   };
 
-  // 4. Play Animation
-  const playAnimation = (wordItem) => {
-    if (!wordItem || !iframeRef.current) return;
-    let sigmlFilePath = '';
-    if (wordItem.file.includes('DictionarySigns') || wordItem.file.includes('SignFiles')) {
-      sigmlFilePath = `${wordItem.file}.sigml`;
-    } else {
-      sigmlFilePath = `SignFiles/${wordItem.file}.sigml`;
+  // React Avatar Lifecycle Bridge:
+  // Explicitly trigger the CWASA player whenever questionIndex advances or currentWord updates
+  useEffect(() => {
+    if (quizState === 'playing' && currentWord) {
+      const timer = setTimeout(() => {
+        playAnimation(currentWord);
+      }, 150);
+      return () => clearTimeout(timer);
     }
-    if (iframeRef.current.contentWindow) {
-      try {
-        if (typeof iframeRef.current.contentWindow.startPlayer === 'function') {
-          iframeRef.current.contentWindow.startPlayer(sigmlFilePath);
-        }
-      } catch (err) {
-        console.warn("Player error:", err);
-      }
-      try {
-        iframeRef.current.contentWindow.postMessage({ type: 'PLAY_SIGML', file: sigmlFilePath }, '*');
-      } catch (e) {}
-    }
-  };
+  }, [quizState, questionIndex, currentWord, playAnimation]);
 
   // 5. Handle Guess
   const handleGuess = (selectedItem) => {
@@ -158,11 +174,12 @@ export default function Quiz() {
     }
   };
 
-  // 6. Next Button
+  // 6. Next Button - explicitly increments questionIndex and triggers next question
   const handleNext = () => {
     if (attempts >= selectedTotal) {
       handleGameOver(false);
     } else {
+      setQuestionIndex(prev => prev + 1);
       generateQuestion();
     }
   };
@@ -473,6 +490,11 @@ export default function Quiz() {
               height: '100%',
               border: 'none',
               display: 'block'
+            }}
+            onLoad={() => {
+              if (quizState === 'playing' && currentWord) {
+                playAnimation(currentWord);
+              }
             }}
           />
           <div style={{
