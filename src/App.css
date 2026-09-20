@@ -324,20 +324,6 @@
   }
 }
 
-/* Sign-to-Text Camera & Sentence Grid */
-.signverse-signtotext-grid {
-  display: grid;
-  grid-template-columns: minmax(0, 1.3fr) minmax(0, 1fr);
-  gap: 24px;
-  align-items: start;
-}
-
-@media (max-width: 860px) {
-  .signverse-signtotext-grid {
-    grid-template-columns: 1fr !important;
-    gap: 20px !important;
-  }
-}
 
 /* AI Chatbot Floating Trigger Button */
 .signverse-chat-trigger-container {

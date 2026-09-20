@@ -169,7 +169,7 @@ const LOCAL_KNOWLEDGE_BASE = [
   {
     keywords: ["what is signverse", "about signverse", "signverse kya hai", "intro to signverse"],
     response: `**SignVerse** is an interactive, real-time **3D Sign Language Learning & Translation Platform** designed to make communication accessible for the Deaf and Hard-of-Hearing community! 🤟\n\n### 🌟 Key Features:\n- ⚡ **Real-time 3D Avatar Animation** (CWASA / JASign WebGL engine)\n- 🎙️ **Voice & Text to Sign Translation**\n- 📚 **A–Z Alphabets, Words, Flashcards & Timed Quizzes**\n- 🔥 **Daily Learning Streak & Rank System**`,
-    action: { label: "Explore About Us", route: "/about" }
+    action: { label: "Try 3D Translator", route: "/translate" }
   },
   {
     keywords: ["how does 3d avatar work", "how avatars work", "jasign", "cwasa", "sigml", "3d engine"],
@@ -206,14 +206,14 @@ const LOCAL_KNOWLEDGE_BASE = [
   },
   {
     keywords: ["sign to text", "camera sign", "gesture recognition", "webcam sign"],
-    response: `**Sign-to-Text** allows you to perform gestures in front of your camera, and our computer vision model detects words and builds spoken sentences in real time! 🤟📹`,
-    action: { label: "Try Sign to Text", route: "/sign-to-text" }
+    response: `Explore our **3D Translation & Sign Dictionary** to look up words or convert sentences into real-time 3D sign language gestures! 🤟`,
+    action: { label: "Explore Dictionary", route: "/words" }
   },
   {
     keywords: ["pricing", "price", "subscription", "free trial", "credits", "plans", "cost"],
     response: `**SignVerse Pricing & Plans:** 💎
 - 🎁 **3-Day Free Trial**: 50 Free AI Credits + Full Core Access.
-- 🚀 **Pro Monthly ($5/mo)**: Unlimited 3D translations, 500 AI credits, all 5 avatars & camera sign-to-text.
+- 🚀 **Pro Monthly ($5/mo)**: Unlimited 3D translations, 500 AI credits & all 5 avatars.
 - 💰 **Pro Annual ($60/yr)**: Save 20%, unlimited everything & certificate.`,
     action: { label: "View Pricing Plans", route: "/pricing" }
   },
@@ -223,7 +223,7 @@ const LOCAL_KNOWLEDGE_BASE = [
 - 👨‍💻 **Hardeep Singh**: Lead Full-Stack & 3D Avatar Architect
 - ⚡ **Dilpreet Singh**: AI, Computer Vision & Gesture Recognition Lead
 - 👩‍💻 **Prabhkirat Kaur**: UI/UX Design Lead & Educational Curriculum Developer`,
-    action: { label: "Meet the Team", route: "/about" }
+    action: { label: "Go to Home", route: "/" }
   }
 ];
 

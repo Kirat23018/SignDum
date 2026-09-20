@@ -141,7 +141,7 @@ export default function Pricing() {
                 <span style={{ color: '#10b981', fontWeight: 'bold' }}>✓</span> <strong>Unlimited 3D Sign Translations</strong>
               </li>
               <li style={{ display: 'flex', alignItems: 'center', gap: '10px', fontSize: '14px', color: '#1e1b4b', fontWeight: '600' }}>
-                <span style={{ color: '#10b981', fontWeight: 'bold' }}>✓</span> <strong>Real-Time Camera Sign-to-Text</strong>
+                <span style={{ color: '#10b981', fontWeight: 'bold' }}>✓</span> <strong>Interactive 3D Avatar & Practice Modules</strong>
               </li>
               <li style={{ display: 'flex', alignItems: 'center', gap: '10px', fontSize: '14px', color: '#334155' }}>
                 <span style={{ color: '#10b981', fontWeight: 'bold' }}>✓</span> 500 AI LLM Chatbot Credits / Month
@@ -192,7 +192,7 @@ export default function Pricing() {
                 <span style={{ color: '#10b981', fontWeight: 'bold' }}>✓</span> <strong>Everything in Pro Monthly</strong>
               </li>
               <li style={{ display: 'flex', alignItems: 'center', gap: '10px', fontSize: '14px', color: '#1e1b4b', fontWeight: '600' }}>
-                <span style={{ color: '#10b981', fontWeight: 'bold' }}>✓</span> <strong>Unlimited AI Assistant & Sign-to-Text</strong>
+                <span style={{ color: '#10b981', fontWeight: 'bold' }}>✓</span> <strong>Unlimited AI Assistant & Translations</strong>
               </li>
               <li style={{ display: 'flex', alignItems: 'center', gap: '10px', fontSize: '14px', color: '#334155' }}>
                 <span style={{ color: '#10b981', fontWeight: 'bold' }}>✓</span> Priority GPU Animation Engine
@@ -234,7 +234,7 @@ export default function Pricing() {
             <div>
               <h4 style={{ margin: '0 0 4px 0', fontSize: '14.5px', color: '#004080', fontWeight: '700' }}>How do AI translation credits work?</h4>
               <p style={{ margin: 0, fontSize: '13px', color: '#64748b', lineHeight: '1.5' }}>
-                Free trial users receive 50 AI credits to test real-time Sign-to-Text camera recognition and AI voice translation. Pro plans include unlimited 3D signs.
+                Free trial users receive 50 AI credits to test real-time 3D translation and voice features. Pro plans include unlimited 3D signs.
               </p>
             </div>
           </div>

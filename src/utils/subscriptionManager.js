@@ -52,7 +52,7 @@ export function getSubscriptionStatus() {
 }
 
 /**
- * Deduct credits for AI actions (Translate, Camera Sign-to-Text, AI Chatbot)
+ * Deduct credits for AI actions (Translate, AI Chatbot)
  */
 export function deductCredits(amount = 1) {
   const status = getSubscriptionStatus();

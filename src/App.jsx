@@ -6,12 +6,10 @@ import Home from './pages/home';
 import Alphabets from './pages/alphabets';
 import Words from './pages/words';
 import Translate from './pages/translate';
-import SignToText from './pages/SignToText';
 import Practice from './pages/practice';
 import Quiz from './pages/quiz';
 import Dashboard from './pages/dashboard';
 import Pricing from './pages/pricing';
-import About from './pages/about';
 import Login from './pages/login';
 import Signup from './pages/signup';
 import AIChatBot from './components/AIChatBot';
@@ -76,7 +74,6 @@ function NavigationBar({ isAuthenticated, handleLogout }) {
       {/* Desktop Links (Visible on desktop > 920px) */}
       <div className="signverse-nav-links-desktop" style={{ display: 'flex', gap: '14px', alignItems: 'center' }}>
         <Link to="/" style={linkStyle('/')}>Home</Link>
-        <Link to="/about" style={linkStyle('/about')}>About Us</Link>
         <Link to="/pricing" style={linkStyle('/pricing')}>Pricing 💎</Link>
         
         {/* Protected Links (Logged in users only) */}
@@ -85,7 +82,6 @@ function NavigationBar({ isAuthenticated, handleLogout }) {
             <Link to="/alphabets" style={linkStyle('/alphabets')}>Alphabets</Link>
             <Link to="/words" style={linkStyle('/words')}>Words</Link>
             <Link to="/translate" style={linkStyle('/translate')}>3D Translate</Link>
-            <Link to="/sign-to-text" style={linkStyle('/sign-to-text')}>🤟 Sign to Text</Link>
             <Link to="/practice" style={linkStyle('/practice')}>Practice</Link>
             <Link to="/quiz" style={linkStyle('/quiz')}>Quiz</Link>
             <Link to="/dashboard" style={linkStyle('/dashboard')}>Dashboard</Link>
@@ -124,7 +120,6 @@ function NavigationBar({ isAuthenticated, handleLogout }) {
       {isMobileMenuOpen && (
         <div className="signverse-nav-drawer">
           <Link to="/" className={`signverse-nav-drawer-link ${isActive('/') ? 'active' : ''}`} onClick={() => setIsMobileMenuOpen(false)}>Home</Link>
-          <Link to="/about" className={`signverse-nav-drawer-link ${isActive('/about') ? 'active' : ''}`} onClick={() => setIsMobileMenuOpen(false)}>About Us</Link>
           <Link to="/pricing" className={`signverse-nav-drawer-link ${isActive('/pricing') ? 'active' : ''}`} onClick={() => setIsMobileMenuOpen(false)}>Pricing 💎</Link>
           
           {isAuthenticated && (
@@ -133,7 +128,6 @@ function NavigationBar({ isAuthenticated, handleLogout }) {
               <Link to="/alphabets" className={`signverse-nav-drawer-link ${isActive('/alphabets') ? 'active' : ''}`} onClick={() => setIsMobileMenuOpen(false)}>Alphabets (A-Z)</Link>
               <Link to="/words" className={`signverse-nav-drawer-link ${isActive('/words') ? 'active' : ''}`} onClick={() => setIsMobileMenuOpen(false)}>Sign Dictionary & Words</Link>
               <Link to="/translate" className={`signverse-nav-drawer-link ${isActive('/translate') ? 'active' : ''}`} onClick={() => setIsMobileMenuOpen(false)}>3D Translate (Voice & Text)</Link>
-              <Link to="/sign-to-text" className={`signverse-nav-drawer-link ${isActive('/sign-to-text') ? 'active' : ''}`} onClick={() => setIsMobileMenuOpen(false)}>🤟 Camera Sign to Text</Link>
               <Link to="/practice" className={`signverse-nav-drawer-link ${isActive('/practice') ? 'active' : ''}`} onClick={() => setIsMobileMenuOpen(false)}>Practice Studio</Link>
               <Link to="/quiz" className={`signverse-nav-drawer-link ${isActive('/quiz') ? 'active' : ''}`} onClick={() => setIsMobileMenuOpen(false)}>Interactive Quiz</Link>
               <Link to="/dashboard" className={`signverse-nav-drawer-link ${isActive('/dashboard') ? 'active' : ''}`} onClick={() => setIsMobileMenuOpen(false)}>Dashboard & Progress</Link>
@@ -196,7 +190,6 @@ export default function App() {
           <Routes>
             {/* Public Routes */}
             <Route path="/" element={<Home />} />
-            <Route path="/about" element={<About />} />
             <Route path="/pricing" element={<Pricing />} />
             <Route path="/login" element={<Login setIsAuthenticated={setIsAuthenticated} />} />
             <Route path="/signup" element={<Signup setIsAuthenticated={setIsAuthenticated} />} />
@@ -205,7 +198,6 @@ export default function App() {
             <Route path="/alphabets" element={<ProtectedRoute isAuthenticated={isAuthenticated}><Alphabets /></ProtectedRoute>} />
             <Route path="/words" element={<ProtectedRoute isAuthenticated={isAuthenticated}><Words /></ProtectedRoute>} />
             <Route path="/translate" element={<ProtectedRoute isAuthenticated={isAuthenticated}><Translate /></ProtectedRoute>} />
-            <Route path="/sign-to-text" element={<ProtectedRoute isAuthenticated={isAuthenticated}><SignToText /></ProtectedRoute>} />
             <Route path="/practice" element={<ProtectedRoute isAuthenticated={isAuthenticated}><Practice /></ProtectedRoute>} />
             <Route path="/quiz" element={<ProtectedRoute isAuthenticated={isAuthenticated}><Quiz /></ProtectedRoute>} />
             <Route path="/dashboard" element={<ProtectedRoute isAuthenticated={isAuthenticated}><Dashboard /></ProtectedRoute>} />
