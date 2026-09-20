@@ -1,4 +1,4 @@
-# SignVerse 🤟 - Next-Gen 3D Sign Language Platform
+# SignDum 🤟 - Next-Gen 3D Sign Language Platform
 
 SignVerse is an interactive, accessible 3D Sign Language translation and learning platform powered by WebGL avatar synthesis, offline synonym matching, real-time gesture pipelines, and AI conversational assistance.
 
