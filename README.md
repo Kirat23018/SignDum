@@ -55,9 +55,9 @@ npm run build
 ---
 
 ## 👥 Authors & Team
-- **Hardeep Singh** - Lead Full-Stack & 3D Avatar Architect
-- **Dilpreet Singh** - AI, Computer Vision & Gesture Recognition Lead
 - **Prabhkirat Kaur** - UI/UX Design Lead & Educational Curriculum Developer
+- AI, Computer Vision & Gesture Recognition Lead
+- Lead Full-Stack & 3D Avatar Architect
 
 ---
 
